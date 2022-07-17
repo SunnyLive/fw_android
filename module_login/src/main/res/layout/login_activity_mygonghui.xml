@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    >
+    <include layout="@layout/base_toolbar" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_union_anchor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_179"
+        android:background="@drawable/icon_union_anchor"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_union_anchor_heard"
+            android:layout_width="@dimen/dp_62"
+            android:layout_height="@dimen/dp_62"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_13"
+            tools:src="@color/red_FE3C9C"
+            />
+
+        <TextView
+            android:id="@+id/tv_union_anchor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_union_anchor_heard"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_marginStart="@dimen/dp_13"
+            tools:text="NA.超级大家族"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            />
+
+        <TextView
+            android:id="@+id/tv_union_anchor_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sp_6"
+            app:layout_constraintTop_toTopOf="@id/tv_union_anchor_name"
+            app:layout_constraintLeft_toRightOf="@+id/tv_union_anchor_name"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_union_anchor_name"
+            android:background="@drawable/bg_union_anchor_label"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingBottom="@dimen/dp_1"
+            android:textSize="@dimen/sp_8"
+            android:textColor="@color/text_white"
+            android:text="主播公会"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_union_anchor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_union_anchor_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_union_anchor_name"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="公会ID:  123123123"
+            />
+
+        <TextView
+            android:id="@+id/tv_union_anchor_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_union_anchor_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_union_anchor_id"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_34"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="GENW跟我一起豪横吧~~~ 家族长期收人。哈哈哈"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_union_anchor_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/btn_union_anchor"
+            app:layout_constraintTop_toTopOf="@+id/btn_union_anchor"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_union_anchor"
+            android:layout_marginStart="@dimen/dp_10"
+            tools:text="申请公会失败"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/red_FF2F2F"
+            />
+
+        <Button
+            android:id="@+id/btn_union_anchor"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/bg_union_btn"
+            android:text="申请主播公会"
+            android:gravity="center"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/text_white"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_union_iliao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_179"
+        android:background="@drawable/icon_union_iliao"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/sp_15"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_union_iliao_heard"
+            android:layout_width="@dimen/dp_62"
+            android:layout_height="@dimen/dp_62"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_13"
+            tools:src="@color/red_FE3C9C"
+            />
+
+        <TextView
+            android:id="@+id/tv_union_iliao_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_union_iliao_heard"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_marginStart="@dimen/dp_13"
+            tools:text="NA.超级大家族"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_union_expert_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sp_6"
+            app:layout_constraintTop_toTopOf="@id/tv_union_iliao_name"
+            app:layout_constraintLeft_toRightOf="@+id/tv_union_iliao_name"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_union_iliao_name"
+            android:background="@drawable/bg_union_expert_label"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_1"
+            android:paddingBottom="@dimen/dp_1"
+            android:textSize="@dimen/sp_8"
+            android:textColor="@color/text_white"
+            android:text="达人公会"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_union_iliao_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_union_iliao_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_union_iliao_name"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="公会ID:  123123123"
+            />
+
+        <TextView
+            android:id="@+id/tv_union_iliao_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_union_iliao_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_union_iliao_id"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_34"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="GENW跟我一起豪横吧~~~ 家族长期收人。哈哈哈"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_union_iliao_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/btn_union_iliao"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_union_iliao"
+            app:layout_constraintTop_toTopOf="@+id/btn_union_iliao"
+            android:layout_marginStart="@dimen/dp_10"
+            tools:text="申请公会失败"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/red_FF2F2F"
+            />
+
+        <Button
+            android:id="@+id/btn_union_iliao"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_36"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/bg_union_btn"
+            android:textAllCaps="false"
+            android:text="申请i撩公会"
+            android:gravity="center"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/text_white"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

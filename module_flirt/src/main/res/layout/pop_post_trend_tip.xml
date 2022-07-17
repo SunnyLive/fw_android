@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_50"
+    android:background="@drawable/shape_white_corner"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingEnd="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="发布贴士"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:lineSpacingExtra="@dimen/dp_5"
+        android:text="蜂窝互娱鼓励用户上传真实原创、健康积极的内容，以下内容不予发布、严重者将封号处理：\n
+1.禁止不文明用语以任何形式发布；\n
+2.禁止上传过度性感，纹身大面积暴露的视频、图片；\n
+3.禁止含有外部链接、联系方式、二维码、有奖转发等任何广告推销、引导行为；\n
+4.禁止含有色情、政治、非法组织及擦边内容；\n
+5.禁止盗用他人身份及人相照片、视频;"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/tv_know"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@drawable/bg_trend_tip_know"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_30"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="我知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

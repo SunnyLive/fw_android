@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:layout_constraintDimensionRatio="1:0.48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.fengwo.module_comment.widget.RoundImageView
+            android:id="@+id/pic_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:radius="@dimen/dp_8"
+            tools:src="@drawable/timg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/vedio_home_player" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvAlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toLeftOf="@id/iv"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        tools:text="测试文字" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_6"
+        android:background="#EEEEEE"
+        app:layout_constraintLeft_toLeftOf="@id/iv"
+        app:layout_constraintRight_toRightOf="@id/iv"
+        app:layout_constraintTop_toBottomOf="@id/tvAlbumName" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/view_bottom"
+        app:layout_constraintLeft_toLeftOf="@id/iv"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        tools:src="@drawable/timg" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintLeft_toRightOf="@id/ivHeader"
+        app:layout_constraintRight_toLeftOf="@id/iv_comment"
+        app:layout_constraintTop_toTopOf="@id/ivHeader"
+        tools:text="测试文字" />
+
+    <LinearLayout
+        android:id="@+id/view_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintRight_toRightOf="@id/iv"
+        app:layout_constraintTop_toTopOf="@id/ivHeader">
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/sp_16"
+            android:src="@drawable/video_ic_like" />
+
+        <TextView
+            android:id="@+id/tvLikeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintRight_toLeftOf="@id/view_like"
+        app:layout_constraintTop_toTopOf="@id/ivHeader" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:src="@drawable/vedio_icon_comment"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintRight_toLeftOf="@id/tv_comment_count"
+        app:layout_constraintTop_toTopOf="@id/ivHeader" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="#F8F8F8"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

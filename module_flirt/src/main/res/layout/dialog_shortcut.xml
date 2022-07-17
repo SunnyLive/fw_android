@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shortcut"
+        android:clipChildren="false"
+        android:paddingStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_15">
+
+
+        <LinearLayout
+            android:id="@+id/ll_shortcut_user_column"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_shortcut_header"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                tools:src="@color/red_ffff3333" />
+
+            <TextView
+                android:id="@+id/tv_shortcut_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:maxLength="6"
+                android:textSize="14sp"
+                tools:text="战斗德玛西亚" />
+
+
+            <TextView
+                android:id="@+id/tv_shortcut_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_text_sign1"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_10"
+                tools:text="开启缘分" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_shortcut_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:layout_below="@id/ll_shortcut_user_column"
+            android:background="@drawable/bg_shortcut_text"
+            android:layout_marginTop="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_11" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_shortcut_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_shortcut_content"
+            android:layout_marginTop="@dimen/dp_15" />
+
+
+        <Button
+            android:id="@+id/bt_send_chat_room"
+            android:layout_width="@dimen/dp_126"
+            android:layout_height="@dimen/dp_34"
+            android:layout_below="@id/rv_shortcut_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/bg_shortcut_button"
+            android:text="进入聊天室"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_shortcut_close"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@drawable/icon_gb" />
+</LinearLayout>

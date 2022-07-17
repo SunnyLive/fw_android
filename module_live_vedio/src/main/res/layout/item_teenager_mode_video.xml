@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_poster"
+        android:layout_width="@dimen/dp_167"
+        android:layout_height="@dimen/dp_167"
+        android:layout_marginTop="@dimen/dp_15"
+        app:cardCornerRadius="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_margin="@dimen/dp_4"-->
+<!--            android:background="@drawable/bg_teenager_video_lable"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingStart="@dimen/dp_4"-->
+<!--            android:paddingTop="@dimen/dp_2"-->
+<!--            android:paddingEnd="@dimen/dp_4"-->
+<!--            android:paddingBottom="@dimen/dp_2">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_gif"-->
+<!--                android:layout_width="@dimen/dp_10"-->
+<!--                android:layout_height="@dimen/dp_10"-->
+<!--                android:layout_gravity="center" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_view_count"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="@dimen/dp_2"-->
+<!--                android:textColor="@color/text_white"-->
+<!--                android:textSize="@dimen/sp_9"-->
+<!--                tools:text="123.2万" />-->
+<!--        </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_gravity="bottom"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:gravity="bottom"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14"
+            android:paddingBottom="@dimen/dp_4"
+            android:singleLine="true"
+            android:background="@drawable/live_bg_home_title_tv"
+            tools:text="做个最棒的男孩"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

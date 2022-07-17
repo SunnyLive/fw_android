@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_iliao_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--头部-->
+    <FrameLayout
+        android:id="@+id/basetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_11"
+            >
+            <TextView
+                android:id="@+id/btn_playing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_talent"
+                android:text="成为达人"
+                android:gravity="center"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_select"
+                android:text="筛选"
+                android:layout_marginRight="@dimen/dp_12"
+                android:gravity="center"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#F2F3F5" />
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lable"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/basetitle"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/btn_flirt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_label"
+        />
+    <ImageView
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_go_talent"
+        />
+    <!--其他 fragment-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

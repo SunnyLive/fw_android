@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_full_default">
+    <!--背景图片-->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rv_card_bg"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
+    <com.fengwo.module_flirt.widget.DetailCardView
+        android:id="@+id/detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_124" />
+
+    <!--关闭图片-->
+    <ImageView
+        android:id="@+id/iv_card_close"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_45"
+        android:src="@mipmap/ic_closes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--分享 设置 图片-->
+    <ImageView
+        android:id="@+id/iv_card_setting"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginRight="@dimen/dp_20"
+        android:src="@mipmap/pic_share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_card_close" />
+
+
+    <TextView
+        android:id="@+id/tv_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_card_close" />
+    <!--白色背景-->
+    <View
+        android:id="@+id/view_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_124"
+        android:background="@drawable/shape_card_purple"
+        android:padding="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.425"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <!--姓名-->
+    <TextView
+        android:id="@+id/tv_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:text="啦啦啦啦"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_14"
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv_card_header"
+        app:layout_constraintLeft_toRightOf="@+id/iv_card_header"
+        app:layout_constraintTop_toTopOf="@+id/view_card_bg" />
+
+    <TextView
+        android:id="@+id/tv_card_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="1小时前 学生 厦门"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_card_header"
+        app:layout_constraintLeft_toRightOf="@+id/tv_card_name"
+        app:layout_constraintTop_toTopOf="@+id/view_card_bg" />
+    <!--性别-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_card_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_name">
+
+        <com.fengwo.module_flirt.UI.DrawTextView
+            android:id="@+id/tv_card_age_and_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/bg_gender_dp7"
+            android:drawableLeft="@drawable/ic_girl"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_3"
+            android:text="20"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10"
+            android:visibility="visible" />
+        <!--<TextView
+            android:id="@+id/tv_card_age_and_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/shape_corner_age"
+
+
+            android:gravity="center"
+
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10"
+            android:visibility="visible" />-->
+
+       <!-- <TextView
+            android:id="@+id/tv_card_details_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/shape_corner_city"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_30"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            tools:text="深圳"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/tv_card_details_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/shape_corner_occupation"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_30"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:text="学生"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/shape_corner_type"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingRight="@dimen/dp_6"
+            android:text="学生"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!--用户头像-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_card_header"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:src="@drawable/default_head"
+        android:layout_marginLeft="@dimen/dp_20"
+        app:layout_constraintLeft_toLeftOf="@+id/rv_card_label"
+        app:layout_constraintTop_toTopOf="@+id/view_card_bg" />
+    <!--直播状态-->
+    <TextView
+        android:id="@+id/tv_card_player_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_card_player_status"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_2"
+        android:text="直播中"
+
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_8"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_card_header"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_card_header"
+        app:layout_constraintRight_toRightOf="@+id/iv_card_header"
+        tools:visibility="visible" />
+
+    <!--状态-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_7"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/rv_card_label"
+        app:layout_constraintLeft_toLeftOf="@+id/view_card_bg">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@mipmap/ic_card_hot"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_10"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!--人物标签-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_card_label"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_35"
+
+        android:layout_marginBottom="@dimen/dp_11"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/view_card_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/view_card_bg"
+        app:layout_constraintRight_toRightOf="@+id/view_card_bg" />
+    <!--语音-->
+    <LinearLayout
+        android:id="@+id/ll_card_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+
+        android:background="@drawable/bg_purple_voice"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_4"
+        app:layout_constraintBottom_toTopOf="@+id/view_card_bg"
+        app:layout_constraintRight_toRightOf="@+id/view_card_bg">
+
+        <ImageView
+            android:id="@+id/iv_wava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_video" />
+
+        <TextView
+            android:id="@+id/tv_voice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_4"
+            android:text="00:10"
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+    <!--开撩 按钮-->
+    <LinearLayout
+        android:id="@+id/ll_card_flirt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_32"
+
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@drawable/rect_purple_detail"
+
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_8"
+
+
+        android:paddingRight="@dimen/dp_8"
+
+        app:layout_constraintRight_toRightOf="@+id/view_card_bg"
+        app:layout_constraintTop_toTopOf="@+id/iv_card_header">
+
+        <ImageView
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pic_hello_s" />
+
+        <TextView
+            android:id="@+id/tv_card_flirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="打招呼"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/iv_card_go"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@mipmap/ic_card_details_go" />-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

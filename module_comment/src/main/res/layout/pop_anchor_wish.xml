@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/im_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_xy_top"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pic_xy_btn"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_con">
+
+            <TextView
+                android:id="@+id/iv_creat_wish"
+                android:layout_width="@dimen/dp_213"
+                android:layout_height="@dimen/dp_48"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_create_wish_btn"
+                android:gravity="center"
+                android:text="生成心愿"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+            <!--生成心愿-->
+
+        </LinearLayout>
+
+        <!--心愿列表-->
+        <LinearLayout
+            android:id="@+id/ll_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_xy_con"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_top">
+            <!--今日 主播心愿展示-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ll_create_wish_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add_create"
+                android:elevation="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wish_type_bg"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="今日心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_wish_present"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="@dimen/dp_65"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_17"
+                    android:background="@drawable/shape_white_coner"
+                    android:padding="@dimen/dp_6"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/live_home_default"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_wish_present_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="爱心仙女棒"
+
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_wish_present"
+                    app:layout_constraintTop_toTopOf="@+id/iv_wish_present" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wish_rank_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_wish_present_name">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist1_1"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist1_2"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist1_3"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_12"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_wish_rank_list"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/pb_wish_num"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dp_159"
+                        android:layout_height="@dimen/dp_4"
+
+                        android:max="100"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/bg_wish_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_wish_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+
+                        android:gravity="center"
+                        android:text="99/99"
+                        android:textColor="#3E3159"
+                        android:textSize="@dimen/sp_12" />
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/tv_ydc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic_ydc"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_des_type_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="@+id/ll_1"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_des_wish_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_wish_present"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present"
+                    tools:visibility="visible" />
+                <!--关闭-->
+                <ImageView
+                    android:id="@+id/iv_close_wish_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ic_close_wish"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--帮助达成-->
+                <ImageView
+                    android:id="@+id/iv_wish_help_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_help"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name" />
+                <!--完成-->
+                <ImageView
+                    android:id="@+id/iv_wish_complete_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_complete"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--今日 添加心愿-->
+            <LinearLayout
+                android:id="@+id/ll_add_wish_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_29"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="╋ 今日心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+            <!--本周 主播心愿展示-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ll_create_wish_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add_create"
+                android:elevation="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wish_type_bg"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="本周心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_wish_present_week"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="@dimen/dp_65"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_17"
+                    android:background="@drawable/shape_white_coner"
+                    android:padding="@dimen/dp_6"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/live_home_default"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_wish_present_name_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="爱心仙女棒"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_wish_present_week"
+                    app:layout_constraintTop_toTopOf="@+id/iv_wish_present_week" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wish_rank_list_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name_week"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_wish_present_name_week"
+                    tools:visibility="visible">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist2_1"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist2_2"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist2_3"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_wish_rank_list_week"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name_week"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/pb_wish_num_week"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dp_159"
+                        android:layout_height="@dimen/dp_4"
+                        android:layout_gravity="center"
+
+                        android:max="100"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/bg_wish_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_wish_value_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="9999/9999"
+                        android:textColor="#3E3159"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBottom_toBottomOf="@+id/ll_2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ll_2" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/tv_ydc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic_ydc"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+                <TextView
+                    android:id="@+id/tv_pb_num_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_9"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ll_2"
+                    app:layout_constraintLeft_toLeftOf="@+id/ll_2"
+                    app:layout_constraintTop_toTopOf="@+id/ll_2" />
+
+
+                <TextView
+                    android:id="@+id/tv_des_type_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="@+id/ll_2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present_week"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_des_wish_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_wish_present_week"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present_week"
+                    tools:visibility="visible" />
+                <!--关闭-->
+                <ImageView
+                    android:id="@+id/iv_close_wish_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ic_close_wish"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--帮助达成-->
+                <ImageView
+                    android:id="@+id/iv_wish_help_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_help"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name_week" />
+                <!--完成-->
+                <ImageView
+                    android:id="@+id/iv_wish_complete_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_complete"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name_week" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--本周 添加心愿-->
+            <LinearLayout
+                android:id="@+id/ll_add_wish_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_29"
+                android:visibility="visible"
+                tools:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="╋ 本周心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+            <!--本月  主播心愿展示-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ll_create_wish_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add_create"
+                android:elevation="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wish_type_bg"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:text="本月心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_wish_present_month"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="@dimen/dp_65"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_17"
+                    android:background="@drawable/shape_white_coner"
+                    android:padding="@dimen/dp_6"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/live_home_default"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_wish_present_name_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="爱心仙女棒"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_wish_present_month"
+                    app:layout_constraintTop_toTopOf="@+id/iv_wish_present_month" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wish_rank_list_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name_month"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_wish_present_name_month">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist3_1"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist3_2"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_ranklist3_3"
+                        android:layout_width="@dimen/dp_32"
+                        android:layout_height="@dimen/dp_32"
+                        android:layout_marginRight="@dimen/dp_7"
+                        android:src="@drawable/default_head"
+                        app:civ_border_color="@color/purple_B699FF"
+                        app:civ_border_width="@dimen/dp_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_wish_rank_list_month"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_wish_present_name_month"
+                    app:layout_constraintRight_toRightOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/pb_wish_num_month"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dp_159"
+                        android:layout_height="@dimen/dp_4"
+                        android:layout_gravity="center"
+
+                        android:max="100"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/bg_wish_progress" />
+
+                    <TextView
+                        android:id="@+id/tv_wish_value_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:ems="5"
+                        android:gravity="center"
+                        android:text="9999/9999"
+                        android:textColor="#3E3159"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintBottom_toBottomOf="@+id/ll_3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ll_3" />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/tv_ydc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic_ydc"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+                <TextView
+                    android:id="@+id/tv_pb_num_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_9"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/ll_3"
+                    app:layout_constraintLeft_toLeftOf="@+id/ll_3"
+                    app:layout_constraintTop_toTopOf="@+id/ll_3" />
+
+
+                <TextView
+                    android:id="@+id/tv_des_type_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="@+id/ll_3"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present_month" />
+
+                <TextView
+                    android:id="@+id/tv_des_wish_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:text="报答方式:自行协商"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_wish_present_month"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_wish_present_month"
+                    tools:visibility="visible" />
+                <!--关闭-->
+                <ImageView
+                    android:id="@+id/iv_close_wish_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ic_close_wish"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--帮助达成-->
+                <ImageView
+                    android:id="@+id/iv_wish_help_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_help"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name_month" />
+                <!--完成-->
+                <ImageView
+                    android:id="@+id/iv_wish_complete_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:src="@drawable/ic_wish_complete"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_wish_present_name_month" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--本月  添加心愿-->
+            <LinearLayout
+                android:id="@+id/ll_add_wish_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_wish_add"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_29"
+                android:visibility="visible"
+                tools:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="╋ 本月心愿"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--关闭-->
+    <ImageView
+        android:id="@+id/iv_wish_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_15"
+        android:src="@drawable/ic_wish_close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

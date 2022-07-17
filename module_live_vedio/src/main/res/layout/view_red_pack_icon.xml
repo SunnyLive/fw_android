@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/v_redpack_icon_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_un_send_redpack" />
+
+    <TextView
+        android:id="@+id/v_redpack_count"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_gravity="right"
+        android:background="@drawable/shape_red_num"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textColor="#ffffffff"
+        android:textSize="9sp"
+        tools:text="99+" />
+
+    <TextView
+        android:id="@+id/v_redpack_countdonw"
+        android:layout_width="47dp"
+        android:layout_height="18dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/shape_redpack_countdown"
+        android:gravity="center"
+        android:text="30s"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</FrameLayout>

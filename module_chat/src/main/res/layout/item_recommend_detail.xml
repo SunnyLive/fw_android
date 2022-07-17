@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/dp_14"
+    android:paddingLeft="@dimen/dp_14"
+    android:paddingRight="@dimen/dp_14">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_33"
+        android:text="连理树"
+        app:layout_constraintLeft_toRightOf="@id/iv_header"
+        app:layout_constraintTop_toTopOf="@id/iv_header"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_2"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_10"
+        android:textColor="@color/text_99"
+        android:text="2019.11.11"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nickname"
+        app:layout_constraintTop_toBottomOf="@id/tv_nickname"/>
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/text_33"
+        android:text="安静了"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nickname"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        android:layout_marginTop="@dimen/dp_8"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_e1e1e1"
+        app:layout_constraintTop_toBottomOf="@id/tv_des"
+        app:layout_constraintLeft_toRightOf="@+id/iv_header"
+        android:layout_marginTop="@dimen/dp_9"
+        android:layout_marginLeft="@dimen/dp_50"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

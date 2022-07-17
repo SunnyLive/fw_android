@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_133"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_real_anchor_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_116"
+                    android:background="@drawable/bg_realname_radius"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_13"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:text="上传手持身份证照片"
+                        android:textColor="@color/text_33"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_164"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <ImageView
+                            android:id="@+id/iv_take_id_card"
+                            android:layout_width="@dimen/dp_164"
+                            android:layout_height="@dimen/dp_119"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:src="@drawable/icon_fw_id_card"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_300"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/btn_id_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_camera"
+                            android:layout_gravity="center"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_take_id_card_del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintRight_toRightOf="@+id/iv_take_id_card"
+                            app:layout_constraintTop_toTopOf="@+id/iv_take_id_card"
+                            android:src="@drawable/icon_anchor_audio_del"
+                            android:visibility="gone" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/v_line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_21"
+                        android:background="@color/normal_bg1" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:text="上传个人形象照片"
+                        android:textColor="@color/text_33"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_164"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_10">
+
+
+                        <ImageView
+                            android:id="@+id/iv_heard"
+                            android:layout_width="@dimen/dp_164"
+                            android:layout_height="@dimen/dp_119"
+                            android:src="@drawable/icon_fw_id_card"
+                            android:layout_gravity="center"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:scaleType="fitXY" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_300"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/btn_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_camera"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_gravity="center" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_heard_del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintRight_toRightOf="@+id/iv_heard"
+                            app:layout_constraintTop_toTopOf="@+id/iv_heard"
+                            android:src="@drawable/icon_anchor_audio_del"
+                            android:visibility="gone" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:gravity="center"
+                android:text="@string/realname_rule"
+                android:textColor="@color/text_33"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_51"
+                android:background="@drawable/bg_realname_btn"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="上传审核"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_20" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        layout="@layout/item_base_empty_view"/>
+</LinearLayout>
+

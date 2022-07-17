@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/gray_f6f6f6" />
+
+    <TextView
+        android:id="@+id/tv_article_name"
+        style="@style/TextStyle.LSize"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_9"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="sdaaaaaaaaasdasssssssssssssssssssssssssssssssssssssssssssssssssssssdasdsadasdsadsadasdasasdsdasdsadasdasa" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_media"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10">
+
+
+            <ImageView
+                android:id="@+id/iv_article_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_ad_close" />
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_video_play"/>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <!--<com.fengwo.module_chat.widgets.TagTextView-->
+                <!--style="@style/ArticleLabel"-->
+                <!--android:layout_marginLeft="@dimen/dp_10"-->
+                <!--android:text="的接口后方可举案说法as"/>-->
+
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            style="@style/TextStyle.SSize.Purple"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rect_pink_round100"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="秋刀鱼" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

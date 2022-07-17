@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_10"
+    android:orientation="vertical"
+    android:background="@drawable/bg_base_popwindow">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="管理"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black_000000" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_gray_corner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:visibility="gone"
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:visibility="gone"
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        app:tabBackground="@android:color/transparent"
+        app:tabRippleColor="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        app:tabIndicatorHeight="@dimen/dp_0"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/gray_666666">
+    </com.google.android.material.tabs.TabLayout>
+
+    </FrameLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fengwo.module_comment.widget.GradientTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_40"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingBottom="@dimen/dp_6"
+    android:textSize="@dimen/sp_14"
+    android:textColor="@color/text_33"
+    android:gravity="center"
+    android:text="朱门">
+
+</com.fengwo.module_comment.widget.GradientTextView>

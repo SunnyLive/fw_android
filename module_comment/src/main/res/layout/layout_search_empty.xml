@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <TextView
+        android:id="@+id/tv_keyword"
+        style="@style/TextStyle.MSize"
+        android:text="搜索关于“民宿”的更多内容"
+        android:textColor="@color/purple_9966ff"
+        android:drawablePadding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_arrow_purple_right"/>
+
+
+
+
+
+</LinearLayout>

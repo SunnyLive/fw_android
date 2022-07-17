@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_86">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/header"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        app:radius="@dimen/dp_19"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginStart="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_19"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/text_66"
+        android:textStyle="bold"
+        android:text="哈哈哈哈哈"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@id/header"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/gray_999999"
+        android:text="今天 8:00"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/gray_999999"
+        android:text="评价"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/nickname"/>
+
+
+    <com.fengwo.module_flirt.widget.CustomRatingBar
+        android:id="@+id/rb_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/comment"
+        app:layout_constraintBottom_toBottomOf="@id/comment"
+        app:layout_constraintTop_toTopOf="@id/comment"/>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tag_flow_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/comment"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

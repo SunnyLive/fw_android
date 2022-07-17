@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivChatHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/timg"
+            tools:layout_height="@dimen/dp_200" />
+
+        <TextView
+            android:id="@+id/tvChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black_3C3C3C"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/tv_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivChatHeader"
+            app:layout_goneMarginBottom="@dimen/dp_10"
+            tools:text="最多两行" />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_9F9F9F"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvChat"
+            />
+
+        <!-- <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/civChat"
+             android:layout_width="@dimen/dp_30"
+             android:layout_height="@dimen/dp_30"
+             android:layout_marginStart="@dimen/dp_10"
+             android:layout_marginTop="@dimen/dp_10"
+             android:layout_marginBottom="@dimen/dp_10"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:visibility="gone"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/tvChat"
+             tools:src="@drawable/timg" />
+
+         <TextView
+             android:id="@+id/tvChatName"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/dp_10"
+             android:layout_marginEnd="@dimen/dp_10"
+             android:maxLength="8"
+             android:singleLine="true"
+             android:visibility="gone"
+             android:textColor="@color/text_66"
+             android:textSize="@dimen/sp_14"
+             app:layout_constraintBottom_toBottomOf="@id/civChat"
+             app:layout_constraintLeft_toRightOf="@id/civChat"
+             app:layout_constraintRight_toLeftOf="@id/ivChatAgree"
+             app:layout_constraintTop_toTopOf="@id/civChat"
+             tools:text="测试文字" />-->
+
+
+        <TextView
+            android:id="@+id/tvChatNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_time"
+            tools:text="点赞数" />
+
+        <ImageView
+            android:id="@+id/ivChatAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_2"
+            android:src="@drawable/chat_ic_home_agree"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            app:layout_constraintRight_toLeftOf="@id/tvChatNum"
+            app:layout_constraintTop_toTopOf="@id/tv_time" />
+
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            app:layout_constraintRight_toLeftOf="@+id/ivChatAgree"
+            app:layout_constraintTop_toTopOf="@id/tv_time"
+            tools:text="点赞数" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_2"
+            android:src="@drawable/chat_ic_home_comment"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            app:layout_constraintRight_toLeftOf="@id/tv_comment_num"
+            app:layout_constraintTop_toTopOf="@id/tv_time" />
+
+        <LinearLayout
+            android:id="@+id/view_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/bg_card_shape_transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_3"
+            android:visibility="invisible"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@id/ivChatHeader"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@id/ivChatHeader"
+            app:layout_constraintRight_toRightOf="@id/ivChatHeader">
+
+            <ImageView
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/chat_location_white" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_10"
+                tools:text="测试文字测试文字测测试文字测试文字测测试文字测试文字测测试文字测试文字测" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_card_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/ll_card_status"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_mine_card_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_card_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@drawable/ll_card_status"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ll_card_status"
+            app:layout_constraintLeft_toRightOf="@+id/ll_card_status"
+            app:layout_constraintTop_toTopOf="@+id/ll_card_status">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_9" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_time,tv_comment_num,iv_comment,ivChatAgree,tvChatNum" />
+
+        <ImageView
+            android:id="@+id/iv_mine_card_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:src="@drawable/ic_mine_secret"
+            app:layout_constraintBottom_toBottomOf="@id/ivChatHeader"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toRightOf="@id/ivChatHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

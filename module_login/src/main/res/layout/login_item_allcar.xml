@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_5"
+    android:background="@drawable/login_bg_corner_white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toRightOf="@+id/iv_img">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獨角獸"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="獨角獸"
+            android:textColor="@color/color_ffc147"
+            android:textSize="@dimen/sp_14" />
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_14"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="购买"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14"
+            app:gtv_angle="90"
+            app:gtv_end_color="@color/color_ffc147"
+            app:gtv_start_color="@color/red_FE3C9C" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

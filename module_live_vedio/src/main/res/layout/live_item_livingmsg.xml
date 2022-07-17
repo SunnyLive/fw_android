@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_msg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:textColor="#4595E5"
+        android:textSize="@dimen/sp_12"
+        app:gtv_end_color="#52000000"
+        app:gtv_radius="@dimen/dp_12"
+        app:gtv_start_color="#52000000" />
+
+
+    <com.fengwo.module_live_vedio.widget.LiversMsgTextView
+        android:id="@+id/tv_msg_livers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_10"
+
+        android:text=""
+        android:textColor="#4595E5"
+
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:gtv_end_color="#52000000"
+        app:gtv_radius="@dimen/dp_12"
+        app:gtv_start_color="#52000000" />
+</LinearLayout>

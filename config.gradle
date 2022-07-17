@@ -1,0 +1,95 @@
+ext {
+    android = [
+            compileSdkVersion   : 29,
+            buildToolsVersion   : '29.0.2',
+            applicationId       : 'com.fengwo.mobile.android',
+            minSdkVersion       : 23,
+            targetSdkVersion    : 26,
+            versionCode         : 49,
+            versionName         : 'v1.0.43',
+            defaultPublishConfig: 'release',
+            publishNonDefault   : true,
+            supportSdkVersion   : '1.0.0-beta01'
+    ]
+    dependencies = [
+            //androidx
+            "androidx.appcompat"             : 'androidx.appcompat:appcompat:1.0.2',
+            "androidx.constraintlayout"      : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            //design
+            "support:design"                 : 'com.google.android.material:material:1.0.0-beta01',
+            //brvah
+            "brvah"                          : 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47',
+            //SmartRefreshLayout
+
+
+            "smartRefreshLayout"            : 'com.scwang.smart:refresh-layout-kernel:2.0.1',//下拉刷新上拉加载
+            "smartRefreshHeader"                   : 'com.scwang.smart:refresh-header-classics:2.0.1',//下拉刷新上拉加载
+            "smartFooiter"                  : 'com.scwang.smart:refresh-footer-classics:2.0.1',//下拉刷新上拉加载
+            "material"                    : 'com.scwang.smart:refresh-header-material:2.0.1',//下拉刷新头部 ui
+            //autolayout
+            "autolayout"                     : 'com.zhy:autolayout:1.4.5',
+            //rx
+            "rxandroid"                      : 'io.reactivex.rxjava2:rxandroid:2.1.1',
+            "rxjava"                         : 'io.reactivex.rxjava2:rxjava:2.2.11',
+            "rxlifecycle2"                   : 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0',
+            //glide
+            "glide"                          : 'com.github.bumptech.glide:glide:4.11.0',
+            "glide_annotationProcessor"      : 'com.github.bumptech.glide:compiler:4.11.0',
+            "glide-transformations"          : "jp.wasabeef:glide-transformations:4.0.0",
+            //retrofit
+            "retrofit"                       : 'com.squareup.retrofit2:retrofit:2.6.1',
+            "converter-gson"                 : 'com.squareup.retrofit2:converter-gson:2.6.1',
+            "adapter-rxjava"                 : 'com.squareup.retrofit2:adapter-rxjava2:2.6.1',
+            "okhttp3-logging"                : "com.squareup.okhttp3:logging-interceptor:4.1.0",
+            //butterknife
+            "butterknife"                    : 'com.jakewharton:butterknife:10.1.0',
+            "butterknife_annotationProcessor": 'com.jakewharton:butterknife-compiler:10.1.0',
+            //aroute
+            "aroute"                         : 'com.alibaba:arouter-api:1.5.0',
+            "aroute_annotationProcessor"     : 'com.alibaba:arouter-compiler:1.2.2',
+            "eventbus"                       : 'org.greenrobot:eventbus:3.1.1',
+            //流式布局 https://github.com/hongyangAndroid/FlowLayout
+            "flowlayout"                     : 'com.hyman:flowlayout-lib:1.1.2',
+            //basepopupwindow
+            "basepopupwindow"                : 'com.github.razerdp:BasePopup_Candy:2.2.3.20200304',
+            "basepopupwindow_support"        : 'com.github.razerdp:BasePopup_Candy-compat-androidx:2.2.2.200220',
+            "junit"                          : 'junit:junit:4.12',
+            "gson"                           : 'com.google.code.gson:gson:2.8.5',
+
+            // https://github.com/CarGuo/GSYVideoPlayer 视频播放器
+//            "gsyVideoPlayer"                 : 'com.shuyu:GSYVideoPlayer:7.0.2',
+            //ijkplayer
+//            "ijkplayer-java"                 : 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8',
+//            "ijkplayer-armv7a"               : 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8',
+//            "ijkplayer-armv5"                : 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8',
+//            "ijkplayer-arm64"                : 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8',
+//            "ijkplayer-x86"                  : 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8',
+//            "ijkplayer-x86_64"               : 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8',
+//            "ijkplayer-exo"                  : 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8',
+
+            //
+//            "jiaozivideoplayer"              : 'cn.jzvd:jiaozivideoplayer:7.0.5',
+
+            //沉浸式
+            "immersionbar"                   : "com.gyf.immersionbar:immersionbar:3.0.0",
+            "immersionbar_component"         : "com.gyf.immersionbar:immersionbar-components:3.0.0",
+
+            //知乎 圖片你選擇器
+            "matisse"                        : "com.zhihu.android:matisse:0.5.3-beta2",
+
+            //rxpermission
+            "rxpermission"                   : "com.github.tbruyelle:rxpermissions:0.10.2",
+            "takephoto"                      : "com.jph.takephoto:takephoto_library:4.0.3",
+
+            "swipelayout"                    : "com.daimajia.swipelayout:library:1.2.0@aar",//拖拽效果
+
+
+
+            //    "frameanimation"                 : "com.yuyashuai.frameanimation:frameanimation:2.1.1",//高效播放礼物帧动画
+            "SVGAPlayer"                    : 'com.github.yyued:SVGAPlayer-Android:2.5.12', //svga播放器
+
+
+
+
+    ]
+}

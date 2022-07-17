@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_6">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:background="@drawable/live_bg_topview_left"
+        android:paddingRight="@dimen/dp_4">
+
+        <FrameLayout
+            android:id="@+id/fl_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/default_head" />
+
+            <ImageView
+                android:id="@+id/iv_head_board"
+                android:layout_width="@dimen/dp_27"
+                android:layout_height="@dimen/dp_27" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/im_cp"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_10"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/pic_cp1"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_toRightOf="@id/fl_header"
+            android:ellipsize="end"
+            android:lines="1"
+            android:minWidth="@dimen/dp_35"
+            android:text="阿萨德是啊"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_10" />
+
+        <ImageView
+            android:id="@+id/iv_heart"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_11"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_alignBottom="@id/fl_header"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:src="@drawable/live_iv_fire"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_calorific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fl_header"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_toRightOf="@id/iv_heart"
+            android:text="0"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_9"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_anchor_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fl_header"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_toRightOf="@id/fl_header"
+            android:background="@drawable/ic_live_level1_5" />
+
+        <TextView
+            android:id="@+id/tv_anchor_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/fl_header"
+            android:layout_marginStart="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_toEndOf="@+id/iv_anchor_level"
+            android:text="123"
+            android:textColor="#CDCDCD"
+            android:textSize="@dimen/sp_9" />
+
+
+        <TextView
+            android:id="@+id/btn_attention"
+            android:layout_width="wrap_content"
+
+            android:layout_height="@dimen/dp_23"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/live_bg_btn_livingroom_attention"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_3"
+            android:paddingBottom="@dimen/dp_2"
+            android:text="关 注"
+            android:textColor="@color/red_f33c6f"
+            android:textSize="@dimen/sp_9"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_shouhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/live_ic_shouhu_hat"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/fl_out_shouhu_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_out_shouhu_header"
+                android:layout_width="@dimen/dp_27"
+                android:layout_height="@dimen/dp_27"
+                android:layout_gravity="center"
+                android:src="@drawable/default_head"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_46"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:src="@drawable/live_ic_shouhu_hat" />
+
+            <com.fengwo.module_comment.widget.GradientTextView
+                android:id="@+id/tv_guard_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginEnd="@dimen/dp_3"
+                android:background="#60000000"
+                android:gravity="center"
+                android:maxWidth="@dimen/dp_23"
+                android:minWidth="@dimen/dp_15"
+                android:paddingStart="@dimen/dp_1"
+                android:paddingEnd="@dimen/dp_1"
+                android:singleLine="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_8"
+                android:visibility="invisible"
+                app:gtv_end_color="#60000000"
+                app:gtv_start_color="#60000000" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+<!--
+        <ImageView
+            android:layout_width="@dimen/dp_37"
+            android:layout_height="@dimen/dp_47"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/layer_list_mask"
+            tools:itemCount="1" />-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1">
+            <com.fengwo.module_comment.widget.MyRecycleView
+                android:id="@+id/rv_watchers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                tools:itemCount="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_watchers_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_27"
+            android:background="@drawable/live_bg_topview_left"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_27"
+            android:minHeight="@dimen/dp_27"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_8" />
+
+
+    </LinearLayout>
+</LinearLayout>

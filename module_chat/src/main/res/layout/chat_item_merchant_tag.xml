@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fengwo.module_comment.widget.GradientTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp_4"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_3"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_3"
+    android:textSize="@dimen/sp_10"
+    tools:text="测试文字" />

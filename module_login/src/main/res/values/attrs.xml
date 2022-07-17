@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="huafen_top">
+        <attr name="startcolor" format="color" />
+        <attr name="endcolor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DotLineView">
+        <attr name="dot_width" format="dimension|reference"/>
+        <attr name="dot_color" format="color|reference" />
+    </declare-styleable>
+</resources>

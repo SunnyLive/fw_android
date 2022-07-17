@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="22px"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="230px"
+        android:layout_height="320px"
+        android:layout_marginRight="40px"
+        android:background="#f0f" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@id/iv_title"
+        android:text="无主之地"
+        android:textColor="@color/text_33"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="10px"
+        android:ellipsize="end"
+        android:maxWidth="360px"
+        android:maxLines="3"
+        android:text="无主之地无主之地无主之地无主之地无主之地无主之地无主之地无主之地无主之地无主之地无主之地"
+        android:textColor="@color/text_99"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_des"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="10px"
+        android:text="导演：张纪中"
+        android:textColor="@color/text_33"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tv_main_actor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_director"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="10px"
+        android:text="导演：张纪中"
+        android:textColor="@color/text_33"
+        android:textSize="24px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main_actor"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginTop="10px"
+        android:text="导演：张纪中"
+        android:textColor="@color/text_33"
+        android:textSize="24px" />
+</com.zhy.autolayout.AutoRelativeLayout>

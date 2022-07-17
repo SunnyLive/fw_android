@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_flirt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--页面显示-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_talent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basetitle" />
+    <!--头部-->
+    <FrameLayout
+        android:id="@+id/basetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_11">
+
+            <ImageView
+                android:id="@+id/im_vip"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+        />
+
+            <TextView
+                android:id="@+id/tv_become"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawableRight="@drawable/icon_operation"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="center"
+                android:text="成为达人"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:tabGravity="fill"
+                app:tabIndicatorFullWidth="false"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="5dp"
+                app:tabPaddingStart="8dp" />
+
+            <com.shizhefei.view.indicator.ScrollIndicatorView
+                android:id="@+id/tabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/iv_flirt_gengduo"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginRight="@dimen/dp_2"
+                android:visibility="gone"
+                android:src="@drawable/pic_gengduo" />
+            <ImageView
+                android:id="@+id/iv_flirt_search"
+                android:layout_width="@dimen/dp_28"
+                android:layout_height="@dimen/dp_28"
+                android:layout_marginRight="@dimen/dp_2"
+                android:src="@drawable/pic_search" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_12"
+                android:drawableLeft="@drawable/ic_add_trends"
+                android:gravity="center"
+                android:text="@string/string_publish"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_12"
+                android:drawableLeft="@drawable/ic_select"
+                android:gravity="center"
+                android:text="@string/string_screen"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/color_f2f3f5" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_label"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_margin="@dimen/dp_12"
+        android:src="@drawable/ic_label"
+        android:transitionName="abc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

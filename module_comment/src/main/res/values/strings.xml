@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="login_app_name">蜂窝互娱</string>
+    <string name="weixin">微信</string>
+    <string name="weixin_circle">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="qq_circle">QQ空间</string>
+    <string name="weibo">微博</string>
+
+    <string name="flower_drill">花钻</string>
+
+
+</resources>

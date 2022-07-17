@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white_gray">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_user_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/purple_9966ff"
+                    android:baselineAlignBottom="true"
+                    app:layout_constraintDimensionRatio="2:1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:baseline="@dimen/dp_20"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/dp_2"
+                    app:layout_constraintBaseline_toBaselineOf="@id/iv_user_desc"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_24"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_header"
+                    app:layout_constraintTop_toBottomOf="@id/iv_header"
+                    tools:text="我是小蜜蜂" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_13"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name"
+                    tools:text="一只小蜜蜂嗡嗡~" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@drawable/selector_sex_bg"
+                    android:padding="@dimen/dp_4"
+                    android:src="@drawable/selector_sex"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_header"
+                    app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_sex"
+                    app:layout_constraintLeft_toRightOf="@id/iv_sex"
+                    app:layout_constraintTop_toTopOf="@id/iv_sex"
+                    tools:text="12岁" />
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="@dimen/dp_9"
+                    android:layout_height="@dimen/dp_11"
+                    android:layout_marginStart="@dimen/dp_14"
+                    android:src="@drawable/login_ic_location"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_sex"
+                    app:layout_constraintLeft_toRightOf="@id/tv_age"
+                    app:layout_constraintTop_toTopOf="@id/iv_sex" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_13"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_sex"
+                    app:layout_constraintLeft_toRightOf="@id/iv_location"
+                    app:layout_constraintTop_toTopOf="@id/iv_sex"
+                    tools:text="厦门" />
+
+                <TextView
+                    android:id="@+id/tv_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@drawable/selector_bg_user_favor"
+                    android:gravity="center"
+                    android:minWidth="@dimen/dp_70"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:textColor="@color/selector_tv_user"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintBottom_toBottomOf="@id/tv_name"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_user_desc"
+                    tools:text="关注" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/white"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="@dimen/dp_2_5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_6"
+                android:background="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginStart="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="@drawable/bg_circle_transparent"
+        android:padding="@dimen/dp_6"
+        android:src="@drawable/icon_back" />
+
+    <ImageView
+        android:id="@+id/iv_add_user"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_18"
+        android:background="@drawable/bg_circle_transparent"
+        android:padding="@dimen/dp_6"
+        android:src="@drawable/ic_add_user" />
+</FrameLayout>

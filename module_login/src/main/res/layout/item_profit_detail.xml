@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_12">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jajf"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="2019/12/12"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:text="jajf"
+        android:textColor="@color/purple_9669E0"
+        android:textSize="@dimen/sp_16" />
+    <!--    分割线-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_date"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/gray_eeeeee" />
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    tools:layout_gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic_live_sh_back"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_23"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/dp_3"
+            tools:src="@drawable/timg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_34"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:orientation="horizontal">
+                <!--  用户等级的徽章   -->
+                <ImageView
+                    android:id="@+id/iv_user_level_badge"
+                    android:layout_width="@dimen/dp_46"
+                    android:layout_height="@dimen/dp_14"
+
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_user_id_copy"
+                    tools:src="@drawable/login_ic_type3_v1"
+                    tools:visibility="visible" />
+
+
+                <!--  主播等级徽章  -->
+                <ImageView
+                    android:id="@+id/iv_anchor_level_badge"
+                    android:layout_width="@dimen/dp_46"
+                    android:layout_height="@dimen/dp_14"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_user_level_badge"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_user_level_badge"
+                    app:layout_constraintTop_toTopOf="@+id/iv_user_level_badge"
+                    tools:src="@drawable/login_ic_type3_v1"
+                    tools:visibility="visible" />
+
+                <!--  贵族等级徽章  -->
+
+                <ImageView
+                    android:id="@+id/iv_vip_level_badge"
+                    android:layout_width="@dimen/dp_46"
+                    android:layout_height="@dimen/dp_14"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_anchor_level_badge"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_anchor_level_badge"
+                    app:layout_constraintTop_toTopOf="@+id/iv_anchor_level_badge"
+                    tools:src="@drawable/login_ic_type3_v1"
+                    tools:visibility="visible" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:background="@drawable/bg_white_top_round_8dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_12">
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_17"
+            android:layout_marginTop="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_bt_l" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="守护军团"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_bt_r" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shjy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_48"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主播笑笑的守护队伍："
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_9966ff"
+                android:textSize="@dimen/sp_16"
+                tools:text="123" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tvTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(仅显示活跃人数)"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="加入军团，成为我的英雄"
+                android:textColor="@color/text_66"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_35"
+                android:layout_marginBottom="@dimen/dp_35"
+                android:text="你愿意成为TA的第一个守护吗？"
+                android:textColor="@color/text_66"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_185"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:gravity="center"
+            android:text="续费"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_14"
+            app:gtv_end_color="@color/red_FE3C9C"
+            app:gtv_start_color="@color/color_FFC147" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

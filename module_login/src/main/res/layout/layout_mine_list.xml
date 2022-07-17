@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fengwo.module_comment.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fll_anchor_flow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    app:isFull="true"
+    android:orientation="horizontal">
+
+    <!--  我的守护  -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_guard_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <ImageView
+            android:id="@+id/iv_guard_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_guard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_guard_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的守护"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_guard_icon"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <com.fengwo.module_comment.widget.ClickableRecyclerView
+            android:id="@+id/rv_guard_info_images"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_guard_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_guard_info_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--  我的公会  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_union_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <ImageView
+            android:id="@+id/iv_union_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_union"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_union_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的公会"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_union_icon"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_union_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_union_info_title">
+
+
+            <ImageView
+                android:id="@+id/iv_union_image"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                tools:src="@color/red_ff5a6d"
+                android:layout_marginEnd="@dimen/dp_5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tv_union_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/iv_union_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="@dimen/dp_3"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:lines="1"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/text_99"
+                android:text="申请加入公会？"/>
+
+            <TextView
+                android:id="@+id/tv_union_info_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/text_99"
+                android:text="申请加入公会？"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--  我的座驾  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_car_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <ImageView
+            android:id="@+id/iv_car_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_car"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_car_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的座驾"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_car_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0" />
+
+
+        <com.fengwo.module_comment.widget.ClickableRecyclerView
+            android:id="@+id/rv_car_info_images"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_car_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_car_info_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--  我的礼物墙  -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_gift_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <ImageView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:src="@drawable/icon_gift"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_gift_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的礼物墙"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_gift_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0" />
+
+
+        <com.fengwo.module_comment.widget.ClickableRecyclerView
+            android:id="@+id/rv_gift_info_images"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/iv_gift_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gift_info_title" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.fengwo.module_comment.widget.FlowLayout>

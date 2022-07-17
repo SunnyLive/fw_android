@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_bitmap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_round_8"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_20">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="@dimen/dp_8"
+        tools:src="@drawable/timg" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dp_4"
+        android:text="发掘颜值才艺主播\n打造真人实时同城视频交友\n网罗流行网红社交方式\n引领社交直播互娱新时代\n快来扫码下载把！"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_code"
+        app:layout_constraintTop_toTopOf="@+id/iv_code" />
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="@dimen/dp_77"
+        android:layout_height="@dimen/dp_77"
+        android:layout_marginTop="@dimen/dp_20"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv" />
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/purple_9966ff"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_36"
+        android:paddingTop="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_36"
+        android:paddingBottom="@dimen/dp_14"
+        android:text="保存相册"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_13"
+        app:gtv_radius="@dimen/dp_20"
+        app:layout_constraintCircleRadius="@dimen/dp_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_code" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:text="观看网红直播请使用以下："
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:textColor="@color/purple_9966ff"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_save"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

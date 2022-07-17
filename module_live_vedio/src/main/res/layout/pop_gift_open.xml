@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dp_332"
+        android:layout_height="@dimen/dp_370"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_17"
+        android:background="@drawable/pic_activity_context_gift"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_14">
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_close_blue"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_120"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_hbyback"
+            android:layout_marginTop="@dimen/dp_100">
+
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烈火战车"
+                android:textColor="#FFF2A9"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6"
+            android:visibility="gone"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/iv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:background="@drawable/pic_end_view"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp_233"
+            android:visibility="gone"
+            android:text="Tips：获得的贵族权限，可以到我的权限或者背包进行使用。"
+            android:textColor="@color/purple_66EAF6"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/bg_open_gift_title" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp_15"
+    tools:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_gift_image"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_48"
+        android:scaleType="fitCenter"
+        tools:src="@color/red_FE3C9C" />
+
+    <TextView
+        android:id="@+id/tv_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_66"
+        tools:text="啪啪啪*15"/>
+
+    <TextView
+        android:id="@+id/tv_gift_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/text_99"
+        tools:text="永久"/>
+
+</LinearLayout>

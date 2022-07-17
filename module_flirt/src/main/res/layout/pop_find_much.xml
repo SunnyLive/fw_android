@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_find_much"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_find_attention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_17"
+            android:text="关注TA"
+            android:textColor="@color/homt_tab_selsct"
+            android:textSize="@dimen/sp_16" />
+        <View
+            android:id="@+id/view_lin"
+            android:layout_width="match_parent"
+            android:background="@color/line_4d4d4d"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_find_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_17"
+            android:text="举报"
+            android:textColor="@color/homt_tab_selsct"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_find_much"
+        android:gravity="center"
+        android:padding="@dimen/dp_17"
+        android:text="取消"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

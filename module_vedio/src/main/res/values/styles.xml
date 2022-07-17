@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--    首页小标题 样式-->
+
+    <!--    热门主题下 icons -->
+    <style name="vedio_sharepopwindow_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="vedio_TabLayoutTextStyle_home">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--    小视频 SmallAuthorDetailActivity 头部样式-->
+
+
+    <style name="vedio_sharepopwindow_btn">
+        <item name="android:layout_width">80px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:padding">15px</item>
+        <item name="android:background">@drawable/bg_white_circle</item>
+    </style>
+    <style name="vedio_sharepopwindow_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_66</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:layout_marginTop">15px</item>
+    </style>
+
+</resources>

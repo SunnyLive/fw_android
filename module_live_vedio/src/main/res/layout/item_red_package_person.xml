@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_64">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginStart="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_head"
+        app:layout_constraintTop_toTopOf="@id/img_head"
+        tools:text="是悦悦呐悦悦呐悦悦呐悦悦呐悦悦呐" />
+
+    <ImageView
+        android:id="@+id/img_best"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_6"
+        android:src="@drawable/icon_red_package_best"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:textColor="@color/gray_999999"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/img_head"
+        app:layout_constraintStart_toEndOf="@+id/img_head"
+        tools:text="2020.12.22 17:10:24" />
+
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:textColor="@color/black_333333"
+        android:textSize="@dimen/dp_16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_unit"
+        app:layout_constraintEnd_toStartOf="@+id/img_unit"
+        app:layout_constraintTop_toTopOf="@+id/img_unit"
+        tools:text="15" />
+
+    <ImageView
+        android:id="@+id/img_unit"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/icon_red_package_money_unit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginStart="@dimen/dp_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/gray_F3F3F3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

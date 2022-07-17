@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是module单独运行 debug首页,可以在这里做一些登陆或者初始化数据的工作" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="初始化 你想做的任何事" />
+
+    <Button
+        android:id="@+id/btn_tohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去login首页" />
+</LinearLayout>

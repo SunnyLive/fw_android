@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/dp_15"
+    android:layout_marginEnd="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_15"
+    android:background="@drawable/bg_union_item">
+
+
+
+    <TextView
+        android:id="@+id/tv_union_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_union_name"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="公会id"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_union_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_35"
+        android:layout_marginEnd="@dimen/dp_35"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_union_id"
+        app:layout_constraintRight_toLeftOf="@id/btn_submit"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        tools:text="公会名称"
+        />
+
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/dp_74"
+        android:layout_height="@dimen/dp_29"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:background="@drawable/bg_union_submit_btn"
+        android:layout_marginEnd="@dimen/dp_20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="申请"
+        android:textSize="@dimen/sp_12" />
+
+<!--
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#F7F7F7"
+        app:layout_constraintBottom_toTopOf="@id/btn_submit"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/dp_15"
+        />
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingTop="@dimen/dp_20">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_3">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="@color/text_66"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="@dimen/dp_28"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:text="申请加入"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_90"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#F7F7F7" />
+
+
+</LinearLayout>-->

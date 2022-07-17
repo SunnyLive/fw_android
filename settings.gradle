@@ -1,0 +1,6 @@
+include ':app', ':module_comment', ':module_vedio', ':module_chat', ':module_live_vedio',
+        ':module_main', ':module_login', ':module_websocket', ':chatlib', ':umentlib', ':module_flirt',
+        ';module_login',':libsuperplayer',
+        //':videoediter', ':videojoiner', ':videorecorder', ':videouploader',
+        ':player',  ':faceunity'
+rootProject.name = 'fwandroid'

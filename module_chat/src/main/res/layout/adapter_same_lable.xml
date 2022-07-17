@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:background="@drawable/card_lable_bg"
+    android:gravity="center"
+    android:id="@+id/ll_card_lable"
+    android:paddingLeft="@dimen/dp_17"
+    android:paddingRight="@dimen/dp_7"
+    android:layout_margin="@dimen/dp_10"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_card_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王者约玩"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_13"
+        />
+    <ImageView
+        android:id="@+id/iv_card_lable_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/card_ic_close_lable"/>
+</LinearLayout>

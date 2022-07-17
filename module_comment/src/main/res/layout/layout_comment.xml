@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <include layout="@layout/item_comment_comment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvReply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/tvNickName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvContent" />
+
+    <LinearLayout
+        android:id="@+id/viewExpandStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/tvNickName"
+        app:layout_constraintTop_toBottomOf="@id/rvReply"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_1"
+            android:background="#D8D8D8" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_11"
+            tools:text="展开更多回复" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_2"
+            android:src="@drawable/ic_arrow" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

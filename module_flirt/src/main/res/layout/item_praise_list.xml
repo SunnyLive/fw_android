@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <RelativeLayout
+        android:id="@+id/civ_head_root"
+        android:layout_width="@dimen/dp_52"
+        android:layout_height="@dimen/dp_52"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--    头像-->
+        <com.fengwo.module_comment.widget.RoundImageView
+            android:id="@+id/civ_head"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_head"
+            app:layout_constraintCircleRadius="@dimen/dp_8" />
+
+        <!--    是否在直播状态-->
+        <RelativeLayout
+            android:id="@+id/iv_gif_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_oval_girl_live_state"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_gif"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                tools:background="@drawable/live_cell_gif" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--    昵称-->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_21"
+        android:layout_marginTop="@dimen/dp_6"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toRightOf="@+id/civ_head_root"
+        app:layout_constraintTop_toTopOf="@+id/civ_head_root"
+        tools:text="宇宙无敌美男1111" />
+
+    <!--    年龄-->
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="right"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_2"
+        android:text="25"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        tools:background="@drawable/shape_corner_boy"
+        tools:drawableLeft="@drawable/ic_boy"
+        tools:ignore="RtlHardcoded" />
+
+    <!--    内容-->
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintRight_toLeftOf="@+id/cover_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age"
+        tools:text="不能怕黑就开灯想念就联系不能怕黑就开灯想念就联系不能怕黑就开灯想念就联系" />
+
+    <!--    发起时间-->
+    <TextView
+        android:id="@+id/tv_create_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg"
+        tools:text="2020-6-14" />
+
+    <!--    封面图-->
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/cover_img"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_13"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_head"
+        app:layout_constraintCircleRadius="@dimen/dp_8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    分割线-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@color/gray_f1f1f1"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_msg"
+        app:layout_constraintRight_toRightOf="@+id/cover_img"
+        app:layout_constraintTop_toBottomOf="@+id/cover_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>

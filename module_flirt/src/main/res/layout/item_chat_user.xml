@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_18"
+        android:background="@drawable/shape_pink_round_9dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:text="当前聊天"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_8"
+        android:src="@drawable/ic_head_label_1"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_title"
+        app:layout_constraintRight_toRightOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.fengwo.module_live_vedio.widget.RadarProgressView
+        android:id="@+id/radar_view"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_head"
+        app:layout_constraintRight_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        app:rb_color="@color/red_FE3C9C"
+        app:rb_duration="3000"
+        app:rb_radius="@dimen/dp_46"
+        app:rb_rippleAmount="2"
+        app:rb_scale="1.3"
+        app:rb_scale_rate="1"
+        app:rb_strokeWidth="@dimen/dp_1"
+        app:rb_type="strokeRipple" />
+
+    <com.fengwo.module_comment.widget.CircularProgressView
+        android:id="@+id/cpv"
+        android:layout_width="@dimen/dp_42"
+        android:layout_height="@dimen/dp_42"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_head"
+        app:layout_constraintRight_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        app:progColor="@color/color_FE3C9C"
+        app:progWidth="@dimen/dp_2" />
+
+    <TextView
+        android:id="@+id/tv_msg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_pink_round_7dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_head"
+        app:layout_constraintRight_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toBottomOf="@+id/iv_head"
+        tools:text="99+" />
+
+    <ImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="@dimen/dp_18"
+        android:layout_height="@dimen/dp_18"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_head"
+        app:layout_constraintRight_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toBottomOf="@+id/iv_head" />
+</androidx.constraintlayout.widget.ConstraintLayout>

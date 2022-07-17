@@ -1,0 +1,70 @@
+<resources>
+    <!--    LoginActivity-->
+    <!--    <string name="login_rule">注册/登录表示同意用户协议|隐私条款</string>-->
+    <string name="login_rule">
+        <![CDATA[
+注册/登录表示同意 《用户协议》 《隐私条例》
+]]>
+    </string>
+
+    <string name="realname_rule">开始认证代表您已同意《用户协议和隐私政策》</string>
+    <string name="realidcard_rule">实名认证需要收集您的姓名、身份证号并采集面部信息，详见《用户协议和隐私政策》</string>
+    <string name="login_phone">手机</string>
+    <string name="login_bind_phone_label">绑定手机号</string>
+    <string name="about_us_rule">
+        <![CDATA[
+<p><< <font color="#FE3C9C">用户服务协议</font> 和 <font color="#FE3C9C">隐私条例</font> >></p>
+]]>
+    </string>
+    <string name="ideal_type_tip">怎样的他会让你怦然心动?</string>
+
+    <string name="login_info_header_tip">上传头像，让他/她一眼看上你</string>
+
+    <string name="text_last">上一步</string>
+    <string name="text_next">下一步</string>
+    <string name="text_save">保存</string>
+    <string name="text_skip">跳过</string>
+
+
+    <string name="char_card_value_1">无上传图片或视频无法选择</string>
+    <string name="char_card_value_2">选填</string>
+    <string name="agree_tip" translatable="false">你同意服务提供者及阿里使用并传达数\n据用于身份核验。查看协议详情</string>
+    <string name="agreement_tip1" translatable="false">欢迎你使用人脸识别功能！</string>
+    <string name="agreement_tip2" translatable="false">
+        为了更好地提供服务，蜂窝互娱开发了人脸识别验证身
+        份功能，该功能由包括但不限于公安部“互联网+”可信
+        身份认证平台、“查询中心”等机构提供核验数据及技术
+        支持。你已将个人身份信息（包括姓名、身份证号）提
+        交给你所选择的第三方服务提供者，并由该第三方服务
+        提供者转交至本人脸识别验证身份功能。
+    </string>
+    <string name="agreement_tip3" translatable="false">
+        点击“下一步”，即视为你同意并授权蜂窝互娱获取、使
+        用你所提交的个人身份信息及人脸影像数据用于实现验
+        证身份功能，并根据你所选择的第三方服务提供者的要
+        求，将人脸识别相关数据（包括但不限于你的人脸影像
+        及身份验证结果）传送至该第三方。"
+    </string>
+    <string name="agreement_tip4" translatable="false">
+        如你不同意授权，请不要点击“下一步”，同时你将无法
+        继续使用人脸识别功能，进而有可能无法使用该第三方
+        服务提供者的与之相关的相应服务，但这并不影响你使
+        用蜂窝互娱的其他服务。
+    </string>
+    <string name="agreement_tip5" translatable="false">
+        蜂窝互娱要求第三方服务提供者以不低于蜂窝互娱的安
+        全水准使用和存储你的数据，并要求第三方服务提供者
+        承诺尽到信息安全保护义务，但蜂窝互娱不对第三方服
+        务提供者的信息保护能力或其行为做任何保证。如对第
+        三方服务提供者使用和存储你的数据有任何疑问，请直
+        接联系该第三方服务提供者；如你发现你的身份信息被
+        第三方侵犯，请点击“投诉”，蜂窝互娱将尽快处理你的
+        投诉。
+    </string>
+    <string name="app_name" translatable="false">蜂窝互娱</string>
+    <string name="face_verify_pass" translatable="false">已通过</string>
+    <string name="face_verify_error" translatable="false">未能通过人脸识别</string>
+    <string name="add_nickname_tip" translatable="false">人脸识别你的身份信息，请确\n认为%1$s本人操作</string>
+
+
+</resources>

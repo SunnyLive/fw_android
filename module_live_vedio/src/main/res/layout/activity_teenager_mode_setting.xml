@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_e1e1e1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_tips"
+            android:layout_width="@dimen/dp_185"
+            android:layout_height="@dimen/dp_138"
+            android:src="@drawable/icon_teenager_tips"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="青少年模式已开启"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_tips" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:src="@drawable/icon_teenager_dot"
+            app:layout_constraintEnd_toStartOf="@+id/tv_tips1"
+            app:layout_constraintTop_toTopOf="@+id/tv_tips1" />
+
+        <TextView
+            android:id="@+id/tv_tips1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_51"
+            android:layout_marginEnd="@dimen/dp_52"
+            android:text="青少年模式是蜂窝互娱促进青少年健康成长做出的尝试，开启青少年模式后，未成年将无法使用蜂窝互娱核心功能。"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_tips" />
+
+
+        <TextView
+            android:id="@+id/tv_tips2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_52"
+            android:layout_marginTop="@dimen/dp_125"
+            android:layout_marginEnd="@dimen/dp_52"
+            android:text="开启青少年模式后，需先设置独立密码，如忘记密码可通过申诉重置。"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_tips" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:src="@drawable/icon_teenager_dot"
+            app:layout_constraintEnd_toStartOf="@+id/tv_tips2"
+            app:layout_constraintTop_toTopOf="@+id/tv_tips2" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            style="@style/ThemeButtonStyle"
+            android:layout_marginTop="@dimen/dp_201"
+            android:text="开启青少年模式"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_tips" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

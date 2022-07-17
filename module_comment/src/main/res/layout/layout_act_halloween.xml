@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_168"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/iv_panish_gift"
+        android:layout_width="@dimen/dp_112"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pic_halloween3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_7"
+
+        android:scaleType="fitCenter">
+        <ImageView
+            android:id="@+id/im_views"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_70"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_gift"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_96"
+            android:layout_marginTop="@dimen/dp_34"
+            android:gravity="center_horizontal"
+android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_name1"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:text="小恶魔"
+                android:textColor="@color/purple_FFD960"
+                android:textSize="@dimen/sp_10" />
+
+
+            <com.fengwo.module_comment.widget.DrawView
+                android:id="@+id/tv_draw1"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_weight="1"
+                android:background="@drawable/pic_back_hd" />
+
+            <TextView
+                android:id="@+id/tv_name2"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:text="小恶魔"
+                android:textColor="@color/purple_FFD960"
+                android:textSize="@dimen/sp_10" />
+
+            <com.fengwo.module_comment.widget.DrawView
+                android:id="@+id/tv_draw2"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_weight="1"
+                android:background="@drawable/pic_back_hd" />
+
+            <TextView
+                android:id="@+id/tv_name3"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_weight="1"
+                android:text="小恶魔"
+                android:textColor="@color/purple_FFD960"
+                android:textSize="@dimen/sp_10" />
+
+            <com.fengwo.module_comment.widget.DrawView
+                android:id="@+id/tv_draw3"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_weight="1"
+                android:background="@drawable/pic_back_hd" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_52"
+                android:layout_height="@dimen/dp_58"
+
+                android:src="@mipmap/pic_activity_lw" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pic_activity_djs" />
+
+                <TextView
+                    android:id="@+id/tv_djs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_3"
+                    android:gravity="center"
+
+                    android:text=""
+
+                    android:textColor="@color/purple_FFD960"
+                    android:textSize="@dimen/sp_10" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奖励开启倒计时"
+                android:textColor="@color/purple_66EAF6"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tv_panish_send"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:background="@mipmap/pic_halloween_btn"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:orientation="vertical"
+        android:text="4分45秒"
+        android:textSize="@dimen/sp_9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雪夜古堡大作战"
+            android:textColor="@color/purple_66EAF6"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/tv_top_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日榜TOP"
+            android:textColor="@color/purple_FFD960"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+</LinearLayout>

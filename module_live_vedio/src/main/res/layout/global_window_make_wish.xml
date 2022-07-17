@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="23dp"
+    app:cardBackgroundColor="#CC176BAC"
+    app:cardCornerRadius="200dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <ImageView
+            android:id="@+id/v_user_icon"
+            android:scaleType="centerCrop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+           />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/v_user_icon"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/v_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                tools:text="亚男" />
+
+            <com.fengwo.module_live_vedio.widget.MarqueTextView
+                android:id="@+id/v_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:textSize="14sp"
+                app:delayTime="1000"
+                tools:text="送的许愿棒" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/v_gift_icon"
+            android:layout_marginLeft="18dp"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+           />
+
+        <TextView
+            android:id="@+id/v_gift_num"
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="x100"
+            android:textColor="#ffffffff"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

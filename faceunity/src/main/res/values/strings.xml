@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">FULiveDemo</string>
+    <string name="fu_live_demo">FU Live Demo</string>
+
+    <string name="camera_dialog_title">警告</string>
+    <string name="camera_dialog_message">相机权限被禁用或者相机被别的应用占用！</string>
+    <string name="camera_dialog_open">重试</string>
+    <string name="camera_dialog_back">退出</string>
+
+    <string name="beauty_box_skin_detect">精准美肤</string>
+    <string name="beauty_box_skin_detect_close">精准美肤 关闭</string>
+    <string name="beauty_box_skin_detect_open">精准美肤 开启</string>
+    <string name="beauty_box_heavy_blur_fine">精细磨皮</string>
+    <string name="beauty_box_heavy_blur_clear">清晰磨皮</string>
+    <string name="beauty_box_heavy_blur_hazy">朦胧磨皮</string>
+    <string name="beauty_box_blur_level">磨皮</string>
+    <string name="beauty_box_color_level">美白</string>
+    <string name="beauty_box_red_level">红润</string>
+    <string name="beauty_box_eye_bright">亮眼</string>
+    <string name="beauty_box_tooth_whiten">美牙</string>
+    <string name="beauty_box_eye_enlarge">大眼</string>
+    <string name="beauty_box_cheek_thinning">瘦脸</string>
+    <string name="beauty_box_cheek_v">V脸</string>
+    <string name="beauty_box_cheek_narrow">窄脸</string>
+    <string name="beauty_box_cheek_small">小脸</string>
+    <string name="beauty_box_intensity_chin">下巴</string>
+    <string name="beauty_box_intensity_forehead">额头</string>
+    <string name="beauty_box_intensity_nose">瘦鼻</string>
+    <string name="beauty_box_intensity_mouth">嘴型</string>
+    <string name="beauty_radio_skin_beauty">美肤</string>
+    <string name="beauty_radio_face_shape">美型</string>
+    <string name="beauty_radio_filter">滤镜</string>
+    <string name="beauty_radio_beauty">质感美颜</string>
+    <string name="makeup_radio_lipstick">口红</string>
+    <string name="makeup_radio_blusher">腮红</string>
+    <string name="makeup_radio_eyebrow">眉毛</string>
+    <string name="makeup_radio_eye_shadow">眼影</string>
+    <string name="makeup_radio_eye_liner">眼线</string>
+    <string name="makeup_radio_eyelash">睫毛</string>
+    <string name="makeup_radio_contact_lens">美瞳</string>
+    <string name="makeup_radio_remove">卸妆</string>
+    <string name="makeup_peach_blossom">桃花</string>
+    <string name="makeup_red_tea">赤茶妆</string>
+    <string name="makeup_winter">冬日妆</string>
+    <string name="makeup_boyfriend">男友</string>
+    <string name="makeup_cream">奶油妆</string>
+    <string name="makeup_clear">清透</string>
+    <string name="makeup_grapefruit">西柚</string>
+
+    <string name="future_warrior">张嘴试试</string>
+    <string name="jet_mask">鼓腮帮子</string>
+    <string name="sdx2">皱眉试试</string>
+    <string name="luhantongkuan_ztt_fu">眨一眨眼</string>
+    <string name="qingqing_ztt_fu">嘟嘴试试</string>
+    <string name="xiaobianzi_zh_fu">微笑触发</string>
+    <string name="xiaoxueshen_ztt_fu">吹气触发</string>
+    <string name="hez_ztt_fu">张嘴试试</string>
+    <string name="push_hand">推出手掌</string>
+    <string name="fu_lm_koreaheart">单手手指比心</string>
+    <string name="ssd_thread_six">比个六</string>
+    <string name="ssd_thread_cute">双拳靠近脸颊卖萌</string>
+
+    <string name="origin">原图</string>
+    <string name="bailiang">白亮</string>
+    <string name="fennen">粉嫩</string>
+    <string name="qingxin">小清新</string>
+    <string name="lengsediao">冷色调</string>
+    <string name="nuansediao">暖色调</string>
+
+    <string name="dialog_no_track_face">未检测到人脸，请重新拍摄</string>
+    <string name="dialog_got">知道啦</string>
+
+    <string name="dialog_reset_avatar_model">是否将所有参数恢复到默认值?</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_confirm_delete">确定删除所选中的道具？</string>
+    <string name="recover">恢复</string>
+
+</resources>

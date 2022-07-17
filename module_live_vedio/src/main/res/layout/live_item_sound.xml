@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_41"
+    android:layout_height="@dimen/dp_41"
+    android:layout_marginRight="@dimen/dp_11">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/sp_12"
+        android:gravity="center"
+        android:textColor="#151923"
+        android:background="@drawable/bg_live_sound_yuan"
+        />
+
+</LinearLayout>

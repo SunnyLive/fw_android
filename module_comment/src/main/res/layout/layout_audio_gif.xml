@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_87"
+    android:layout_height="@dimen/dp_86">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_black_radius"
+        android:alpha="0.4"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_gif_play"
+        android:layout_width="@dimen/dp_63"
+        android:layout_height="@dimen/dp_42"
+        android:src="@mipmap/ic_voice_card"
+        android:layout_gravity="center"
+        />
+
+
+</FrameLayout>

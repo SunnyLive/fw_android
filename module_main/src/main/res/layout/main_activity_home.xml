@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_48" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="bottom"
+            android:background="@color/bg_home_tag"
+            android:elevation="@dimen/dp_6"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/btn_live"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view_live"
+                    android:layout_width="@dimen/dp_26"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_bg_mainbottom_live"
+                    android:button="@null"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/tv_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播"
+                    android:textColor="@drawable/main_tab_text_color"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_devio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/view_vedio"
+                    android:layout_width="@dimen/dp_26"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_bg_mainbottom_vedio"
+                    android:button="@null"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/tv_vedio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="i 撩"
+                    android:textColor="@drawable/main_tab_text_color"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/view_message"
+                        android:layout_width="@dimen/dp_26"
+                        android:layout_height="@dimen/dp_26"
+                        android:layout_gravity="center"
+                        android:background="@drawable/main_bg_mainbottom_message"
+                        android:button="@null"
+                        android:enabled="false" />
+
+                    <TextView
+                        android:id="@+id/tv_badge"
+                        android:layout_width="@dimen/dp_18"
+                        android:layout_height="@dimen/dp_18"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/bg_dot_red"
+                        android:gravity="center"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_10"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="消息"
+                    android:textColor="@drawable/main_tab_text_color"
+                    android:textSize="@dimen/sp_10" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_social"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/view_social"
+                    android:layout_width="@dimen/dp_26"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_bg_mainbottom_social"
+                    android:button="@null"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/tv_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="动态"
+                    android:textColor="@drawable/main_tab_text_color"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_mine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view_mine"
+                    android:layout_width="@dimen/dp_26"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_gravity="center"
+                    android:background="@drawable/main_bg_mainbottom_mine"
+                    android:button="@null"
+                    android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/tv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的"
+                    android:textColor="@drawable/main_tab_text_color"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

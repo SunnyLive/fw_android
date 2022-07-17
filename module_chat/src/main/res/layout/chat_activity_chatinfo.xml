@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_20">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btn_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_14"
+                    tools:text="查看全部成员(200)" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:layout_marginStart="@dimen/dp_4"
+                    android:src="@drawable/ic_arrow_black_down" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="#F0F0F0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="免打扰模式"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_16" />
+
+                <Switch
+                    android:id="@+id/switch_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.fengwo.module_comment.widget.MenuItem
+                android:id="@+id/menuitem_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:menu_title="群聊名称" />
+
+            <com.fengwo.module_comment.widget.MenuItem
+                android:id="@+id/menuitem_lab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                app:menu_title="我的群标签 " />
+
+            <com.fengwo.module_comment.widget.MenuItem
+                android:id="@+id/menuitem_notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                app:menu_title="群公告" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_12"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_12"
+                tools:text="测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:background="#F0F0F0" />
+
+            <com.fengwo.module_comment.widget.GradientTextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_18"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:text="全部禁言"
+                android:textColor="@color/text_white"
+                app:gtv_end_color="#F0A4FA"
+                app:gtv_mid_color="#BA6FFC"
+                app:gtv_start_color="#9A43FF" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

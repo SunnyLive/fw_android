@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_title"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextStyle.XLSize"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:textColor="@color/black_222222"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="标题啊啊啊" />
+
+
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/TextStyle.SSize"
+        tools:text="已有账号?立即登录"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center_vertical"
+        android:textColor="@color/blue_6680ff"
+        android:layout_marginRight="@dimen/dp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_bar" />
+
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_30"
+        android:src="@drawable/ic_arrow_white_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</merge>

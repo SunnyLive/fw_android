@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="dot_colors">
+        <item>@android:color/white</item>
+        <item>@color/cFF529A</item>
+    </integer-array>
+    <integer-array name="dot_colors2">
+        <item>@color/cFF529A</item>
+        <item>@android:color/white</item>
+    </integer-array>
+</resources>

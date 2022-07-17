@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_enter"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_38"
+    android:layout_marginBottom="@dimen/dp_15"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:minWidth="@dimen/dp_300"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_4"
+
+    android:paddingRight="10dp"
+    android:paddingBottom="@dimen/dp_4"
+
+    android:visibility="visible"
+    app:layout_constraintBottom_toTopOf="@id/rv_chat"
+    app:layout_constraintRight_toLeftOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_enter_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/iv_enter_header"-->
+<!--            android:layout_width="@dimen/dp_18"-->
+<!--            android:layout_height="@dimen/dp_18"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/default_head"-->
+<!--            android:visibility="gone" />-->
+
+        <ImageView
+            android:id="@+id/iv_enter_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+
+            android:src="@drawable/login_ic_v1"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_enter_vip_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_toEndOf="@+id/iv_enter_user_level"
+            android:src="@drawable/vip1"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/iv_enter_roommanager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:layout_toEndOf="@+id/iv_enter_vip_level"
+            android:src="@drawable/ic_roommanager"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_enter_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_toStartOf="@+id/iv_enter_guard"
+            android:layout_toEndOf="@+id/iv_enter_roommanager"
+            android:paddingRight="@dimen/dp_10"
+            android:text=""
+            android:lines="1"
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_enter_msg_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_toStartOf="@+id/iv_enter_guard"
+
+            android:layout_toEndOf="@+id/iv_enter_roommanager"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_enter_guard"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:visibility="gone" />
+
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/tv_bay_msg"
+            android:paddingEnd="@dimen/dp_4"
+            android:paddingStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_3"
+            android:gravity="center|start"
+            android:paddingBottom="@dimen/dp_4"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_12"
+            tools:text="dsdadasdadasda"
+            app:gtv_end_color="#00000000"
+            app:gtv_radius="@dimen/dp_10"
+            app:gtv_start_color="#00000000" />
+
+        <ImageView
+            android:id="@+id/im_enter_pic"
+            android:layout_width="@dimen/dp_27"
+            android:layout_height="@dimen/dp_34"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-10dp"
+
+            android:layout_marginRight="@dimen/dp_4"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

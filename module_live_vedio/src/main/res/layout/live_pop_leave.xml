@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_38"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/shape_card_white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_48"
+        android:paddingBottom="@dimen/dp_25">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="笑笑"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_29"
+            android:text="您这么快就要变心了吗"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_29"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.fengwo.module_comment.widget.GradientTextView
+                android:id="@+id/btn_leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_21"
+                android:layout_marginRight="@dimen/dp_21"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_17"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingRight="@dimen/dp_17"
+                android:paddingBottom="@dimen/dp_13"
+                android:text="无情离开"
+                android:textColor="@color/purple_9B7CF1"
+                android:textSize="@dimen/sp_14"
+                app:gtv_end_color="#F5F4FA"
+                app:gtv_start_color="#F5F4FA" />
+
+            <com.fengwo.module_comment.widget.GradientTextView
+                android:id="@+id/tv_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_21"
+                android:layout_marginRight="@dimen/dp_21"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_38"
+                android:paddingTop="@dimen/dp_13"
+                android:paddingRight="@dimen/dp_38"
+                android:paddingBottom="@dimen/dp_13"
+                android:text="关注"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_14"
+                app:gtv_end_color="#FE3C9C"
+                app:gtv_start_color="#FFC147" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_75"
+        android:layout_gravity="center_horizontal"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/dp_3" />
+
+</FrameLayout>

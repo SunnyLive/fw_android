@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/dp_80"
+    android:layout_gravity="right"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/iv_head_me"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/iv_bg_pop"
+            app:layout_constraintTop_toTopOf="@id/iv_bg_pop"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:layout_marginTop="@dimen/dp_78"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/iv_bg_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_pre_single_pk"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_head_me"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_bg_pop"
+            app:layout_constraintLeft_toLeftOf="@id/iv_bg_pop"
+            app:layout_constraintRight_toRightOf="@id/iv_bg_pop"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_18">
+            <TextView
+                android:id="@+id/tv_top_countDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/text_white"
+                android:text="120S"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tv_matching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/text_white"
+                android:text="匹配中"
+                android:layout_marginTop="@dimen/dp_23"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新匹配"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_12"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingBottom="@dimen/dp_6"
+                android:background="@drawable/shape_white_board_corner"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

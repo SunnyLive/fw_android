@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_30"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="@dimen/dp_10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_guard"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/live_ic_shouhu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/live_bg_guard_buy"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_buy_guard_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="asdgagd"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/tv_buy_guardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="开通托朗守护"
+            android:textColor="#FFEA7F"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+</LinearLayout>

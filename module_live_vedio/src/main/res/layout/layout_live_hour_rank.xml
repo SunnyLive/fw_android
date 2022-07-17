@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_live_top"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:text="小时榜"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_gd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:gravity="right"
+                    android:text="更多榜单"
+                    android:textColor="#898989"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                android:id="@+id/smartrefreshlayout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/white">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+            </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/lin_ececec"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_65"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_13"
+                android:paddingRight="@dimen/dp_13">
+
+
+                <ImageView
+                    android:id="@+id/iv_rank"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_31"
+                    android:src="@drawable/live_ic_tuhao1"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#B4B4B4"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:textSize="@dimen/sp_9"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_rank"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_rank"
+                    app:layout_constraintRight_toRightOf="@id/iv_rank"
+                    app:layout_constraintTop_toTopOf="@id/iv_rank" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_view"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_48"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_rank"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/im_ph_back"
+                        android:layout_width="@dimen/dp_48"
+                        android:layout_height="@dimen/dp_48"
+                        tools:src="@drawable/pic_xsb_one" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_header"
+                        android:layout_width="@dimen/dp_35"
+                        android:layout_height="@dimen/dp_35"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+
+                        tools:src="@drawable/timg" />
+
+                    <ImageView
+                        android:id="@+id/im_dw"
+                        android:layout_width="@dimen/dp_17"
+                        android:layout_height="@dimen/dp_17"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@id/rl_view"
+                    app:layout_constraintTop_toTopOf="@id/rl_view">
+
+                    <ImageView
+                        android:id="@+id/iv_level1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/text_33"
+                        android:textSize="@dimen/sp_14"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_level2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="@dimen/dp_3"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:maxHeight="@dimen/dp_18"
+                        app:layout_constraintRight_toLeftOf="@id/btn_attention"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_6"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_14"
+                    app:layout_constraintLeft_toRightOf="@id/rl_view"
+                    app:layout_constraintTop_toBottomOf="@id/ll_s" />
+
+
+                <TextView
+                    android:id="@+id/btn_attention"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginRight="108dp"
+                    android:background="@drawable/bg_follow"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="@color/red_cf3d79"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_contextsss"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_contextsss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="花蜜值"
+                    android:textColor="#B4B4B4"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

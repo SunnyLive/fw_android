@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_viewint"
+    android:layout_width="@dimen/dp_315"
+    android:layout_height="@dimen/dp_306"
+    android:layout_gravity="center"
+    android:background="@drawable/pic_newyasr_fang">
+
+    <ImageView
+        android:id="@+id/im_clone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@mipmap/pic_clone_y_bai"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_header"
+        android:layout_width="@dimen/dp_52"
+        android:layout_height="@dimen/dp_52"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_32"
+        android:src="@drawable/default_head"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="@dimen/dp_22" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="name"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user_header"
+        app:layout_constraintLeft_toRightOf="@+id/iv_user_header"
+        app:layout_constraintTop_toTopOf="@+id/iv_user_header" />
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="@dimen/dp_92"
+        android:layout_height="@dimen/dp_92"
+        android:layout_marginTop="@dimen/dp_11"
+        android:src="@drawable/pic_newyear_xxb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:text="x1100"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im3" />
+
+    <TextView
+        android:id="@+id/tv_success_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="@drawable/pic_newyear_btnss"
+        android:gravity="center"
+        android:text="赠送成功"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

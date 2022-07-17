@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_1"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:id="@+id/root"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_5">
+
+
+    <FrameLayout
+        android:id="@+id/fl_header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dp_29"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_2_5"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:id="@+id/iv_hat"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/live_ic_shouhu1" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toRightOf="@id/fl_header"
+        app:layout_constraintTop_toTopOf="@id/fl_header" />
+
+    <ImageView
+        android:id="@+id/iv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/login_bg_sex_girl"
+        android:paddingTop="@dimen/dp_3"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/dp_3"
+        android:src="@drawable/login_ic_girl"
+        app:layout_constraintBottom_toBottomOf="@id/fl_header"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name" />
+
+    <ImageView
+        android:id="@+id/iv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:src="@drawable/login_ic_v1"
+        app:layout_constraintBottom_toBottomOf="@id/fl_header"
+        app:layout_constraintLeft_toRightOf="@id/iv_sex" />
+
+    <ImageView
+        android:id="@+id/iv_vip_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:src="@drawable/login_ic_v1"
+        app:layout_constraintBottom_toBottomOf="@id/iv_level"
+        app:layout_constraintLeft_toRightOf="@id/iv_level"
+        app:layout_constraintTop_toTopOf="@id/iv_level" />
+
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_31"
+        android:textColor="@color/bg_99979b"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_17"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginRight="@dimen/dp_11"
+        android:src="@drawable/live_ic_diamond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

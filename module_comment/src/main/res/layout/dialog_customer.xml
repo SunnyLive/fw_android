@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout android:id="@+id/dialog_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_10"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:paddingBottom="@dimen/dp_30"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+
+
+    <!--    title     -->
+
+    <TextView
+        android:id="@+id/dialog_customer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="title"
+        android:textColor="@color/text_33"
+        android:textSize="16sp" />
+
+
+    <!--   content     -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp">
+
+        <EditText
+            android:id="@+id/dialog_customer_input_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_edit_bg"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_customer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:text="are you sure quit?"
+            android:textColor="#a1a1a1"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/gray_999999" />
+
+
+    <!--   底部    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/dialog_customer_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radius_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/purple_fff_09a"
+            android:text="取消"
+            android:textSize="14sp"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_999999"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/dialog_customer_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radius_purple_bg"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:text="确定"
+            android:textSize="14sp"
+            android:textColor="@color/text_white" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_dialog_close"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/icon_dialog_close"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

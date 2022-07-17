@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic_back"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!--背景星星闪动动画-->
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga_star"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:clearsAfterStop="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--星空转动动画-->
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga_nebulae"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        app:clearsAfterStop="true"
+        app:layout_constraintBottom_toBottomOf="@+id/carrLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carrLayout" />
+
+    <!--星球View page1-->
+    <com.fengwo.module_flirt.widget.MerryRoundView
+        android:id="@+id/carrLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/cl_tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_become" />
+
+    <!--底部button-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:drawableLeft="@mipmap/pic_hyp"
+            android:drawablePadding="@dimen/dp_5"
+            android:padding="5dp"
+            android:textSize="@dimen/sp_12"
+            android:text="换一批"
+            android:textColor="@color/text_white_arr"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_btn"
+            app:layout_constraintRight_toLeftOf="@+id/tv_btn"
+            app:layout_constraintTop_toTopOf="@+id/tv_btn" />
+
+        <TextView
+            android:id="@+id/tv_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:background="@mipmap/pic_flirt_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_go"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_44"
+            android:src="@mipmap/pic_go_btn"
+            android:layout_marginLeft="@dimen/dp_15"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_btn"
+            app:layout_constraintLeft_toRightOf="@+id/tv_btn"
+            app:layout_constraintTop_toTopOf="@+id/tv_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--星空标签部分 page1-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cl_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_22"
+            android:text="选择三个标签，开启蜂窝星空"
+            android:textColor="#ccffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_select_2"
+            android:layout_width="@dimen/dp_67"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:background="@mipmap/pic_select"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_select_1"
+            android:layout_width="@dimen/dp_67"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_28"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:background="@mipmap/pic_select"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title"
+            app:layout_constraintRight_toLeftOf="@+id/tv_select_2" />
+
+        <TextView
+            android:id="@+id/tv_select_3"
+            android:layout_width="@dimen/dp_67"
+            android:layout_height="@dimen/dp_60"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:background="@mipmap/pic_select"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9"
+            app:layout_constraintBottom_toTopOf="@+id/tv_title"
+            app:layout_constraintLeft_toRightOf="@+id/tv_select_2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+ <!--   &lt;!&ndash;转场动画&ndash;&gt;
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga_transition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:clearsAfterStop="true" />-->
+
+    <!--推荐达人 page2-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_recommend_talent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cl_tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_become">
+
+        <FrameLayout
+            android:id="@+id/fl_mim_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_2"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_3"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_4"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_mim_2"
+                app:layout_constraintLeft_toLeftOf="@id/fl_mim_2"
+                app:layout_constraintRight_toRightOf="@+id/fl_mim_2"
+                app:layout_constraintTop_toTopOf="@+id/fl_mim_2"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_5"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_mim_2"
+                app:layout_constraintLeft_toLeftOf="@id/fl_mim_2"
+                app:layout_constraintRight_toRightOf="@+id/fl_mim_2"
+                app:layout_constraintTop_toTopOf="@+id/fl_mim_2"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_6"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_mim_2"
+                app:layout_constraintLeft_toLeftOf="@id/fl_mim_2"
+                app:layout_constraintRight_toRightOf="@+id/fl_mim_2"
+                app:layout_constraintTop_toTopOf="@+id/fl_mim_2"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_7"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_mim_2"
+                app:layout_constraintLeft_toLeftOf="@id/fl_mim_2"
+                app:layout_constraintRight_toRightOf="@+id/fl_mim_2"
+                app:layout_constraintTop_toTopOf="@+id/fl_mim_2"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_mim_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/mim_1"
+                android:layout_width="@dimen/dp_112"
+                android:layout_height="@dimen/dp_112"
+                android:layout_gravity="center"
+                android:src="@mipmap/pic_select"
+                app:layout_constraintBottom_toBottomOf="@+id/fl_mim_2"
+                app:layout_constraintLeft_toLeftOf="@id/fl_mim_2"
+                app:layout_constraintRight_toRightOf="@+id/fl_mim_2"
+                app:layout_constraintTop_toTopOf="@+id/fl_mim_2"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_rotate_angle="30"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <include layout="@layout/tag_anchor_info" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--选中的星空标签部分 page2-->
+    <LinearLayout
+        android:id="@+id/ll_selected_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/cl_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_selected_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_14"
+            android:background="@mipmap/pic_select_one"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/tv_selected_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_14"
+            android:background="@mipmap/pic_select_two"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9" />
+
+        <TextView
+            android:id="@+id/tv_selected_tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:background="@mipmap/pic_select_three"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_9" />
+    </LinearLayout>
+
+
+    <!--是否为达人-->
+    <TextView
+        android:id="@+id/tv_become"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_31"
+        android:drawableLeft="@drawable/selector_is_talent"
+        android:gravity="center_vertical"
+        android:text="成为达人"
+        android:textColor="#66ffffff"
+        android:drawablePadding="@dimen/dp_4"
+        android:drawableRight="@drawable/icon_operation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--筛选 page1-->
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_14"
+        android:drawableLeft="@drawable/pic_sx"
+        android:gravity="center"
+        android:text="筛选"
+        android:textColor="#66ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_become"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_become" />
+</androidx.constraintlayout.widget.ConstraintLayout>

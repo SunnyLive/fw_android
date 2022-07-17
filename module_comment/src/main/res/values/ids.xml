@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="basetitle" type="id" />
+    <item name="title_tv" type="id" />
+    <item name="right2_img" type="id" />
+    <item name="right1_img" type="id" />
+
+    <item name="smartrefreshlayout" type="id" />
+    <item name="recycleview" type="id" />
+
+    <item name="rv_chat" type="id" />
+    <item name="tagQuickSdMsg" type="id" />
+    <item name="rv" type="id" />
+    <item name="fast_click_id" type="id" />
+    <item name="fast_click_x" type="id" />
+    <item name="fast_click_y" type="id" />
+    <item name="rl_act_banner" type="id" />
+    <item name="act_banner" type="id" />
+    <item name="live_id_view_level" type="id"/>
+
+</resources>

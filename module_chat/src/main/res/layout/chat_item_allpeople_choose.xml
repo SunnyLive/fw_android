@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fengwo.module_comment.widget.RoundImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv"
+    android:layout_width="@dimen/dp_32"
+    android:layout_height="@dimen/dp_32"
+    android:layout_marginStart="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_6"
+    android:layout_marginBottom="@dimen/dp_6"
+    android:scaleType="centerCrop"
+    android:visibility="visible"
+    app:radius="@dimen/dp_8"
+    tools:src="@drawable/timg" />

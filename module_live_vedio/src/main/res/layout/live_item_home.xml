@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.fengwo.module_comment.widget.RatioImageView
+                android:id="@+id/iv_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:height_to_width_ratio="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:round_radius="@dimen/dp_10"
+              />
+
+            <com.fengwo.module_comment.widget.RatioImageView
+                android:id="@+id/iv_thumb_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:height_to_width_ratio="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/live_bg_home_title_tv_top"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_21"
+
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_activity_tag"
+                android:layout_width="@dimen/dp_93"
+                android:layout_height="@dimen/dp_21"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-1dp"
+                android:src="@drawable/pic_live_zw"
+                android:scaleType="fitStart"
+                android:visibility="visible"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_recomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text=""
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_10" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toRightOf="@+id/tv_recomment"
+
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@drawable/bg_home_lable"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_6"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_gif"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+
+                />
+
+            <ImageView
+                android:id="@+id/im_hmz"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+
+                android:src="@drawable/pic_hmz"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_looknum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:gravity="center"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_9"
+                android:textStyle="bold"
+                tools:text="1" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_1"
+                android:src="@drawable/txt_live"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_7"
+            android:src="@drawable/live_ic_living"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/live_bg_home_title_tv"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/dp_6"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ll_title"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/mIvLiveLevel"
+                    android:layout_width="@dimen/dp_49"
+                    android:layout_height="@dimen/dp_13"
+                    android:paddingLeft="@dimen/dp_10" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:ellipsize="marquee"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_13"
+
+
+                    tools:text="阿大使馆" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_10"
+
+                android:singleLine="true"
+                tools:text="打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜打得过矮冬瓜"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_red_packet"
+            android:layout_width="@dimen/dp_26"
+            android:layout_height="@dimen/dp_26"
+            app:layout_constraintBottom_toTopOf="@+id/ll_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/dp_11"
+            android:src="@drawable/icon_red_package_home"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_8"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</LinearLayout>

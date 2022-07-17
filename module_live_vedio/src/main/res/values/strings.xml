@@ -1,0 +1,25 @@
+<resources>
+    <string name="live_tou_tiao">
+        <![CDATA[<p>1. Boss为自己心仪主播送出头条礼物，即可享受全平台直播间长达<font color="#FFC757">180秒</font>的头条飘屏服务;</p>
+        <p>2. 也可在现有头条礼物的基础上<font color="#FFC757">+100花钻</font>顶掉现有头条;</p>
+        <p>3. 送出超过当前头条礼物价值的其他头条礼物，亦可抢占头条飘屏服务.</p>
+]]>
+    </string>
+    <string name="flower_values">花蜜值</string>
+    <string name="meiyan" translatable="false">美颜</string>
+    <string name="teenager_password_tips">
+        <![CDATA[忘记密码，请您拨打客服电话：<font color="#63A5FF">400-005-1118</font><br>或关注公众号：蜂窝互娱，咨询在线客服</br>]]>
+    </string>
+    <string name="permissions_title" translatable="false">提示</string>
+    <string name="permissions_location" translatable="false">没有定位权限，无法使用此功能</string>
+    <string name="permissions_camera" translatable="false">没有相机，无法使用此功能</string>
+    <string name="permissions_storage" translatable="false">没有内部储存权限，无法使用此功能</string>
+    <string name="permissions_audio" translatable="false">没有麦克风权限，无法使用此功能</string>
+    <string name="permissions_equipment" translatable="false">没有设备信息权限(通话状态)，无法使用此功能</string>
+   <!-- <string name="permissions_camera" translatable="false">您没有相机权限，请先开启权限在执行此操作</string>-->
+    <string name="permissions_audios" translatable="false">您没有录音，请先开启权限在执行此操作</string>
+    <string name="permissions_setting" translatable="false">去设置</string>
+    <string name="permissions_cancel" translatable="false">取消</string>
+    <string name="permissions_w" translatable="false">没有内部储存权限，无法使用此功能</string>
+    <string name="transition_name" translatable="false">square_transition</string>
+</resources>

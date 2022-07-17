@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/selector_round_select_8dp"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:singleLine="true"
+    android:textColor="@color/color_chat_card_select_tag"
+    android:textSize="@dimen/sp_12"
+    tools:text="测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字" />

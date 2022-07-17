@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"><!--padding 必须为viewpager padding的1/3-->
+
+    <ImageView
+        android:id="@+id/iv_circle_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_170"
+        android:background="@drawable/rect_white_round10"
+        android:scaleType="fitXY"
+        android:elevation="@dimen/dp_4"/>
+
+    <TextView
+        android:id="@+id/tv_position"
+        style="@style/TextStyle.MSize"
+        android:layout_gravity="center"
+        android:elevation="@dimen/dp_10"/>
+
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_30"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_230"
+    android:layout_marginRight="@dimen/dp_10"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_34"
+        android:background="@drawable/bg_gift_msg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/timg" />
+
+        <TextView
+            android:id="@+id/tv_msg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="asdgagd"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_14"
+            android:src="@drawable/timg" />
+
+        <TextView
+            android:id="@+id/tv_msg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="开通托朗守护"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+</LinearLayout>

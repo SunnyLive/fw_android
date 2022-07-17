@@ -1,0 +1,175 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'  //kapt3插件
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'androidx.appcompat:appcompat:1.1.0'
+    //implementation files('libs\\tbs_sdk_thirdapp_v4.3.0.67_43967_sharewithdownloadwithfile_withoutGame_obfs_20200923_120452.jar')
+    api 'com.tencent.tbs.tbssdk:sdk:43939'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api rootProject.ext.dependencies['aroute']
+    api 'androidx.constraintlayout:constraintlayout:2.0.4'
+    kapt rootProject.ext.dependencies['aroute_annotationProcessor']
+    //annotationProcessor rootProject.ext.dependencies['aroute_annotationProcessor']
+    kapt rootProject.ext.dependencies['butterknife_annotationProcessor']
+
+    // annotationProcessor rootProject.ext.dependencies['aroute_annotationProcessor']
+    api rootProject.ext.dependencies['butterknife']
+    //   annotationProcessor rootProject.ext.dependencies['butterknife_annotationProcessor']
+    api rootProject.ext.dependencies['support:design']
+    api rootProject.ext.dependencies['brvah']
+    api rootProject.ext.dependencies['smartRefreshLayout']
+    api rootProject.ext.dependencies['smartRefreshHeader']
+    api rootProject.ext.dependencies["smartFooiter"]
+    api rootProject.ext.dependencies["material"]
+    api rootProject.ext.dependencies['autolayout']
+    api rootProject.ext.dependencies['rxlifecycle2']
+    api rootProject.ext.dependencies['rxandroid']
+    api rootProject.ext.dependencies['rxjava']
+    api rootProject.ext.dependencies['converter-gson']
+    api rootProject.ext.dependencies['adapter-rxjava']
+    api rootProject.ext.dependencies['flowlayout']
+    api rootProject.ext.dependencies['basepopupwindow']
+    api rootProject.ext.dependencies['basepopupwindow_support']
+    //    api 'com.shuyu:GSYVideoPlayer:7.1.0'
+    implementation rootProject.ext.dependencies['glide']
+    annotationProcessor rootProject.ext.dependencies['glide_annotationProcessor']
+    implementation rootProject.ext.dependencies['okhttp3-logging']
+    api rootProject.ext.dependencies["immersionbar"]
+    api rootProject.ext.dependencies["immersionbar_component"]
+    api rootProject.ext.dependencies["androidx.constraintlayout"]
+    api rootProject.ext.dependencies["rxpermission"]
+    api rootProject.ext.dependencies["swipelayout"]
+    api rootProject.ext.dependencies["matisse"]
+
+    api rootProject.ext.dependencies["glide-transformations"]
+    api project(':libsuperplayer')
+    api rootProject.ext.dependencies["SVGAPlayer"]
+    //    api rootProject.ext.dependencies["takephoto"]
+    api 'com.github.promeg:tinypinyin:2.0.3'
+    // ~80KB//通讯录拼音解析
+    api 'com.shizhefei:ViewPagerIndicator:1.1.9.androidx'
+    api 'com.github.ome450901:SimpleRatingBar:1.4.3'
+    //    api('com.tencent.liteavsdk:LiteAVSDK_Smart:6.6.7458', {
+    //        exclude group: 'com.google.android.exoplayer2.core.R'
+    //    })        // LiteAV SDK
+//    api(name: 'LiteAVSDK_Smart_8.3.9881', ext: 'aar')
+ //   implementation 'com.tencent.liteavsdk:LiteAVSDK_Smart:latest.release@aar'
+  //  api(name: 'PgPrettifyEngine-release', ext: 'aar')
+    api 'com.aliyun.dpa:oss-android-sdk:+'
+    api project(':module_websocket')
+    api project(':faceunity')
+    api 'com.github.SherlockGougou:BigImageViewPager:v4_4.1.0'
+ //   api 'de.hdodenhof:circleimageview:3.1.0'
+    api 'com.contrarywind:Android-PickerView:4.1.8'
+    api 'com.github.yalantis:ucrop:2.2.6'
+
+    api 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+//    api 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+//    api 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+//    api 'com.github.ctiao:ndkbitmap-armv5:0.9.21'
+
+    //   api 'com.github.ctiao:ndkbitmap-x86:0.9.21'
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.1'
+    api project(':umentlib')
+    implementation 'com.liulishuo.filedownloader:library:1.7.6'
+    implementation 'top.zibin:Luban:1.1.8'
+    api 'cn.bingoogolapple:bga-qrcode-zbar:1.3.6'
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.6'
+    api 'me.dm7.barcodescanner:zxing:1.8.4'
+    //JPush
+    api 'cn.jiguang.sdk:jpush:3.8.6'  // 此处以JPush 3.8.6 版本为例。
+    api 'cn.jiguang.sdk:jcore:2.6.0'  // 此处以JCore 2.6.0 版本为例。
+    // 高德定位
+    api 'com.amap.api:location:latest.integration'
+    //    implementation 'com.lzy.widget:imagepicker:0.6.0'
+    api  'com.github.bytedance:AlphaPlayer:1.0.4'
+    api 'com.google.android.exoplayer:exoplayer-core:2.10.5'
+
+
+    api 'org.greenrobot:greendao:3.3.0'
+    api 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+    api 'com.meituan.android.walle:library:1.1.6'
+    api 'com.meituan.android.walle:payload_reader:1.1.6'
+
+    api "com.android.support:multidex:1.0.1" // 多dex配置
+    api 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    api 'com.tencent.bugly:nativecrashreport:latest.release'
+    api(name: 'alipaySdk-15.6.8-20191021122455-noUtdid', ext: 'aar')
+    api "androidx.viewpager2:viewpager2:1.0.0"
+    api(name: 'phoneNumber-AuthSDK-2.7.1-20191223', ext: 'aar')
+
+    api "com.alibaba:fastjson:1.2.60"
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    api 'com.youth.banner:banner:2.1.0'
+    //stream流支持库兼容
+    api "net.sourceforge.streamsupport:streamsupport:1.6.0"
+    //消息列表侧滑
+    api 'com.yanzhenjie.recyclerview:x:1.3.2'
+    api 'com.github.donkingliang:LabelsView:1.6.1'
+
+
+    api 'me.everything:overscroll-decor-android:1.0.4'//rcv 回弹效果
+    api 'com.google.android:flexbox:2.0.1'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+    api(name: 'rpsdk-4.4.2-open', ext: 'aar')
+    api(name: 'SecurityGuardSDK-external-release-5.5.13873794', ext: 'aar')
+    api(name: 'SecurityBodySDK-external-release-5.5.19', ext: 'aar')
+    api(name: 'MiddleTierSDK-external-release-5.5.13874142', ext: 'aar')
+    api(name: 'windvane', ext: 'aar')
+
+    if (isEnableLeakCanary.toBoolean())
+        debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
+
+    //阿里hotfix
+    api ('com.aliyun.ams:alicloud-android-hotfix:3.2.17'){
+        exclude group: 'com.aliyun.ams', module:'alicloud-android-utdid'
+    }
+}

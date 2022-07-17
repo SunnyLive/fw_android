@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/item_tv_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="3"
+            android:gravity="center"
+            android:text="开始时间"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_12" />
+            <com.fengwo.module_comment.widget.RoundImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_tv_endtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="结束时间"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/item_tv_alltime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="直播时长"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_10" />
+
+        <TextView
+            android:id="@+id/item_tv_devices"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="直播设备"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/normal_bg" />
+</FrameLayout>

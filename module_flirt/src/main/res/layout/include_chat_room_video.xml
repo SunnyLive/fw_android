@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_chat_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+    <!--直播界面-->
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+<!--    <FrameLayout-->
+<!--        android:id="@+id/video_play"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <!--未付费背景图-->
+    <ImageView
+        android:id="@+id/iv_free_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/default_bg"
+        android:visibility="gone" />
+
+    <!-- 订单礼物 -->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/ll_gift_show"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@color/alpha_80_black"-->
+    <!--        android:visibility="gone"-->
+    <!--        tools:visibility="gone"-->
+    <!--        >-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_bg_gift"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            />-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_gift_show"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginBottom="@dimen/dp_80"-->
+    <!--            android:src="@drawable/ic_gift_first"/>-->
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_close_gift"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="right"-->
+    <!--            android:layout_marginTop="@dimen/dp_30"-->
+    <!--            android:layout_marginRight="@dimen/dp_15"-->
+    <!--            android:src="@mipmap/ic_close"/>-->
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_gift_title"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="开启缘分"-->
+    <!--            android:layout_marginBottom="@dimen/dp_160"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:textColor="#fffe3c9c"-->
+    <!--            android:textSize="@dimen/sp_20"-->
+    <!--            />-->
+    <!--    </FrameLayout>-->
+
+    <!-- 聊天室-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_chat_room_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:id="@+id/view_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/sr_refresh"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="10" />
+
+        <!-- 隐藏显示聊天框按钮-->
+        <ImageView
+            android:id="@+id/iv_chat_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_9"
+            android:src="@drawable/ic_filrt_down"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/sr_refresh"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_weight" />
+
+        <!--聊天窗口-->
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/sr_refresh"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/cri_input"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/rv_users"
+            app:layout_constraintTop_toBottomOf="@+id/view_weight"
+            app:layout_constraintVertical_weight="10">
+
+            <com.fengwo.module_chat.utils.AddHistroyHeader
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:padding="@dimen/dp_6" />
+
+            <com.fengwo.module_comment.widget.FadingRecyclerView
+                android:id="@+id/rv_chat_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_8" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <!--键盘-->
+        <com.fengwo.module_flirt.widget.ChatRoomInputView
+            android:id="@+id/cri_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sr_refresh" />
+
+        <com.fengwo.module_comment.widget.FadingRecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_170"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:paddingBottom="@dimen/dp_10"
+            app:layout_constraintBottom_toTopOf="@+id/cri_input"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_users_count"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/shape_translucence_black_4dp"
+            android:gravity="center"
+            android:textColor="@color/text_white_arr"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_users"
+            app:layout_constraintLeft_toLeftOf="@+id/rv_users"
+            app:layout_constraintRight_toRightOf="@+id/rv_users" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--显示开启缘分-->
+    <RelativeLayout
+        android:id="@+id/ll_show_gift_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:background="@drawable/shape_gift_btn"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_gift_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_7"
+            android:paddingLeft="@dimen/dp_20"
+            android:shadowColor="#6e6767ff"
+            android:text="开启缘分"
+            android:textColor="@color/text_white_arr"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_gift_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_24"
+            android:layout_toRightOf="@+id/tv_gift_des"
+            android:background="@drawable/bg_qr_radius_white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_12"
+
+            android:paddingRight="@dimen/dp_12"
+            android:shadowColor="#6e6767ff"
+            android:text="开启"
+            android:textColor="#fffe3c9c"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:src="@mipmap/pic_yf_x" />
+    </RelativeLayout>
+</FrameLayout>
+

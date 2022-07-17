@@ -1,0 +1,59 @@
+<resources>
+    <!--SelectedRangeView -->
+    <declare-styleable name="view_selected_range">
+        <attr name="circleR" format="dimension|reference"/>
+        <attr name="AcircleValue" format="integer|reference"/>
+        <attr name="BcircleValue" format="integer|reference"/>
+        <attr name="valueRange" format="integer|reference"/>
+        <attr name="progressBarHeight" format="dimension|reference"/>
+        <attr name="progressColor" format="color|reference"/>
+        <attr name="selectedColor" format="color|reference"/>
+        <attr name="circleCorlor" format="color|reference"/>
+        <attr name="circleShadowCorlor" format="color|reference"/>
+        <attr name="shadowWidth" format="dimension|reference"/>
+        <attr name="starValue" format="integer|reference"/>
+    </declare-styleable>
+    <!--dialog-->
+    <style name="BottomDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item><!--显示软件盘-->
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <declare-styleable name="DrawTextView">
+        <attr name="drawW" format="reference|dimension"/>
+        <attr name="drawH" format="reference|dimension"/>
+        <attr name="drawDir" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="end" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MerryRoundView">
+
+        <attr name="autoRotation" format="boolean"/>
+        <attr name="rotationTime" format="integer"/>
+        <attr name="r" format="dimension"/>
+
+        <attr name="rotateDirection">
+            <enum name="clockwise" value="0"/>
+            <enum name="anticlockwise" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+
+    <style name="style_custom_ratingbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/ic_gradle_small</item>
+        <item name="android:layout_marginStart">@dimen/dp_6</item>
+    </style>
+</resources>
+
+
+

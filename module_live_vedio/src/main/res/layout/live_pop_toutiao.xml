@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.78" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_margin="@dimen/dp_10"
+        android:padding="@dimen/dp_4"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintRight_toRightOf="@id/ivBackground"
+        app:layout_constraintTop_toTopOf="@id/ivBackground" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="@string/live_tou_tiao"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/ivBackground"
+        app:layout_constraintRight_toRightOf="@id/ivBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/bg_toutiao_btn"
+        android:gravity="center"
+        android:text="我要上头条"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_15"
+        app:gtv_start_color="#FFAB03"
+        app:gtv_end_color="#ffcc65"
+        app:layout_constraintBottom_toBottomOf="@id/ivBackground"
+        app:layout_constraintLeft_toLeftOf="@id/ivBackground"
+        app:layout_constraintRight_toRightOf="@id/ivBackground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

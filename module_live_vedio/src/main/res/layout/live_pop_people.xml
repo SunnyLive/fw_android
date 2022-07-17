@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_round_8dp"
+    tools:layout_gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_14"
+            tools:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线人数"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_9966ff"
+            android:textSize="@dimen/sp_14"
+            tools:text="9909" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_now"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/selector_push_people"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_week"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日榜"
+            android:textColor="@color/selector_push_people"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/iv_now"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/home_tab_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_week"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/selector_push_people"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/btn_now"
+        app:layout_constraintRight_toLeftOf="@id/btn_month"
+        app:layout_constraintTop_toTopOf="@id/btn_now">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周榜"
+            android:textColor="@color/selector_push_people"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/iv_week"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/home_tab_style"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_month"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/selector_push_people"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/btn_week"
+        app:layout_constraintRight_toLeftOf="@id/btn_current"
+        app:layout_constraintTop_toTopOf="@id/btn_now">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月榜"
+            android:textColor="@color/selector_push_people"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/iv_month"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/home_tab_style"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_current"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/selector_push_people"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@id/btn_month"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_now">
+
+
+        <TextView
+            android:id="@+id/tv_zxgz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线观众"
+            android:textColor="@color/selector_push_people"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/iv_current"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/home_tab_style"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_now">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_320"
+            android:background="@color/normal_bg" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

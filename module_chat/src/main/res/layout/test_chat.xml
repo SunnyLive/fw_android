@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_view_ac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.fengwo.module_comment.widget.AppTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:atb_backIcon="@drawable/ic_back_black"
+        app:atb_moreIcon="@drawable/ic_title_more"
+        app:atb_title="聊天人"
+        app:atb_title_color="@color/black_333333"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/dp_10"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/chatBottomView"
+        app:layout_constraintTop_toBottomOf="@id/titleBar" />
+
+    <com.fengwo.module_chat.widgets.chat.ChatBottomView
+        android:id="@+id/chatBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/mult_select_bgview" />
+
+    <RelativeLayout
+        android:id="@+id/mult_select_bgview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.buildware.widget.indeterm.IndeterminateCheckBox
+            android:id="@+id/mult_checkbox"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="反选"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/delete_img_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/fowrd_img_btn"
+            android:src="@drawable/deleteimg" />
+
+        <ImageView
+            android:id="@+id/fowrd_img_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/cancel_img_btn"
+            android:src="@drawable/shareimg" />
+
+        <ImageView
+            android:id="@+id/cancel_img_btn"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/cancelimg" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

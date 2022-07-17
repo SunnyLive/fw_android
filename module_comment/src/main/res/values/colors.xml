@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE3C9C</color>
+    <color name="colorPrimaryDark">#FE3C9C</color>
+    <color name="colorAccent">#FFC147</color>
+
+    <color name="bg_mine_white">#ffffff</color>
+    <color name="bg_list_white">#f7f8f9</color>
+    <color name="black">#000000</color>
+    <color name="mine_white">#ffffff</color>
+    <color name="mine_white1">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="text_white">#ffffff</color>
+    <color name="menu_white">#ffffff</color>
+
+    <color name="normal_bg">#F3F3F3</color>
+    <color name="normal_bg1">#ECECEC</color>
+    <color name="list_bg">#F3F3F3</color>
+    <color name="list_bg_white">#FFFFFF</color>
+    <color name="text_33">#333333</color>
+    <color name="text_66">#666666</color>
+    <color name="text_99">#999999</color>
+    <color name="text_cc">#cccccc</color>
+
+
+    <color name="bg_300">#30000000</color>
+
+
+    <color name="live_label1">#8370F3</color>
+    <color name="live_label2">#FE3C9C</color>
+    <color name="live_label3">#46AEFF</color>
+    <color name="live_label4">#FEBE49</color>
+    <!--home -->
+    <!--    <color name="bg_home_tag">#F7F7F7</color>-->
+    <color name="bg_home_tag">#FFFFFF</color>
+    <!--flirt-->
+    <color name="AA_white">#AAFFFFFF</color>
+    <!--chat-->
+    <color name="search_history">#333333</color>
+    <!--user-->
+    <color name="bg_tips">#F7F3FF</color>
+
+    <color name="black_000000">#000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_3333">#333333</color>
+    <color name="t00_000000">#00000000</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_222222">#222222</color>
+    <color name="alpha_black_000000">#66000000</color>
+    <color name="gray_eeeeee">#eeeeee</color>
+    <color name="gray_ececec">#ececec</color>
+    <color name="gray_eaeaea">#eaeaea</color>
+    <color name="gray_c1c1c1">#c1c1c1</color>
+    <color name="gray_d1d1d1">#d1d1d1</color>
+    <color name="gray_bdbdbd">#BDBDBD</color>
+    <color name="gray_F5F4F9">#F5F4F9</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_F2F0F6">#F2F0F6</color>
+    <color name="gray_FF000000">#ff000000</color>
+    <color name="alpha71_gray_666666">#b5666666</color>
+    <color name="gray_f0f0f0">#f0f0f0</color>
+    <color name="red_ff6666">#ff6666</color>
+    <color name="bg_white_gray">#f2f2f2</color>
+    <color name="orange_F65E31">#F65E31</color>
+    <color name="yellow_FFB007">#FFB007</color>
+    <color name="yellow_FFD67F">#FFD67F</color>
+    <color name="green_0FE8F0">#0FE8F0</color>
+    <color name="green_17CE5D">#17CE5D</color>
+    <color name="yellow_E9985C">#E9985C</color>
+    <color name="blue_6680ff">#6680FF</color>
+    <color name="blue_0099ff">#0099ff</color>
+    <color name="blue_0085FF">#0085FF</color>
+    <color name="blue_7F95FF">#7F95FF</color>
+    <color name="blue_923AFD">#923AFD</color>
+    <color name="blue_5DB5FF">#5DB5FF</color>
+    <color name="blue_27D589">#27D589</color>
+    <color name="blue_E5F2FF">#E5F2FF</color>
+    <color name="red_F46060">#F46060</color>
+    <color name="red_FE3C9C">#FE3C9C</color>
+    <color name="red_ff3333">#FF3333</color>
+    <color name="red_FF53DD">#FF53DD</color>
+    <color name="red_ff4967">#FF4967</color>
+    <color name="red_FF4C4C">#FF4C4C</color>
+    <color name="red_ff5959">#FF5959</color>
+    <color name="red_ff5a6d">#FF5A6D</color>
+    <color name="red_f46060">#fff46060</color>
+    <color name="red_f33c6f">#F33C6F</color>
+    <color name="red_FF5E5E">#FF5E5E</color>
+    <color name="red_ED62CB">#ED62CB</color>
+    <color name="red_FE3ACE">#FE3ACE</color>
+    <color name="red_FF2F2F">#FF2F2F</color>
+
+    <color name="red_cf3d79">#CF3D79</color>
+
+    <color name="color_330036">#330036</color>
+    <color name="gray_B8B8B8">#B8B8B8</color>
+    <color name="gray_f2f2f2">#f2f2f2</color>
+    <color name="gray_F3F3F3">#F3F3F3</color>
+    <color name="gray_f8f8f8">#F8F8F8</color>
+    <color name="gray_e1e1e1">#e1e1e1</color>
+    <color name="alpha20_black">#33000000</color>
+    <color name="alpha70_black">#b3000000</color>
+    <color name="gray_b3b2b2">#ffb3b2b2</color>
+    <color name="gray_f1f1f1">#ffF1F1F1</color>
+    <color name="gray_f1">#ffF1F1F1</color>
+    <color name="gray_bbbbbb">#ffbbbbbb</color>
+    <color name="gray_F5F4FA">#F5F4FA</color>
+    <color name="gray_EEEEEE">#EEEEEE</color>
+    <color name="gray_DDDDDD">#DDDDDD</color>
+    <color name="gray_9F9F9F">#9F9F9F</color>
+    <color name="gray_A0A0A0">#A0A0A0</color>
+    <color name="gray_979797">#979797</color>
+    <color name="gray_C8C8C8">#C8C8C8</color>
+    <color name="label_FFF282">#FFF282</color>
+    <color name="label_F7F2FF">#FFF7F2FF</color>
+    <color name="gray_292929">#F4F4F4</color>
+    <color name="tab_primary_Dark">#FE3C9C</color>
+    <color name="purple_9966FF">#9966FF</color>
+    <color name="purple_B068D9">#B068D9</color>
+    <color name="purple_e2daf6">#F4F4F4</color>
+    <color name="purple_8578A4">#8578A4</color>
+    <color name="grayF8_to_black">#F8F8F8</color>
+    <color name="blue_4DC6E0">#4bc6e0</color>
+    <color name="red_FEEBF5">#FEEBF5</color>
+    <color name="blue_63A5FF">#63A5FF</color>
+
+    <color name="blue_63A5">#EFF6FF</color>
+
+    <color name="black_E7EBF2">#E7EBF2</color>
+
+    <color name="black_363636">#363636</color>
+    <color name="black_1A1A1A">#1A1A1A</color>
+    <color name="black_4B4B4B">#4B4B4B</color>
+
+    <color name="black_3C3C3C">#3C3C3C</color>
+
+
+    <color name="red_ffff3333">#ffff3333</color>
+    <color name="blue_8066FF">#FF8066FF</color>
+
+    <color name="keyboard_input">#f6f6f6</color>
+
+    <color name="gray_f6f6f6">#f6f6f6</color>
+    <color name="gray_f5f5f5">#f5f5f5</color>
+    <color name="gray_f7f7f7">#f7f7f7</color>
+    <color name="gray_fff3f3f3">#fff3f3f3</color>
+    <color name="gray_ebebeb">#ebebeb</color>
+    <color name="pink_eee5ff">#EEE5FF</color>
+    <color name="pink_f1edff">#F1EDFF</color>
+    <color name="pink_E65BFF">#E65BFF</color>
+    <color name="pink_EA7FFF">#EA7FFF</color>
+    <color name="purple_9669E0">#9669E0</color>
+    <color name="purple_9966ff">#FE3C9C</color>
+    <color name="purple_FE3C9C">#FE3C9C</color>
+    <color name="purple_d375ff">#d375ff</color>
+    <color name="purple_9B7CF1">#FE3C9C</color>
+    <color name="purple_AB75F4">#AB75F4</color>
+    <color name="purple_8893FF">#8893FF</color>
+    <color name="purple_9B70FC">#9B70FC</color>
+    <color name="purple_B699FF">#57FE3C9C</color>
+    <color name="purple_f6f3fc">#F6F3FC</color>
+
+    <color name="color_acacac">#ACACAC</color>
+
+    <color name="alpha_40_white">#66FFFFFF</color>
+    <color name="alpha_50_white">#80FFFFFF</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_65_black">#A6000000</color>
+
+    <color name="back_20">#202020</color>
+    <color name="alpha_0fa">#fffcf0fa</color>
+
+    <color name="text_white_arr">#FFFFFF</color>
+    <color name="back_c1e">#ffffff</color>
+    <color name="lin_F7F7F7">#F7F7F7</color>
+    <color name="alpha_fa">#EEFAFA</color>
+
+    <color name="alpha_245">#3E4245</color>
+    <color name="lin_ececec">#ececec</color>
+    <color name="alpha_292929">#F4F4F4</color>
+
+    <color name="alpha_e9e9e9">#9e9e9e</color>
+    <color name="sharch">#ffffff</color>
+
+    <color name="homt_tab">#999999</color>
+    <color name="homt_tab_selsct">#FE3C9C</color>
+    <color name="homt_tab_selsct_all">#FE3C9C</color>
+
+
+    <color name="alpha_white">#FFFFFF</color>
+    <color name="alpha_dcd">#FE9DCD</color>
+    <color name="alpha_dcd_what">#FE3C9C</color>
+    <color name="lin_40">#EEEDEE</color>
+
+
+    <color name="alpha_gz_bj">#CCCCCC</color>
+    <color name="alpha_gz_k">#ffffff</color>
+
+    <color name="alpha_lxx">#FE24A5</color>
+    <color name="alpha_lxx_k">#FEEBF5</color>
+
+    <color name="color_this">#FF2F7E</color>
+
+    <color name="alpha_5b5a68">#ffffff</color>
+    <color name="alpha_5b5a68ssss">#666666</color>
+
+    <color name="alpha_5b5a68f4f4f4">#F4F4F4</color>
+
+
+    <color name="alpha_5b5a682e263a">#F4F4F4</color>
+
+
+    <color name="alpha_citys">#cc222333</color>
+
+    <color name="alpha_3d3b4ad9">#333333</color>
+
+
+    <color name="purple_fff_34d">#ffffff</color>
+
+    <color name="purple_666_09a">#666666</color>
+
+
+    <color name="alpha_fff_63a">#ffffff</color>
+
+    <color name="alpha_fff_64e">#ffffff</color>
+    <color name="alpha_000_bff">#000000</color>
+
+    <color name="alpha_000_ae1">#cc000000</color>
+
+    <color name="purple_fff_09a">#ffffff</color>
+
+    <color name="purple_d8d8d8_09a">#D8D8D8</color>
+    <color name="purple_d8d8d8_09asss">#D8D8D8</color>
+    <color name="color_ffc147">#ffc147</color>
+    <color name="color_62BAFF">#62BAFF</color>
+    <color name="color_6A38FF">#6A38FF</color>
+    <color name="color_fe3c9c">#fe3c9c</color>
+    <color name="color_f2f3f5">#f2f3f5</color>
+
+
+    <color name="purple_EB985B">#EB985B</color>
+    <color name="purple_FFD960">#FFD960</color>
+    <color name="purple_66EAF6">#66EAF6</color>
+    <color name="purple_FFC199">#FFC199</color>
+
+    <color name="line_4d4d4d">#f7f7f7</color>
+    <color name="color_fefefe">#fefefe</color>
+    <color name="color_fb3c9c">#fb3c9c</color>
+    <color name="bg_mine_index">#F7F8F9</color>
+    <color name="bg_603939">#603939</color>
+    <color name="bg_99979b">#99979B</color>
+</resources>

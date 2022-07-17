@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_15"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/iv_ranking"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_28"
+        android:drawableStart="@drawable/icon_ranking1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/fl_header_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_marginBottom="@dimen/dp_15"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ranking"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_header"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/default_head" />
+
+        <ImageView
+            android:id="@+id/iv_photo_frame"
+            android:layout_width="@dimen/dp_47"
+            android:layout_height="@dimen/dp_53"
+            tools:src="@drawable/icon_photo_frame_ranking1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="拉拉队"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toRightOf="@+id/fl_header_parent"
+        app:layout_constraintTop_toTopOf="@+id/fl_header_parent" />
+
+
+    <!--   年龄跟性别   -->
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_7"
+        android:background="@drawable/sex_choose_bg"
+        android:drawableStart="@drawable/sex_choose_icon"
+        android:drawablePadding="@dimen/dp_3"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_2"
+        android:paddingEnd="@dimen/dp_2"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintLeft_toRightOf="@+id/fl_header_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="18" />
+
+
+    <!--  用户等级  -->
+    <ImageView
+        android:id="@+id/iv_level"
+        android:background="@drawable/login_ic_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_7"
+        app:layout_constraintLeft_toRightOf="@+id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:src="@drawable/login_ic_type3_v1" />
+
+
+    <!--    印象值  打赏值都是这个  唯一要变动的就是右边的 drawable    -->
+    <TextView
+        android:id="@+id/tv_impression_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:drawableEnd="@drawable/icon_move_house_heart"
+        android:drawablePadding="@dimen/dp_9"
+        android:textColor="@color/red_FE3C9C"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="123.5w"
+        tools:visibility="gone" />
+
+
+    <!--
+
+
+  这块设计到收礼明细的columns
+  这里就不需要用户的性别跟年龄的icon
+  右上角展示日期
+
+
+    -->
+
+
+    <!--   这个是礼物的明细 是什么礼物  数量是多少   -->
+
+    <TextView
+        android:id="@+id/tv_gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_7"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/fl_header_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="玫瑰花" />
+
+    <!--  礼物数量  -->
+    <TextView
+        android:id="@+id/tv_gift_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_gift_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="x999999"
+        tools:textColor="@color/text_33" />
+
+
+    <!--  这个是日期的   -->
+    <TextView
+        android:id="@+id/tv_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3月21日  8:00" />
+
+
+    <!--  这个是礼物   -->
+
+    <ImageView
+        android:id="@+id/iv_gift"
+        android:layout_width="@dimen/dp_22"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:src="@color/red_FE3C9C"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

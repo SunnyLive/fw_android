@@ -1,0 +1,23 @@
+<resources>
+    <string name="no_more_data">没有更多数据了！</string>
+
+
+    <string name="string_selected_tag">该标签已选择</string>
+    
+    
+    
+    <string name="char_open_fate">开启缘分</string>
+    <string name="char_susan_slade">缘定三生</string>
+    <string name="char_once_again">再续前缘</string>
+
+    <string name="string_comment">评论</string>
+    <string name="string_star">点赞</string>
+    <string name="string_share">分享</string>
+    <string name="string_publish">发布</string>
+    <string name="string_screen">筛选</string>
+    <string name="impress_value">印象值</string>
+    <string name="count_down_tip">结束倒计时</string>
+    <string name="comment_count_down_tip">评论倒计时</string>
+    
+    <string name="expert_operating_tip">1.上传身份证正反面和手持身份证照片\n\n2.上传一段语音和视频（30s以内）及正脸清晰照（3张）\n\n3.申请认证后，平台将进行资料审核，符合要求的用户将收到认证通过消息，可开通实时在线视频及相关达人权限。</string>
+</resources>

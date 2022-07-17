@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="@dimen/dp_17">
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:text="取消"
+        android:textColor="@color/text_66"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="身高体重"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:textColor="@color/blue_27D589"
+        android:text="确定"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_36"
+        android:layout_marginBottom="@dimen/dp_36"
+        android:divider="@drawable/divider_gray_horizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/wv_height"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_weight="1"
+            app:wheelview_dividerColor="@color/white"
+            app:wheelview_lineSpacingMultiplier="2"
+            app:wheelview_textColorCenter="@color/black"
+            app:wheelview_textColorOut="@color/text_99"
+            app:wheelview_textSize="@dimen/sp_16" />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/wv_weight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_weight="1"
+            app:wheelview_dividerColor="@color/white"
+            app:wheelview_lineSpacingMultiplier="2"
+            app:wheelview_textColorCenter="@color/black"
+            app:wheelview_textColorOut="@color/text_99"
+            app:wheelview_textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</RelativeLayout>

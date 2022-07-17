@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.fengwo.module_comment.widget.AppTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:atb_backIcon="@drawable/ic_back_white"
+        app:atb_more_text="完成"
+        app:atb_more_text_color="@color/text_66"
+        app:atb_title="修改群公告"
+        app:atb_title_color="@color/text_33" />
+
+    <com.fengwo.module_comment.widget.ClearEditText
+        android:id="@+id/cet_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="输入群公告"
+        android:lines="5"
+        android:maxLength="120"
+        android:textColor="@color/text_66"
+        android:textColorHint="@color/text_99"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:text="0/120"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>

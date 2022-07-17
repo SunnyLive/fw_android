@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_View"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_fff_34d"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+
+        <ImageView
+            android:id="@+id/cb_kjhf"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:src="@drawable/pic_voide"
+
+            />
+
+        <!--   <EditText
+               android:id="@+id/dialog_comment_content"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/dp_25"
+               android:layout_weight="1"
+               android:background="@null"
+               android:gravity="center_vertical"
+               android:hint="说点什么"
+               android:maxLines="4"
+               android:minHeight="55dp"
+               android:padding="5dp"
+   android:visibility="gone"
+               android:textColorHint="#cccccc"
+               android:textSize="13sp" />-->
+        <EditText
+            android:id="@+id/dialog_comment_content"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_edit"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text=""
+            android:hint="说点什么..."
+            android:inputType="textAutoCorrect|textAutoComplete|textMultiLine|textCapSentences"
+            android:maxLength="100"
+            android:maxLines="4"
+
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+
+            android:scrollbars="none"
+            android:textColor="@color/black_333333"
+            android:textColorHint="#cccccc"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/im_choice"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:padding="@dimen/dp_10"
+
+            android:src="@drawable/bg_chat_room_emotion" />
+
+        <ImageView
+            android:id="@+id/dialog_comment_send"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="right|center_vertical"
+            android:padding="@dimen/dp_10"
+
+            android:src="@mipmap/pic_end" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lin_F7F7F7" />
+
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/alpha_fff_63a"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_expression"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:gravity="center"
+            android:src="@mipmap/pic_expression"
+
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_11" />
+
+        <ImageView
+            android:id="@+id/iv_caiquan"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:gravity="center"
+            android:src="@drawable/ic_finger_guessing"
+
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_11" />
+
+        <ImageView
+            android:id="@+id/iv_touzi"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:gravity="center"
+            android:src="@drawable/ic_touzi"
+            android:textSize="@dimen/sp_11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kjhf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_fff_63a"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_44"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_quick_left"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:text="快捷回复"
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_17"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_4" />
+        </LinearLayout>
+        <!--        <androidx.core.widget.NestedScrollView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <com.zhy.view.flowlayout.TagFlowLayout-->
+        <!--                android:id="@+id/tabflowlayout"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:paddingBottom="@dimen/dp_30"-->
+        <!--                android:layout_marginTop="@dimen/dp_10"-->
+
+        <!--                />-->
+
+        <!--        </androidx.core.widget.NestedScrollView>-->
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/dp_30" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/lin_F7F7F7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="管理"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_fff_63a"
+        android:gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragment_chat_vp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.fengwo.module_comment.utils.chat.IndicatorView
+        android:id="@+id/fragment_chat_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/alpha_fff_63a"
+        android:gravity="center"
+        android:orientation="horizontal" />
+</LinearLayout>

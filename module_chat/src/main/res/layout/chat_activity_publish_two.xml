@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.ui.activity.publish.PublishTwoActivity">
+
+    <com.fengwo.module_comment.widget.AppTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:atb_backgroundGradient="@drawable/rect_gradient_purple"
+        app:atb_more_text="发布"
+        app:atb_title="" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40">
+
+                <TextView
+                    style="@style/TextStyle.LSize"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="设置年龄段" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextStyle.LSize"
+                        android:layout_width="@dimen/dp_70"
+                        android:background="@drawable/layer_bottom_purple_line"
+                        android:drawableRight="@drawable/ic_mini_arrow_black_down" />
+
+                    <TextView
+                        style="@style/TextStyle.LSize"
+                        android:layout_marginLeft="@dimen/dp_11"
+                        android:layout_marginRight="@dimen/dp_11"
+                        android:text="至"
+                        android:textColor="@color/gray_666666" />
+
+
+                    <TextView
+                        style="@style/TextStyle.LSize"
+                        android:layout_width="@dimen/dp_70"
+                        android:background="@drawable/layer_bottom_purple_line"
+                        android:drawableRight="@drawable/ic_mini_arrow_black_down" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40">
+
+                <TextView
+                    style="@style/TextStyle.LSize"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:text="设置投放性别" />
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/TextStyle.LSize"
+                        android:button="@null"
+                        android:drawableRight="@drawable/selector_check_mini_oval_purple_gray"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="全部" />
+
+                    <RadioButton
+                        style="@style/TextStyle.LSize"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:button="@null"
+                        android:drawableRight="@drawable/selector_check_mini_oval_purple_gray"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="男" />
+
+                    <RadioButton
+                        style="@style/TextStyle.LSize"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:button="@null"
+                        android:drawableRight="@drawable/selector_check_mini_oval_purple_gray"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="女" />
+
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_72">
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/TextStyle.LSize"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:hint="设置播放日期"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <View
+                    style="@style/HDivider"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_marginEnd="@dimen/dp_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/dp_21"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/ic_calendar"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_72">
+
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    style="@style/TextStyle.LSize"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:hint="设置播放位置"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <View
+                    style="@style/HDivider"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_marginEnd="@dimen/dp_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dp_21"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_location"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginEnd="@dimen/dp_72">
+
+
+                <TextView
+                    android:id="@+id/tv_tag"
+                    style="@style/TextStyle.LSize"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:hint="#"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <View
+                    style="@style/HDivider"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_marginEnd="@dimen/dp_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/dp_21"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/ic_tag"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_tag"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@color/gray_f6f6f6" />
+
+
+            <TextView
+                style="@style/TextStyle.SSize"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="添加类型"
+                android:textColor="@color/gray_666666" />
+
+
+            <com.fengwo.module_comment.widget.MyFlowLayout
+                android:id="@+id/fl_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_153" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

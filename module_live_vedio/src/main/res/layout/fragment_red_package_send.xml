@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/black">
+
+    <RadioGroup
+        android:id="@+id/rg_switch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_local"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red_package_send_radio_button"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="房间红包"
+            android:textColor="@color/color_red_package_radio_button"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red_package_send_radio_button"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="全站红包"
+            android:textColor="@color/color_red_package_radio_button"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/bg_red_package_rule">
+
+
+        <View
+            android:id="@+id/img_bg_input_money"
+            android:layout_width="@dimen/dp_315"
+            android:layout_height="@dimen/dp_69"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/bg_red_package_send_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_15"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="单个花钻："
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintStart_toStartOf="@+id/img_bg_input_money"
+            app:layout_constraintTop_toTopOf="@+id/img_bg_input_money"
+            tools:drawableStart="@drawable/icon_red_package_random" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_45"
+            android:text="红包花钻≥50000将展示全服红包"
+            android:textColor="@color/gray_999999"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintStart_toStartOf="@+id/img_bg_input_money"
+            app:layout_constraintTop_toTopOf="@+id/img_bg_input_money" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="end|center"
+            android:hint="500起"
+            android:inputType="number"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:textColor="@color/black_333333"
+            android:textColorHint="@color/gray_999999"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_view"
+            app:layout_constraintEnd_toStartOf="@+id/tv_unit"
+            app:layout_constraintStart_toEndOf="@+id/text_view" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="花钻"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="@+id/img_bg_input_money"
+            app:layout_constraintTop_toTopOf="@+id/img_bg_input_money" />
+
+        <TextView
+            android:id="@+id/tv_package_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="#ff999999"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="@+id/img_bg_input_money"
+            app:layout_constraintTop_toBottomOf="@+id/img_bg_input_money"
+            tools:text="当前为拼手气红包，改为拼手气红包" />
+
+        <View
+            android:id="@+id/img_bg_input_unit"
+            android:layout_width="@dimen/dp_315"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_37"
+            android:background="@drawable/bg_red_package_send_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_bg_input_money" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="红包个数："
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="@+id/img_bg_input_unit"
+            app:layout_constraintStart_toStartOf="@+id/img_bg_input_unit"
+            app:layout_constraintTop_toTopOf="@+id/img_bg_input_unit" />
+
+        <EditText
+            android:id="@+id/et_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="end|center"
+            android:hint="20起"
+            android:inputType="number"
+            android:paddingStart="0dp"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:textColor="@color/black_333333"
+            android:textColorHint="@color/gray_999999"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_view2"
+            app:layout_constraintEnd_toStartOf="@+id/tv_unit2"
+            app:layout_constraintStart_toEndOf="@+id/text_view2" />
+
+        <TextView
+            android:id="@+id/tv_unit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="个"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="@+id/img_bg_input_unit"
+            app:layout_constraintTop_toTopOf="@+id/img_bg_input_unit" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="0"
+            android:textColor="#ff333333"
+            android:textSize="@dimen/sp_32"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/img_unit"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bg_input_unit" />
+
+        <ImageView
+            android:id="@+id/img_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:src="@drawable/icon_red_package_money_unit"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_money" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            style="@style/ThemeButtonStyle"
+            android:layout_width="@dimen/dp_273"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_77"
+            android:enabled="false"
+            android:text="花钻发红包"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bg_input_unit" />
+
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="未抢到红包，将于5小时后退回花钻"
+            android:textColor="#cccccc"
+            android:textSize="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_send" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

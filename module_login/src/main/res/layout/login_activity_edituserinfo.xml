@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/view_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.fengwo.module_comment.widget.ClearEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            android:hint="填写属于你的个性昵称~（最大6个字）"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:maxLength="10"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/text_33"
+            android:textColorHint="@color/text_99"
+            android:textSize="@dimen/sp_15" />
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_12"
+                android:text="本次修改昵称需花费"/>
+            <TextView
+                android:id="@+id/tv_to_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple_9966ff"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:textSize="@dimen/sp_12"
+                android:text="去充值"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_error_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_F46060"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textSize="@dimen/sp_12" />
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/btn_name_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_42"
+            android:layout_marginRight="@dimen/dp_42"
+            android:layout_marginBottom="@dimen/dp_26"
+            android:layout_marginTop="@dimen/dp_70"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_rule_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/text_99"
+            android:layout_marginTop="@dimen/dp_22"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/bg_gray_round_8"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="填写个人简介更容易获得别人的关注哦~"
+            android:lines="4"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/dp_16"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_16"
+            android:textColor="@color/text_66"
+            android:textColorHint="@color/text_99"
+            android:textSize="@dimen/sp_14"
+            tools:text="测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字" />
+
+        <TextView
+            android:id="@+id/tv_desc_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:text="0/50"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_sex_secret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_secret"
+                    android:layout_width="@dimen/dp_96"
+                    android:layout_height="@dimen/dp_96"
+                    android:src="@drawable/ic_sex_secret" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="保密"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_sex_women"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_girl"
+                    android:layout_width="@dimen/dp_96"
+                    android:layout_height="@dimen/dp_96"
+                    android:src="@drawable/ic_sex_women" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="女生"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_sex_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_boy"
+                    android:layout_width="@dimen/dp_96"
+                    android:layout_height="@dimen/dp_96"
+                    android:src="@drawable/ic_sex_man" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="男生"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/rect_white_round10"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="选择所在地"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:background="@drawable/rect_purple_round10"
+            android:divider="@drawable/divider_gray_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelProvince"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_weight="1"
+                app:wheelview_dividerColor="@color/white"
+                app:wheelview_lineSpacingMultiplier="2"
+                app:wheelview_textColorCenter="@color/colorPrimary"
+                app:wheelview_textColorOut="@color/text_99"
+                app:wheelview_textSize="@dimen/sp_16" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelCity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_weight="1"
+                app:wheelview_dividerColor="@color/white"
+                app:wheelview_lineSpacingMultiplier="2"
+                app:wheelview_textColorCenter="@color/colorPrimary"
+                app:wheelview_textColorOut="@color/text_99"
+                app:wheelview_textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/rect_white_round10"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="选择生日"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:background="@drawable/rect_purple_round10"
+            android:divider="@drawable/divider_gray_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelYear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_weight="1"
+                app:wheelview_dividerColor="@color/white"
+                app:wheelview_lineSpacingMultiplier="2"
+                app:wheelview_textColorCenter="@color/colorPrimary"
+                app:wheelview_textColorOut="@color/text_99"
+                app:wheelview_textSize="@dimen/sp_16" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelMonth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_weight="1"
+                app:wheelview_dividerColor="@color/white"
+                app:wheelview_lineSpacingMultiplier="2"
+                app:wheelview_textColorCenter="@color/colorPrimary"
+                app:wheelview_textColorOut="@color/text_99"
+                app:wheelview_textSize="@dimen/sp_16" />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelDay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_weight="1"
+                app:wheelview_dividerColor="@color/white"
+                app:wheelview_lineSpacingMultiplier="2"
+                app:wheelview_textColorCenter="@color/colorPrimary"
+                app:wheelview_textColorOut="@color/text_99"
+                app:wheelview_textSize="@dimen/sp_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_42"
+        android:layout_marginRight="@dimen/dp_42"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

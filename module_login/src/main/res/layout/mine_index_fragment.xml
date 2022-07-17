@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_mine_index">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_mine_index_bg"
+        app:layout_constraintDimensionRatio="h,1:0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:fitsSystemWindows="false"
+            android:stateListAnimator="@null">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:title="我的"
+                app:toolbarId="@id/toolbar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_24"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        app:layout_collapseMode="pin">
+
+
+                        <TextView
+                            android:id="@+id/tv_back_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_12"
+                            android:text="我的"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp_20" />
+
+
+                        <TextView
+                            android:id="@+id/tv_user_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_marginBottom="@dimen/dp_12"
+                            android:text=""
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_24"
+                            tools:textColor="@color/text_33" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_scan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_setting"
+                            android:paddingStart="@dimen/dp_12"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingEnd="@dimen/dp_5"
+                            android:paddingBottom="@dimen/dp_12"
+                            android:src="@drawable/icon_mine_scan" />
+
+                        <ImageView
+                            android:id="@+id/iv_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_12"
+                            android:paddingEnd="@dimen/dp_15"
+                            android:paddingBottom="@dimen/dp_12"
+                            android:src="@drawable/icon_mine_setting" />
+
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/mine_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:srlEnableLoadMore="false">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/ll_bottom_sheet_behavio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ctl_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    android:paddingStart="@dimen/dp_15"
+                    android:paddingEnd="@dimen/dp_15"
+                    android:paddingBottom="@dimen/dp_20">
+                    <!--  这个就是用户的个人信息卡片 -->
+                    <include
+                        android:id="@+id/view1"
+                        layout="@layout/layout_user_card" />
+
+                    <!--   广告图  -->
+
+                    <ImageView
+                        android:id="@+id/iv_mine_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_66"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:src="@drawable/icon_mine_index_banner"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+
+                    <!-- 我的座驾  我的守护  我的礼物墙  -->
+                    <include
+                        tools:visibility="gone"
+                        android:id="@+id/include_anchor_flow"
+                        layout="@layout/layout_mine_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_mine_banner" />
+
+
+                    <!-- 我的服务  -->
+                    <LinearLayout
+                        tools:visibility="gone"
+                        android:id="@+id/ll_server_columns"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/bg_dialog"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/include_anchor_flow">
+
+                        <TextView
+                            android:id="@+id/tv_server_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:text="我的服务"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_16" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_mine_server"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_15" />
+
+
+                    </LinearLayout>
+
+                    <!--  主播认证 达人认证  -->
+
+                    <include
+                        tools:visibility="gone"
+                        android:id="@+id/include_certification_columns"
+                        layout="@layout/layout_certification"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_server_columns" />
+
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ll_live_time"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@+id/include_certification_columns"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/bg_dialog"
+                        android:paddingTop="@dimen/dp_15"
+                        android:paddingStart="@dimen/dp_15"
+                        android:paddingEnd="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="直播记录"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_16" />
+
+
+                        <TextView
+                            android:id="@+id/tv_nectar_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:textColor="@color/color_ffc147"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_time_title"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:textSize="@dimen/sp_16"
+                            tools:text="99999" />
+
+                        <TextView
+                            android:id="@+id/tv_nectar_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_nectar_value"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:text="今日花蜜值"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_14" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="@dimen/dp_32"
+                            android:background="@color/lin_F7F7F7"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_nectar_value"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_nectar_label"/>
+
+                        <TextView
+                            android:id="@+id/tv_live_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_12"
+                            app:layout_constraintTop_toTopOf="@+id/tv_nectar_value"
+                            app:layout_constraintLeft_toRightOf="@+id/line"
+                            android:textColor="@color/color_ffc147"
+                            android:textSize="@dimen/sp_16"
+                            tools:text="99999" />
+
+                        <TextView
+                            android:id="@+id/tv_live_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toLeftOf="@+id/tv_live_time"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_live_time"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="今日直播时长"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_14" />
+
+
+
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<!--
+                    <LinearLayout
+                        android:id="@+id/ll_watch_history"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/bg_dialog"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/include_certification_columns"
+                        app:layout_constraintWidth_percent="0.485">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:text="观看历史"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_16" />
+
+                        &lt;!&ndash;  直播历史   &ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_8"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginEnd="@dimen/dp_8"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:background="@drawable/bg_list"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/icon_anchor_list_label"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:text="直播历史"
+                                android:textColor="@color/text_33"
+                                android:textSize="@dimen/sp_14" />
+
+                            <com.fengwo.module_comment.widget.ClickableRecyclerView
+                                android:id="@+id/rv_anchor_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_12" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_15"
+                                android:drawableStart="@drawable/icon_expert_list_label"
+                                android:drawablePadding="@dimen/dp_5"
+                                android:text="i撩历史"
+                                android:textColor="@color/text_33"
+                                android:textSize="@dimen/sp_14" />
+
+                            <com.fengwo.module_comment.widget.ClickableRecyclerView
+                                android:id="@+id/rv_expert_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_12" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_live_time"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@drawable/bg_dialog"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/ll_watch_history"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/ll_watch_history"
+                        app:layout_constraintWidth_percent="0.485"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_15"
+                            android:text="直播记录"
+                            android:textColor="@color/text_33"
+                            android:textSize="@dimen/sp_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/dp_8"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginEnd="@dimen/dp_8"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:background="@drawable/bg_list"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp_10">
+
+                            &lt;!&ndash; 今日花蜜值  &ndash;&gt;
+                            <TextView
+                                android:id="@+id/tv_nectar_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_ffc147"
+                                android:textSize="@dimen/sp_16"
+                                tools:text="99999" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="今日花蜜值"
+                                android:textColor="@color/text_33"
+                                android:textSize="@dimen/sp_14" />
+
+                            &lt;!&ndash; 今日直播时长  &ndash;&gt;
+
+                            <TextView
+                                android:id="@+id/tv_live_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_15"
+                                android:textColor="@color/color_ffc147"
+                                android:textSize="@dimen/sp_16"
+                                tools:text="99999" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_5"
+                                android:text="今日直播时长"
+                                android:textColor="@color/text_33"
+                                android:textSize="@dimen/sp_14" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>-->
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

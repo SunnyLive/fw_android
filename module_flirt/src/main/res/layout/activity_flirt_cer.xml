@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+
+            <TextView
+                android:id="@+id/tv_audit_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:alpha="0"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_12"
+                tools:text="语音包含不雅语言，请注意文明用词"
+                android:gravity="center"
+                android:background="@color/red_ff5a6d"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_voice_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="语音设置"
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_audit_tip" />
+
+            <LinearLayout
+                android:id="@+id/ll_voice_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_voice_set">
+
+                <TextView
+                    android:id="@+id/tv_record_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="invisible" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    >
+
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_record_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_anchor_audio"
+                        android:layout_marginTop="@dimen/dp_10"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:visibility="visible"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_voice_record_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_anchor_audio_bg"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:orientation="horizontal"
+                        tools:visibility="gone"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_3"
+                        android:paddingBottom="@dimen/dp_3"
+                        android:paddingLeft="@dimen/dp_40"
+                        android:paddingRight="@dimen/dp_20">
+
+                        <ImageView
+                            android:id="@+id/iv_voice_wava"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_voice_card"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:id="@+id/tv_record_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="right|center"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="00:10"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_record_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_anchor_audio_del"
+                        app:layout_constraintLeft_toRightOf="@id/ll_voice_record_finish"
+                        app:layout_constraintRight_toRightOf="@id/ll_voice_record_finish"
+                        app:layout_constraintBottom_toTopOf="@id/ll_voice_record_finish"
+                        app:layout_constraintTop_toTopOf="@id/ll_voice_record_finish"
+                        android:visibility="visible" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="按住录音3s~30s"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginRight="@dimen/dp_60"
+                    android:layout_marginLeft="@dimen/dp_60"
+                    android:gravity="center"
+                    android:text="录制一段介绍语音（可以是介绍兴趣爱好，可以是唱几句歌等等）"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_divide_voice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:background="@color/gray_b3b2b2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_voice_record" />
+
+            <LinearLayout
+                android:id="@+id/ll_upload_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_divide_voice">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="照片/视频"
+                    android:textColor="@color/text_33"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(1~5张图片或视频，单个视频时长30s内)"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                app:layout_constraintTop_toBottomOf="@id/ll_upload_des" />
+
+            <View
+                android:id="@+id/view_divide_upload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/lin_F7F7F7"
+                android:layout_marginTop="@dimen/dp_20"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_upload"
+                />
+
+            <com.fengwo.module_comment.widget.MenuItem
+                android:id="@+id/menu_shenfen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_divide_upload"
+                app:menu_icon="@drawable/icon_anchor_id_card"
+                app:menu_right_text_color="@color/text_99"
+                app:menu_title="身份" />
+
+            <View
+                android:id="@+id/view_divide_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="@color/normal_bg1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_shenfen"
+                />
+
+
+            <com.fengwo.module_comment.widget.MenuItem
+                android:id="@+id/menu_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view_divide_1"
+                app:menu_icon="@drawable/icon_anchor_label"
+                app:menu_right_text_color="@color/text_99"
+                app:menu_title="标签" />
+
+            <TextView
+                android:id="@+id/tv_flirt_cer_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_18"
+                android:layout_marginBottom="@dimen/dp_52"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_15"
+                android:background="@drawable/bg_choose_flirt_btn"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/menu_tag"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

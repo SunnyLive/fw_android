@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource,ResourceName">
+
+    <com.zhihu.matisse.internal.ui.widget.RoundedRectangleImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_000000"
+        android:textSize="@dimen/sp_14"
+        android:padding="@dimen/dp_5"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@drawable/ic_video_share"/>
+
+    </LinearLayout>
+
+</LinearLayout>

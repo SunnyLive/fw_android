@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/dp_25"
+    android:paddingRight="@dimen/dp_25"
+    android:paddingTop="@dimen/dp_26"
+    android:paddingBottom="@dimen/dp_30"
+    android:background="@drawable/shape_white_corner"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/text_33"
+        android:text="提示"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_33"
+        android:text="申请提交成功，确认提交注销申请后，存在7天审核期，7天内可申请撤回注销。"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_gravity="center"/>
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_44"
+        android:layout_marginRight="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="知道了"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        app:gtv_start_color="@color/purple_9966ff"
+        app:gtv_end_color="@color/purple_9966ff"/>
+
+
+</LinearLayout>

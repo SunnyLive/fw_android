@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frame_view"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_push_end_back"
+    android:orientation="vertical">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/pk_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll_pk_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_280"
+            android:layout_marginTop="@dimen/dp_100"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/fl_pk_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#666666">
+
+                <com.tencent.rtmp.ui.TXCloudVideoView
+                    android:id="@+id/pk_main_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:id="@+id/iv_pk_result_left"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_6"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_pk_fail"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_pk_result_left_end"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:src="@drawable/ic_pk_fail"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/pb_mine"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_pk_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#666666">
+
+                <com.tencent.rtmp.ui.TXCloudVideoView
+                    android:id="@+id/pk_other_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_pk_result_right"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_6"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_pk_fail"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_pk_result_right_end"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:src="@drawable/ic_pk_fail"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/pb_other"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    android:background="@drawable/live_bg_topview_left">
+
+                    <TextView
+                        android:id="@+id/tv_pk_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxWidth="@dimen/dp_65"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_11" />
+
+                    <com.fengwo.module_comment.widget.GradientTextView
+                        android:id="@+id/tv_pk_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_3"
+                        android:text="关注"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_10"
+                        app:gtv_end_color="@color/purple_9966ff"
+                        app:gtv_start_color="@color/purple_9966ff" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_pk_video_view"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view_score_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/live_bg_score_mine" />
+
+                <View
+                    android:id="@+id/view_score_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/live_bg_score_ohters" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_score_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="我方 0"
+                android:textColor="@color/text_white" />
+
+            <TextView
+                android:id="@+id/tv_score_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="0 对方"
+                android:textColor="@color/text_white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fl_score"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/shape_alpha_70_black"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_2"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            android:id="@+id/tv_we_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_time"
+            android:background="@drawable/bg_we_team_score"
+            android:gravity="center"
+            android:text="我方票数"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_other_team_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_time"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_other_team_score"
+            android:gravity="center"
+            android:text="对方票数"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fl_score">
+
+            <RelativeLayout
+                android:id="@+id/rl_pk_team_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:background="@drawable/bg_pk_team"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_we_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_10" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_other_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_10" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_vs_bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pk_single_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:background="@drawable/bg_pk_team"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_hot_we"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_hot_we"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_pk_hot_we"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/dp_13"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:scaleType="fitCenter"
+                        android:text="45"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_8" />
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:duplicateParentState="true">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_we_single"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/iv_wipe_we"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bg_wipe" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hot_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:duplicateParentState="true">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_other_single"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right" />
+
+                        <ImageView
+                            android:id="@+id/iv_wipe_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bg_wipe" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_hot_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_pk_hot_other"
+                        android:duplicateParentState="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_15"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:scaleType="fitCenter"
+                        android:text="45"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_8" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_vs_bottom" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+<!--预加载占位图-->
+    <FrameLayout
+        android:id="@+id/fl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <androidx.constraintlayout.widget.Placeholder
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <com.fengwo.module_live_vedio.widget.RadarProgressView
+            android:id="@+id/radar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:rb_color="@android:color/white"
+            app:rb_duration="3000"
+            app:rb_radius="@dimen/dp_66"
+            app:rb_rippleAmount="2"
+            app:rb_scale="2"
+            app:rb_scale_rate="1.0"
+            app:rb_strokeWidth="@dimen/dp_2"
+            app:rb_type="strokeRipple" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header_loading"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_gravity="center"
+                android:src="@drawable/timg"
+                android:transitionName="room_img"/>
+
+            <TextView
+                android:id="@+id/tv_no_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="网络环境差\n请到其他直播间看看"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_18"
+                android:visibility="gone" />
+
+            <com.fengwo.module_comment.widget.GradientTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_14"
+                android:paddingTop="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_14"
+                android:paddingBottom="@dimen/dp_6"
+                android:text="点击重试"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_14"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

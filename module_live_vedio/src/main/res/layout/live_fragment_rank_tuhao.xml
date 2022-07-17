@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rank_tuhao"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_116"
+                    android:gravity="bottom|center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_header_second"
+                        android:layout_width="@dimen/dp_86"
+                        android:layout_height="@dimen/dp_86"
+                        android:layout_gravity="bottom|center" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/dp_90"
+                        android:layout_height="@dimen/dp_116"
+                        android:background="@drawable/bg_rank_tuhao_second"
+                        android:gravity="bottom|center" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_nick_second"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lines="1"
+                    android:gravity="center"
+                    android:maxLength="7"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_honey_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="50sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="@dimen/dp_145"
+                    android:gravity="bottom|center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_header_first"
+                        android:layout_width="@dimen/dp_106"
+                        android:layout_height="@dimen/dp_106"
+                        android:layout_gravity="bottom|center" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/dp_110"
+                        android:layout_height="@dimen/dp_145"
+                        android:background="@drawable/bg_rank_tuhao_first"
+                        android:gravity="bottom|center" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_nick_first"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lines="1"
+                    android:maxLength="7"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_honey_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_34"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_116"
+                    android:gravity="bottom|center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_header_third"
+                        android:layout_width="@dimen/dp_84"
+                        android:layout_height="@dimen/dp_84"
+                        android:layout_gravity="bottom|center" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/dp_90"
+                        android:layout_height="@dimen/dp_116"
+                        android:background="@drawable/bg_rank_tuhao_third"
+                        android:gravity="bottom|center" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_nick_third"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLength="7"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_honey_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textColor="@color/orange_F65E31"
+                    android:textSize="38sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

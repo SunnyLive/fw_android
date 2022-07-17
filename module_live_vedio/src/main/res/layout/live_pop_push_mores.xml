@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="@dimen/dp_11"
+    android:paddingBottom="@dimen/dp_50"
+    android:background="@drawable/shape_bottom_common_dialog"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="文字贴纸"
+        android:textColor="#D1D1D1"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tv_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_height="@dimen/dp_105">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="图片贴纸"
+        android:textColor="#D1D1D1"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pic_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_height="@dimen/dp_105">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

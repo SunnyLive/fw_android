@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_resetpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:menu_title="重置密码" />
+
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_bindphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:menu_right_text="未绑定"
+        app:menu_title="手机绑定" />
+
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_bindwechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:menu_right_text="未绑定"
+        app:menu_title="微信绑定" />
+
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_bindqq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:menu_right_text="未绑定"
+        app:menu_title="QQ绑定" />
+
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_bindcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu_right_text="未绑定"
+        app:menu_title="银行卡绑定" />
+    <com.fengwo.module_comment.widget.MenuItem
+        android:id="@+id/btn_cancel_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu_title="注销账号" />
+</LinearLayout>

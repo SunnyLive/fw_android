@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_354"
+    android:background="@drawable/bg_start_pk">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:padding="@dimen/dp_4"
+        android:visibility="gone"
+        android:src="@drawable/live_ic_close" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:layout_marginBottom="@dimen/dp_18"
+        android:padding="@dimen/dp_14">
+
+        <LinearLayout
+            android:id="@+id/ll_reject_pk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_118"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_start_pk_pop"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/dp_14"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/live_bg_check_start"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:text="拒绝接受邀请"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_138"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_start_pk_single"
+                android:layout_width="@dimen/dp_88"
+                android:layout_height="@dimen/dp_96"
+                android:scaleType="centerInside"
+                android:src="@drawable/live_single_pk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="单人pk"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_single_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/live_gradient_orange"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:text="随机匹配"
+
+
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_138"
+            android:layout_marginRight="@dimen/dp_30"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_start_pk_team"
+                android:layout_width="@dimen/dp_88"
+                android:layout_height="@dimen/dp_96"
+                android:scaleType="centerInside"
+                android:src="@drawable/live_team_pk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="组团pk"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_team_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/live_gradient_purple"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_10"
+                android:text="邀请主播"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ResourceName">
+
+    <FrameLayout
+        android:id="@+id/fl_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_score_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/live_bg_score_mine" />
+
+            <View
+                android:id="@+id/view_score_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/live_bg_score_ohters" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_score_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="我方 0"
+            android:textColor="@color/text_white" />
+
+        <TextView
+            android:id="@+id/tv_score_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="0 对方"
+            android:textColor="@color/text_white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_48"
+        android:background="@drawable/shape_alpha_70_black"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_3"
+        android:textColor="@color/text_white" />
+
+    <TextView
+        android:id="@+id/tv_we_team_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_we_team_score"
+        android:gravity="center"
+        android:text="我方票数"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_other_team_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_other_team_score"
+        android:gravity="center"
+        android:text="对方票数"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_score"
+        android:layout_marginTop="@dimen/dp_3">
+
+        <RelativeLayout
+            android:id="@+id/rl_pk_team_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pk_team"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_we_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_10"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_other_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_10"></androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vs_bottom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pk_single_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pk_team"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_hot_we"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_hot_we"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_pk_hot_we"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:scaleType="fitCenter"
+                    android:text="45"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_8" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:duplicateParentState="true">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_we_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                    <ImageView
+                        android:id="@+id/iv_wipe_we"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bg_wipe" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hot_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:duplicateParentState="true">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_other_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right" />
+
+                    <ImageView
+                        android:id="@+id/iv_wipe_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bg_wipe" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_hot_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_pk_hot_other"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:scaleType="fitCenter"
+                    android:text="45"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_8" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_vs_bottom" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

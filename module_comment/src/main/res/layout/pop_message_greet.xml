@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rootContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:paddingBottom="@dimen/dp_30"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_height="300dp"
+            tools:layout_marginTop="@dimen/dp_50">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_134"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="我是小蜜蜂"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <!--    年龄-->
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:drawablePadding="@dimen/dp_4"
+                android:gravity="right"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_2"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_2"
+                android:text="25"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvName"
+                app:layout_constraintLeft_toRightOf="@+id/tvName"
+                app:layout_constraintTop_toTopOf="@+id/tvName"
+                tools:background="@drawable/shape_corner_boy"
+                tools:drawableLeft="@drawable/ic_boy"
+                tools:ignore="RtlHardcoded"
+                tools:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="非好友每天对同一人只能发送1条招呼"
+                android:textColor="#CACACA"
+                android:textSize="@dimen/sp_11"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tagMessageGreet" />
+
+            <TextView
+                android:id="@+id/tvGreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_45"
+                android:text="打招呼"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_marginTop="@dimen/dp_62" />
+
+            <ImageView
+                android:id="@+id/ivGreetUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:background="@drawable/ic_greet_update"
+                app:layout_constraintBottom_toBottomOf="@+id/tvGreet"
+                app:layout_constraintRight_toLeftOf="@+id/tvGreetUpdate"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvGreet" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:background="@drawable/ic_close_wish"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGreetUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:text="换一批"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/tvGreet"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvGreet" />
+
+            <com.fengwo.module_comment.widget.TagLayoutView
+                android:id="@+id/tagMessageGreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:background="@color/text_white_arr"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintTop_toBottomOf="@+id/tvGreet"
+                app:tag_row_space="@dimen/dp_10"
+                app:tag_tag_space="@dimen/dp_12"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <com.fengwo.module_comment.widget.multiImageview.MultiImageView
+                android:id="@+id/iv_header"
+                android:layout_width="@dimen/dp_94"
+                android:layout_height="@dimen/dp_89"
+                android:layout_gravity="center"
+                android:src="@drawable/live_home_default"
+                app:miv_border_color="@color/white"
+                app:miv_border_width="@dimen/dp_1"
+                app:miv_corner_radius="@dimen/dp_9"
+                app:miv_sides="6"
+                app:type="2" />
+
+            <ImageView
+                android:id="@+id/iv_header_bg"
+                android:layout_width="@dimen/dp_98"
+                android:layout_height="@dimen/dp_98"
+                android:layout_marginTop="@dimen/dp_2" />
+
+            <ImageView
+                android:id="@+id/iv_regimental"
+                android:layout_width="@dimen/dp_68"
+                android:layout_height="@dimen/dp_46"
+                android:layout_gravity="bottom|center"
+                android:src="@drawable/ic_regitament"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

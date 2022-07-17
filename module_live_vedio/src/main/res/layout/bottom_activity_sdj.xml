@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    app:cardCornerRadius="@dimen/dp_15"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:descendantFocusability="blocksDescendants">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="920dp">
+
+
+            <LinearLayout
+                android:id="@+id/im_top"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:background="@drawable/pic_sd_back_top"
+                android:orientation="vertical"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.opensource.svgaplayer.SVGAImageView
+                    android:id="@+id/im_sds_big"
+                    android:layout_width="178dp"
+                    android:layout_height="@dimen/dp_300"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="68dp"
+
+                    android:clipChildren="false"
+                    app:autoPlay="true"
+                    app:clearsAfterStop="true" />
+                <!--                <ImageView-->
+                <!--                    android:layout_width="@dimen/dp_178"-->
+                <!--                    android:layout_height="@dimen/dp_340"-->
+                <!--         -->
+                <!--                -->
+                <!--                    android:src="@drawable/pic_sds_one" />-->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_69"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/pic_sd_context"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_69"
+                        android:gravity="center"
+                      android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/im_gift"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentLeft="true"
+
+                            android:src="@drawable/pic_sd_wz" />
+
+                        <TextView
+                            android:id="@+id/tv_gift_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+
+                            android:text="1/00"
+                            android:textColor="@color/text_white_arr"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_zs"
+                    android:layout_width="@dimen/dp_110"
+                    android:layout_height="@dimen/dp_54"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:background="@drawable/bg_btnt_sd"
+
+                    android:gravity="center"
+                    android:textColor="@color/text_white_arr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:background="@drawable/pic_sd_back_btn"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_42"
+                android:paddingRight="@dimen/dp_42"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/im_top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_76"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_150"
+                        android:layout_height="@dimen/dp_104"
+                        android:src="@drawable/pic_sd_one_tree" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="甜心平安果"
+                        android:textColor="#ECE751"
+                        android:textSize="@dimen/sp_10" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp_67"
+                        android:layout_height="@dimen/dp_104"
+                        android:background="@drawable/pic_sd_backs">
+
+                        <ImageView
+                            android:id="@+id/im_one"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_one_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_14"
+                            android:text="0/100"
+                            android:textColor="#ECE751"
+                            android:textSize="@dimen/sp_8" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_150"
+                        android:layout_height="@dimen/dp_104"
+                        android:src="@drawable/pic_sd_two_tree" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_two_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="神秘礼袜"
+                        android:textColor="#ECE751"
+                        android:textSize="@dimen/sp_10" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp_67"
+                        android:layout_height="@dimen/dp_104"
+                        android:background="@drawable/pic_sd_backs">
+
+                        <ImageView
+                            android:id="@+id/im_two"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_two_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_14"
+                            android:text="0/100"
+                            android:textColor="#ECE751"
+                            android:textSize="@dimen/sp_8" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_28"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_150"
+                        android:layout_height="@dimen/dp_104"
+                        android:src="@drawable/pic_sd_three_tree" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_three_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="圣诞女神"
+                        android:textColor="#ECE751"
+                        android:textSize="@dimen/sp_10" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp_67"
+                        android:layout_height="@dimen/dp_104"
+                        android:background="@drawable/pic_sd_backs">
+
+
+                        <ImageView
+                            android:id="@+id/im_three"
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_activity_three_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dp_14"
+                            android:text="0/100"
+                            android:textColor="#ECE751"
+                            android:textSize="@dimen/sp_8" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@drawable/pic_sd_back_btn_btn"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/ll_btn" />
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/im_sds_back"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_422"
+                android:clipChildren="false"
+                app:autoPlay="true"
+
+                app:clearsAfterStop="true"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.cardview.widget.CardView>

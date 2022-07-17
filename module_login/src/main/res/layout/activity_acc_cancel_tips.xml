@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/normal_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_33"
+            android:text="开始注销前，请确认以下内容"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_66"
+            android:text="账号处于可注销状态"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/shape_circle_black"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_99"
+            android:text="已签署平台协议的账号，请先解除，之后才可进行注销。"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_66"
+            android:text="账号无任何资产或主动放弃资产"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/shape_circle_black"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_99"
+            android:text="账号资产包括但不限于花钻、花蜜值、花粉、道具、座驾、勋章、会员、待提现或提现待到账货币等相关内容。"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_66"
+            android:text="信息将被删除，账号将不可找回"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/shape_circle_black"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_99"
+            android:text="账号注销后，相关信息和作品等，例如您的动态、关注、私信等信息会被删除，且无法恢复。
+账号注销后，会在所有的设备上被登出，并且账号绑定手机、邮箱等相关信息将被释放，账号将无法登陆及找回账号。
+                            "
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_66"
+            android:text="账号注销申请流程"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/shape_circle_black"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/text_99"
+            android:text="确认提交注销申请后，存在7天审核期，若此期间没有申诉即可完成注销，如在此期间有非本人或误操作等原因找回账号，请联系客服申诉。"
+            android:drawablePadding="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_6"/>
+        
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:layout_marginLeft="@dimen/dp_42"
+            android:layout_marginRight="@dimen/dp_42"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/dp_80"
+            android:text="确认注销"
+
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

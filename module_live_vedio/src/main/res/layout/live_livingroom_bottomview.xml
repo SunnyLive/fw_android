@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_8">
+
+    <LinearLayout
+        android:id="@+id/ll_talk_root"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:src="@drawable/pic_room_talk" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/im_moer"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:src="@drawable/pic_room_gd" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_8"
+        android:gravity="center_horizontal|center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_shop"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/live_ic_shop"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/btn_sixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live_ic_sixin"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live_ic_share"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live_ic_more"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_toutiao"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_20"
+        android:src="@drawable/live_ic_toutiao" />
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/btn_qipao"-->
+    <!--            android:layout_width="@dimen/dp_35"-->
+    <!--            android:layout_height="@dimen/dp_30"-->
+    <!--            android:layout_marginRight="@dimen/dp_20"-->
+    <!--            android:src="@drawable/live_ic_feizao" />-->
+
+    <ImageView
+        android:id="@+id/v_game"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_20"
+        android:src="@drawable/ic_game" />
+
+    <ImageView
+        android:id="@+id/btn_sendgift"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_37"
+        android:layout_marginRight="@dimen/dp_20"
+        android:src="@drawable/live_ic_gift" />
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_14"
+        android:src="@drawable/ic_user_live_close" />
+</LinearLayout>

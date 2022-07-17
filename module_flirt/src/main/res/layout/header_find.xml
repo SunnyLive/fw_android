@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_17"
+    android:paddingRight="@dimen/dp_17"
+    android:background="@drawable/bg_find_header">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_find_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:orientation="horizontal" />
+    <TextView
+        android:id="@+id/tv_find_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_14"
+        android:layout_gravity="center_vertical|right"
+        android:drawablePadding="@dimen/dp_7"
+        android:textColor="@color/text_white"
+        android:drawableRight="@drawable/ic_find_go"
+        android:text="去看看"/>
+</LinearLayout>

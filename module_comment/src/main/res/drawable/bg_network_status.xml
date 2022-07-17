@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:karl="http://schemas.android.com/apk/res-auto">
+    <item karl:state_high="true">
+        <bitmap android:gravity="end" android:src="@drawable/ic_network_high" />
+    </item>
+    <item karl:state_middle="true">
+        <bitmap android:gravity="end" android:src="@drawable/icon_network_middle" />
+    </item>
+    <item karl:state_low="true">
+        <bitmap android:gravity="end" android:src="@drawable/icon_network_low" />
+    </item>
+</selector>
+

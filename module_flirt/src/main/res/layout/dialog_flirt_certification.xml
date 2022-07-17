@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_white_corner"
+    android:layout_marginLeft="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_12"
+    android:padding="@dimen/dp_20">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:src="@drawable/ic_close_gray_x"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/dp_6"
+        android:paddingBottom="@dimen/dp_6"/>
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_below="@id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_33"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:gravity="center"/>
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_sure"
+        android:layout_below="@id/tv_des"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        app:gtv_text_color="@color/text_white"
+        />
+
+</RelativeLayout>

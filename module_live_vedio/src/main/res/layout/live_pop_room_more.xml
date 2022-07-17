@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_161"
+    android:background="@drawable/shape_bottom_room_common_dialog">
+
+    <ImageView
+        android:id="@+id/im_sx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_marginTop="@dimen/dp_21"
+        android:src="@drawable/pic_room_sx"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="私信"
+        android:textColor="@color/text_33"
+        app:layout_constraintLeft_toLeftOf="@+id/im_sx"
+        app:layout_constraintRight_toRightOf="@id/im_sx"
+        app:layout_constraintTop_toBottomOf="@+id/im_sx" />
+
+    <ImageView
+        android:id="@+id/im_fx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_21"
+        android:src="@drawable/pic_fx"
+        app:layout_constraintLeft_toRightOf="@id/im_sx"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="分享"
+        android:textColor="@color/text_33"
+        app:layout_constraintLeft_toLeftOf="@+id/im_fx"
+        app:layout_constraintRight_toRightOf="@id/im_fx"
+        app:layout_constraintTop_toBottomOf="@+id/im_fx" />
+
+    <ImageView
+        android:id="@+id/im_dh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_21"
+        android:src="@drawable/pic_dh_clone"
+        app:layout_constraintLeft_toRightOf="@id/im_fx"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_dh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_7"
+        android:text="关闭动画"
+        android:textColor="@color/text_33"
+        app:layout_constraintLeft_toLeftOf="@+id/im_dh"
+        app:layout_constraintRight_toRightOf="@id/im_dh"
+        app:layout_constraintTop_toBottomOf="@+id/im_dh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

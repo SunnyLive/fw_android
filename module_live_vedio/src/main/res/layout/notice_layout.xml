@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_notice"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--头条-->
+
+        <include
+            android:id="@+id/view_toutiao"
+            layout="@layout/live_item_toutiao"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_32"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            tools:visibility="visible" />
+        <!--公告-->
+        <include
+            android:id="@+id/view_annoucement"
+            layout="@layout/live_item_annoucement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_54"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <!--直播间公告-->
+        <include
+            android:id="@+id/view_notice"
+            layout="@layout/add_notice_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_54"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <!--守护-->
+        <include
+            android:id="@+id/view_buyguard"
+            layout="@layout/live_item_buyguard"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+</LinearLayout>

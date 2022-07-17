@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="@dimen/dp_40"
+    android:layout_height="@dimen/dp_40"
+    android:layout_marginBottom="@dimen/dp_8"
+    app:cardBackgroundColor="@color/text_white"
+    app:cardCornerRadius="@dimen/dp_8"
+    tools:layout_gravity="center">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/iv_chat_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/dp_2"
+        android:src="@drawable/timg"
+        app:radius="@dimen/dp_8" />
+</androidx.cardview.widget.CardView>

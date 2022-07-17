@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+//    compile(name: 'LiteAVSDK_UGC', ext: 'aar')
+//    implementation(name: 'libsuperplayer', ext: 'aar')
+   // implementation(name: 'LiteAVSDK_Enterprise_6.8.7969', ext: 'aar')
+  //  api(name: 'LiteAVSDK_Smart_8.3.9881', ext: 'aar')
+//    compile "com.android.support:appcompat-v7:$rootProject.ext.android.supportSdkVersion"
+//    compile "com.android.support:recyclerview-v7:$rootProject.ext.android.supportSdkVersion"
+    implementation project(':module_comment')
+
+    api 'com.squareup.okhttp3:okhttp:3.9.0'
+    api 'androidx.multidex:multidex:2.0.0'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+//    api project(path: ':libsuperplayer')
+}

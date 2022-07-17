@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alpha20_black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_29">
+
+    <!--内容-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_17"
+        android:background="@drawable/bg_radius_top_qr"
+        android:paddingBottom="@dimen/dp_21"
+        android:visibility="visible">
+        <!--背景-->
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dp_65"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_qr_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--标题-->
+        <ImageView
+            android:id="@+id/iv_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_28"
+            android:src="@drawable/ic_qr_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--头像框-->
+        <LinearLayout
+            android:id="@+id/ll_avator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/bg_qr_radius_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_23"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_titile">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_avator"
+                android:layout_width="@dimen/dp_108"
+                android:layout_height="@dimen/dp_108"
+                android:src="@drawable/default_head" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="回忆终究是一个过去"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_27"
+                android:layout_marginTop="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_27"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="我在蜂窝直播，扫码查看我的资料和动态吧～"
+                android:textColor="@color/gray_999999"
+                android:textSize="@dimen/sp_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/ic_qr_id_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_8">
+
+                <TextView
+                    android:id="@+id/tvFwId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="896130"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_24"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蜂窝号ID"
+                    android:textColor="@color/gray_999999"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--二维码-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_bg"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/dp_12"
+            app:layout_constraintLeft_toLeftOf="@+id/ll_avator"
+            app:layout_constraintTop_toBottomOf="@+id/ll_avator">
+
+            <ImageView
+                android:id="@+id/ivQrCode"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:layout_gravity="center"
+                android:src="@drawable/default_head" />
+        </androidx.cardview.widget.CardView>
+        <!--文字-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_22"
+            app:layout_constraintLeft_toLeftOf="@+id/tvShare"
+            app:layout_constraintRight_toRightOf="@+id/ll_avator"
+            app:layout_constraintTop_toTopOf="@+id/cv_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="我"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="的"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="网"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="红"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="生"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="活"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <!--分享-->
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@drawable/bg_qr_share"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="分享给好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_bg"
+            app:layout_constraintLeft_toRightOf="@+id/cv_bg" />
+        <!--保存-->
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@drawable/bg_qr_share_yellow"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="保存图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_bg"
+            app:layout_constraintRight_toRightOf="@+id/ll_avator" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--关闭-->
+    <ImageView
+        android:id="@+id/iv_close_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/dp_14"
+        android:src="@drawable/ic_close_qr" />
+
+</LinearLayout>

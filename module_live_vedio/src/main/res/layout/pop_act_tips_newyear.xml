@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_315"
+    android:layout_height="@dimen/dp_342"
+    android:background="@drawable/pic_sd_back"
+    android:orientation="vertical">
+    <!--    android:background="@drawable/bg_pop_tips"-->
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_53"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_old"
+                android:layout_width="@dimen/dp_83"
+                android:layout_height="@dimen/dp_83"
+                android:background="@drawable/pic_newyear_backs" />
+
+            <TextView
+                android:id="@+id/tv_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="w"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:id="@+id/tv_old_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="w"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_28"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_28"
+            android:src="@drawable/pic_zh" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_new"
+                android:layout_width="@dimen/dp_83"
+                android:layout_height="@dimen/dp_83"
+                android:background="@drawable/pic_newyear_backs" />
+
+            <TextView
+                android:id="@+id/tv_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="w"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+            <TextView
+                android:id="@+id/tv_new_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="w"
+                android:textColor="@color/text_white_arr"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_1"
+        android:layout_marginLeft="@dimen/dp_37"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_37"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="[幸运袜]已变身[许愿棒]在我\n的[背包]可查询"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_14" />
+<TextView
+    android:id="@+id/tv_zdl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/dp_15"
+    android:layout_below="@+id/context"
+    android:text="我知道了"
+    android:gravity="center"
+    android:textSize="@dimen/sp_16"
+    android:textColor="@color/text_white_arr"
+    android:background="@drawable/pic_sd_zdl"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_53"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_xyw" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginRight="@dimen/dp_18"
+            android:src="@drawable/pic_zh" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_xyb" />
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:src="@mipmap/pic_clone_y_bai" />
+
+</RelativeLayout>

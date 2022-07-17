@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="花钻"
+                android:textColor="@color/text_33"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/tv_huazuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3410"
+                android:textColor="@color/tab_primary_Dark"
+                android:textSize="@dimen/sp_22" />
+        </LinearLayout>
+
+        <!--        <View-->
+        <!--            android:layout_width="@dimen/dp_1"-->
+        <!--            android:layout_height="@dimen/dp_35"-->
+        <!--            android:background="#E8E8E8" />-->
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="可提取"-->
+        <!--                android:textColor="@color/text_33"-->
+        <!--                android:textSize="@dimen/sp_18" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_tiqu"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="3410"-->
+        <!--                android:textColor="@color/purple_9966ff"-->
+        <!--                android:textSize="@dimen/sp_22" />-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <com.fengwo.module_comment.widget.MenuItem
+            android:id="@+id/btn_tomygift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            app:menu_title="收到礼物" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/normal_bg" />
+
+        <com.fengwo.module_comment.widget.MenuItem
+            android:id="@+id/btn_tosendgift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            app:menu_title="送出礼物" />
+
+    </LinearLayout>
+
+</LinearLayout>

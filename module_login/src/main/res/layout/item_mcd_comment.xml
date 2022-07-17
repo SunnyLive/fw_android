@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/text_33"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/iv_head"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        tools:text="张三" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_mine"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/dp_10"-->
+<!--        android:background="@drawable/shape_pink_stoke_corner"-->
+<!--        android:paddingLeft="@dimen/dp_10"-->
+<!--        android:paddingTop="@dimen/dp_2"-->
+<!--        android:paddingRight="@dimen/dp_10"-->
+<!--        android:paddingBottom="@dimen/dp_2"-->
+<!--        android:text="我"-->
+<!--        android:textColor="@color/red_FE3ACE"-->
+<!--        android:textSize="@dimen/sp_12"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/tv_name"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/tv_name"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/tv_name" />-->
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:text="10分钟前" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/text_66"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        tools:text="sadfasfdasfasfd" />
+
+    <TextView
+        android:id="@+id/tv_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_head"
+        tools:text="99" />
+
+    <ImageView
+        android:id="@+id/iv_find_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:src="@drawable/icon_mine_card_islike"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_like_count"
+        app:layout_constraintRight_toLeftOf="@+id/tv_like_count"
+        app:layout_constraintTop_toTopOf="@+id/tv_like_count" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:background="@color/gray_C8C8C8"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

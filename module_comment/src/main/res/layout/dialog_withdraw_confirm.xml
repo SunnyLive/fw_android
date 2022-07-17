@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/x562"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18"
+    android:paddingBottom="@dimen/dp_16"
+    android:background="@drawable/bg_confirm_dialog">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_38"
+        android:gravity="center"
+        android:text="确保账户安全，请先主播认证，认证通过后再绑定银行卡"
+        android:textColor="@color/btn_live_photo_text"
+        android:textSize="@dimen/x30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:paddingTop="@dimen/dp_11"
+        android:paddingBottom="@dimen/dp_11"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_21"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        android:background="@drawable/bg_dialog_radius"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="取消"/>
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:paddingTop="@dimen/dp_11"
+        android:paddingBottom="@dimen/dp_11"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp_21"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        android:background="@drawable/radius_purple_bg"
+        android:textColor="@color/text_white"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="立即认证"/>
+
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_21"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        android:textColor="@color/purple_9966ff"
+        android:text="知道了"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

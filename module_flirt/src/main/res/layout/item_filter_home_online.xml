@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_6"
+    android:layout_marginRight="@dimen/dp_6">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/ivGallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x330"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/dp_20"
+        app:radius="8dp"
+        android:background="@drawable/bg_iliao_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x330"
+    android:scaleType="centerCrop"
+    android:layout_marginTop="@dimen/dp_20"
+
+    android:background="@drawable/bg_iliao_img"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvSignaturea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="@color/alpha_3d3b4ad9"
+        android:textSize="@dimen/sp_13"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivGallery"
+        app:layout_constraintStart_toStartOf="@+id/ivGallery"
+        app:layout_constraintTop_toBottomOf="@+id/ivGallery" />
+
+    <com.fengwo.module_flirt.UI.DrawTextView
+        android:id="@+id/tvNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y12"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:maxLines="1"
+        android:drawablePadding="@dimen/x10"
+        android:text="你在一起爱是和你在一起"
+        android:textColor="@color/gray_666666"
+        android:textSize="@dimen/x24"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/ivGallery"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignaturea" />
+
+
+    <LinearLayout
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/tvNickName"
+        app:layout_constraintEnd_toEndOf="@+id/ivGallery"
+
+        android:background="@drawable/bg_gender"
+        android:paddingStart="@dimen/x6"
+        android:paddingTop="@dimen/x4"
+
+        android:paddingEnd="@dimen/x6"
+        android:paddingBottom="@dimen/x4">
+        <ImageView
+            android:id="@+id/im_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gender"/>
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="15"
+            android:textSize="@dimen/x20"
+            android:textColor="@color/text_white_arr"/>
+        <ImageView
+            android:id="@+id/im_gif"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_3"
+            android:layout_width="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_height="@dimen/dp_10"/>
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/containerPlayerTag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x8"
+        android:layout_marginEnd="@dimen/x8"
+
+        android:layout_marginBottom="@dimen/y12"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGallery"
+        app:layout_constraintEnd_toEndOf="@+id/ivGallery"
+        app:layout_constraintStart_toStartOf="@+id/ivGallery" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

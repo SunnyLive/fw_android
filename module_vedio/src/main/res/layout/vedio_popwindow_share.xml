@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vedio_bg_smallvedio_grey_pop"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="40px"
+        android:text="分享到"
+        android:textColor="@color/text_33"
+        android:textSize="32px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px">
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_share_weixin"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/weixin" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_share_weixincircle"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/weixin_circle" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_share_qq"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/qq" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_share_weibo"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/weibo" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_share_qqcircle"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/qq_circle" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="50px"
+        android:layout_height="1px"
+        android:background="#E3E3E3" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="30px">
+
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_garbage"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/vedio_icons_all" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_start_normal"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/vedio_icons_hot" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout style="@style/vedio_sharepopwindow_ll">
+
+            <ImageView
+                style="@style/vedio_sharepopwindow_btn"
+                android:src="@drawable/ic_report"
+                app:layout_auto_basewidth="height" />
+
+            <TextView
+                style="@style/vedio_sharepopwindow_tv"
+                android:text="@string/vedio_icons_new" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

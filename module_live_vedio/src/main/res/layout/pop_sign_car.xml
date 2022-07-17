@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shape_white_corner"
+    android:paddingLeft="@dimen/dp_30"
+    android:paddingRight="@dimen/dp_30"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_motor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_33"
+        android:text="恭喜获得冰雪龙吟座驾*30天"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_32"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢您为主播助力，可在【我的座驾】中选择使用"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_12"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/iv_sign_car"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_sure"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="知道了"
+        android:textColor="@color/text_white"
+        android:gravity="center"/>
+
+</LinearLayout>

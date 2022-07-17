@@ -1,0 +1,31 @@
+<resources>
+
+    <!--    短片fragment  start-->
+    <!--    热门主题下 icons标题-->
+    <string name="vedio_icons_all">全部</string>
+    <string name="vedio_icons_hot">热点</string>
+    <string name="vedio_icons_new">最新</string>
+    <!--    短片fragment  end -->
+
+    <!--   广场fragment start -->
+    <string name="vedio_rank">短片排行</string>
+    <!--   广场fragment end -->
+
+<!--    vedio_activity_smallauthor_detail-->
+
+    <!--    vedio_activity_shorty_vedio-->
+
+    <!--    vedio_activity_search-->
+    <string name="vedio_search_hint">搜索你感兴趣的</string>
+    <string name="vedio_search_history">历史搜索</string>
+    <string name="vedio_search_guess">猜你想搜索</string>
+    <string name="video_related">相关视频</string>
+    <string name="video_related_short">相关短片</string>
+    <string name="vedio_search_cancel">取消</string>
+    <string name="vedio_serach_filter">筛选</string>
+    <string name="video_search_result_all">查看全部</string>
+    <string name="input_search_content">请输入搜索内容</string>
+    <string name="video_search_all">全部视频</string>
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_integral"
+    android:orientation="vertical"
+    android:gravity="left|bottom"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:text="积分"
+        android:textColor="@color/text_white"/>
+
+    <TextView
+        android:id="@+id/tv_integral_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:textSize="@dimen/sp_12"
+        android:text="排名"
+        android:textColor="@color/text_white"/>
+</LinearLayout>

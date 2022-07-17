@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_push_end_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_46"
+        android:gravity="center_horizontal"
+        android:text="直播已结束"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_17" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dp_69"
+        android:layout_height="@dimen/dp_69"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_27"
+        android:src="@drawable/ic_difengduijue"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_horizontal"
+        android:text="影子"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_17" />
+
+    <TextView
+        android:id="@+id/tv_attention"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_34"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@drawable/shape_gray_corner"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_48"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="观看人数"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_look_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="2000"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_17" />
+
+
+            <TextView
+                android:id="@+id/tv_honey_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_44"
+                android:text="2000"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_17"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_honey_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="直播时长"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="直播时长"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="2000"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_18" />
+
+                <TextView
+                    android:id="@+id/tv_new_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_44"
+                    android:text="2000"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_18"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_new_fans_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="新增粉丝"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_89"
+        android:layout_marginTop="@dimen/dp_200"
+        android:layout_marginRight="@dimen/dp_89"
+        android:gravity="center"
+        android:text="返回首页"
+        android:textColor="@color/text_white"
+        android:textSize="18sp" />
+
+</LinearLayout>

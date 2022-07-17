@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_15"
+    android:clipToPadding="false">
+
+
+
+        <!--垃圾Xbanner先用着，弄好设计稿边距-->
+        <com.fengwo.module_chat.widgets.xbanner.XBanner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_195"
+            app:AutoPlayTime="3000"
+            app:clipChildrenTopBottomMargin="@dimen/dp_10"
+            app:isAutoPlay="false"
+            app:isClipChildrenMode="true"
+            app:isHandLoop="true"
+            app:isShowIndicatorOnlyOne="true"
+            app:isShowNumberIndicator="false"
+            app:pageChangeDuration="800"
+            app:pointNormal="@drawable/oval_grayf6"
+            app:pointSelect="@drawable/xbanner_shape_point_select"
+            app:pointTopBottomPadding="@dimen/dp_0"
+            app:pointsContainerBackground="@android:color/transparent"
+            app:pointsPosition="CENTER" />
+
+
+
+</FrameLayout>

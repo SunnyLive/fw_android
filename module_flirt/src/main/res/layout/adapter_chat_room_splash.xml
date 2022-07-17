@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_splash"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:background="@drawable/chat_splash_text_bg"
+        android:padding="@dimen/dp_8"
+        android:gravity="center"
+        tools:text="欢迎进入某某某的心动小屋，开启我们的缘分"
+        android:textColor="@color/text_white_arr"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_33"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:src="@drawable/ic_chat_splash_room"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_splash"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

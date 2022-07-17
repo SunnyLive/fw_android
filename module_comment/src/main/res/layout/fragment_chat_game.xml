@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/iv_caiquan"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:drawableTop="@drawable/ic_finger_guessing"
+        android:gravity="center"
+        android:text="猜拳"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_11" />
+
+    <TextView
+        android:id="@+id/iv_touzi"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:drawableTop="@drawable/ic_touzi"
+        android:gravity="center"
+        android:text="掷骰子"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_11" />
+
+</LinearLayout>

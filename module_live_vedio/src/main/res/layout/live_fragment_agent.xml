@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar" />
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:text="全民经纪人榜单"
+                android:textColor="@color/text_33"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:background="@drawable/live_bg_broker"
+                android:paddingBottom="@dimen/dp_10">
+
+                <RelativeLayout
+                    android:id="@+id/rl_rank_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_9">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/broker_one_avatar"
+                        android:layout_width="@dimen/dp_106"
+                        android:layout_height="@dimen/dp_106"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_38"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_head" />
+
+                    <ImageView
+                        android:id="@+id/iv_one"
+                        android:layout_width="@dimen/dp_109"
+                        android:layout_height="@dimen/dp_144"
+                        android:src="@drawable/broker_rank_one" />
+
+                    <TextView
+                        android:id="@+id/broker_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_one"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="王牌.."
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/tv_fengmizhi_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/broker_one_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="蜂蜜值"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/broker_one_follow"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_fengmizhi_one"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/shape_white_cornerbig"
+                        android:gravity="center"
+                        android:text="+关注"
+                        android:textColor="@color/purple_9966ff"
+                        android:textSize="@dimen/sp_10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@+id/rl_rank_one"
+                    android:gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/broker_two_avatar"
+                        android:layout_width="@dimen/dp_84"
+                        android:layout_height="@dimen/dp_84"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_29"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_head" />
+
+                    <ImageView
+                        android:id="@+id/iv_two"
+                        android:layout_width="@dimen/dp_88"
+                        android:layout_height="@dimen/dp_115"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/broker_rank_two" />
+
+                    <TextView
+                        android:id="@+id/broker_two_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_two"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="王牌.."
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/tv_fengmizhi_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/broker_two_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="蜂蜜值"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/broker_two_follow"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_fengmizhi_two"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/shape_white_cornerbig"
+                        android:gravity="center"
+                        android:text="+关注"
+                        android:textColor="@color/purple_9966ff"
+                        android:textSize="@dimen/sp_10" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="36dp"
+                    android:layout_toRightOf="@+id/rl_rank_one"
+                    android:gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/broker_three_avatar"
+                        android:layout_width="@dimen/dp_84"
+                        android:layout_height="@dimen/dp_84"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_29"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_head" />
+
+                    <ImageView
+                        android:id="@+id/iv_three"
+                        android:layout_width="@dimen/dp_88"
+                        android:layout_height="@dimen/dp_115"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/broker_rank_three" />
+
+                    <TextView
+                        android:id="@+id/broker_three_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_three"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="王牌.."
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/tv_fengmizhi_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/broker_three_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="蜂蜜值"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/sp_10" />
+
+                    <TextView
+                        android:id="@+id/broker_three_follow"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_fengmizhi_three"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/shape_white_cornerbig"
+                        android:gravity="center"
+                        android:text="+关注"
+                        android:textColor="@color/purple_9966ff"
+                        android:textSize="@dimen/sp_10" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!--今日收益表-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/broker_rl_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="今日收益表"
+                        android:textColor="@color/text_33"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:drawableRight="@drawable/broker_ic_rank_more"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:text="全部"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_13"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/broker_ll_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_63"
+                    android:layout_below="@+id/broker_rl_coin"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/live_broker_1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_yaoqing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:gravity="center"
+                            android:text="邀请人数"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/live_broker_2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_gongxiang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:gravity="center"
+                            android:text="共享经济"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/live_broker_3"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_xiaji"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:gravity="center"
+                            android:text="下级贡献人数"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/live_broker_4"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_shuali"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="刷礼总额"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.fengwo.module_comment.widget.GradientTextView
+                    android:id="@+id/iv_today_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_below="@+id/broker_ll_num"
+                    android:layout_marginLeft="@dimen/dp_37"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginRight="@dimen/dp_37"
+                    android:gravity="center"
+                    android:text="一键分享"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/sp_20"
+                    app:gtv_end_color="#FC902A"
+                    app:gtv_start_color="#FFBD0B" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

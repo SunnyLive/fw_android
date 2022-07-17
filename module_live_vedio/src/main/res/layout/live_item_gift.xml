@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_4"
+    android:layout_marginRight="@dimen/dp_4"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_8"
+    android:gravity="center"
+    android:background="@drawable/live_bg_gift_selected"
+    tools:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/timg" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        tools:text="名字啦啦啦" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="asdg"
+        android:textSize="@dimen/sp_9"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <LinearLayout
+        android:id="@+id/ll_price_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/ivDiamond"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/live_ic_diamond"
+            app:layout_constraintBottom_toBottomOf="@id/tv_price"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_price"
+            app:layout_constraintTop_toTopOf="@id/tv_price" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_4"
+            android:textColor="#AEADAF"
+            android:textSize="@dimen/sp_11"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivDiamond"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="jiage" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_gift_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dp_17"
+        android:minHeight="@dimen/dp_11"
+        android:paddingTop="@dimen/dp_1"
+        android:paddingBottom="@dimen/dp_1"
+        android:paddingStart="@dimen/dp_3"
+        android:paddingEnd="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_9"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_backpack_label" />
+
+
+    <TextView
+        android:id="@+id/tv_gift_validity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="222"
+        android:textSize="@dimen/sp_9"
+        android:textColor="#AEADAF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_price_parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_remain_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="222"
+        android:textSize="@dimen/sp_9"
+        android:textColor="@color/red_FE3C9C"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gift_validity_date"
+        />
+
+    <TextView
+        android:id="@+id/tv_btn_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingBottom="@dimen/dp_4"
+        android:background="@drawable/bg_gift_item_btn"
+        android:gravity="center"
+        android:textSize="@dimen/sp_9"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="续费"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gift_validity_date"/>
+
+    <TextView
+        android:id="@+id/tv_gift_date_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textSize="@dimen/sp_9"
+        android:textColor="@color/red_FE3C9C"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="18T"
+        android:layout_marginStart="@dimen/dp_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_btn_gift"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--直播界面-->
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_small_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_small_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@mipmap/ic_butter" />
+
+
+    <ImageView
+        android:id="@+id/btn_hide"
+        android:layout_width="@dimen/dp_52"
+        android:layout_height="@dimen/dp_22"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:src="@drawable/ic_hide" />
+
+</merge>

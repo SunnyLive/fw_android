@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="@dimen/dp_44"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/timg" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toTopOf="@id/tvDate"
+        app:layout_constraintLeft_toRightOf="@id/ivHeader"
+        app:layout_constraintTop_toTopOf="@id/ivHeader"
+        tools:text="宇宙无敌美男" />
+
+    <!--    年龄-->
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="right"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_2"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_2"
+        android:text="25"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintBottom_toBottomOf="@+id/tvName"
+        app:layout_constraintLeft_toRightOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="@+id/tvName"
+        tools:background="@drawable/shape_corner_boy"
+        tools:drawableLeft="@drawable/ic_boy"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:singleLine="true"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintLeft_toLeftOf="@id/tvName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        tools:text="20:26" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:background="@drawable/bg_greet_text"
+        android:paddingStart="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_8"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@id/tvDate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate"
+        tools:text="gdgdfggdgdgfdgd刚动过" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/gray_eeeeee"
+        app:layout_constraintLeft_toLeftOf="@+id/tvContent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.fengwo.module_comment.widget.AppTitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:atb_backIcon="@drawable/icon_back"
+        app:atb_moreIcon="@drawable/ic_share_white"
+        app:atb_title_color="@color/text_33"
+        app:atb_alpha_status_bar="true"
+        android:fitsSystemWindows="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_white_gray"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_12"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请文明发表评论~"
+            android:gravity="top"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/gray_999999"
+            android:paddingBottom="@dimen/dp_14"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_emoji_gray"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_2"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_appointment"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_20"
+    tools:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/tv_pop_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:drawableRight="@mipmap/ic_pop_go"
+        android:drawablePadding="@dimen/dp_5"
+        android:padding="@dimen/dp_7"
+        android:text="去充值"
+        android:textColor="@color/purple_9966ff"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pop_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_15"
+        android:drawableLeft="@mipmap/ic_masonry"
+        android:drawablePadding="@dimen/dp_5"
+        android:text="100"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pop_recharge"
+        app:layout_constraintRight_toLeftOf="@+id/tv_pop_recharge"
+        app:layout_constraintTop_toTopOf="@+id/tv_pop_recharge" />
+
+    <TextView
+        android:id="@+id/tv_pop_select_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择预约时段"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pop_recharge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_pop_recharge" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pop_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_25"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pop_recharge" />
+
+    <TextView
+        android:id="@+id/tv_pop_charge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_21"
+        android:gravity="center"
+        android:text="共500花钻"
+        android:textColor="@color/purple_9966ff"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_pop_time" />
+
+    <TextView
+        android:id="@+id/tv_pop_appointment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_7"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_7"
+        android:background="@drawable/rect_purple_round100"
+        android:gravity="center"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        android:text="确定预约"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toLeftOf="@+id/rv_pop_time"
+        app:layout_constraintRight_toRightOf="@+id/rv_pop_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pop_charge" />
+</androidx.constraintlayout.widget.ConstraintLayout>

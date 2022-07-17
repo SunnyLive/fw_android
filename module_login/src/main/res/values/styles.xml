@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/login_raitingbar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+
+    <style name="CustomTabLayoutTextAppearance" >
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <declare-styleable name="RatioImageView">
+        <!--宽度是否根据src图片的比例来测量（高度已知）-->
+        <attr name="is_width_fix_drawable_size_ratio" format="boolean"/>
+        <!--高度是否根据src图片的比例来测量（宽度已知）-->
+        <attr name="is_height_fix_drawable_size_ratio" format="boolean"/>
+        <!-- 高度设置，参考宽度，如0.5 , 表示 高度＝宽度×０.5 -->
+        <attr name="height_to_width_ratio" format="float"/>
+        <!-- 宽度设置，参考高度，如0.5 , 表示 宽度＝高度×０.5 -->
+        <attr name="width_to_height_ratio" format="float"/>
+
+        <attr name="round_radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+
+    <style name="MineDetailText" >
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_face_verify_tip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dp_14</item>
+        <item name="android:paddingEnd">@dimen/dp_14</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+    </style>
+    <style name="style_face_verify_activity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">@color/black_333333</item>
+        <item name="colorPrimaryDark">@color/black_333333</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+</resources>

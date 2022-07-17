@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <com.fengwo.module_comment.widget.RoundImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="@dimen/dp_94"
+        android:layout_height="@dimen/dp_94"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="@dimen/dp_8" />
+
+    <TextView
+        android:id="@+id/tv_recommend_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_33"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/iv_recommend"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="椰风寨海边民宿" />
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/ll_start_distance"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="@dimen/dp_110"-->
+    <!--        android:layout_marginTop="@dimen/dp_7"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/iv_recommend"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/tv_recommend_title">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/ll_start"-->
+    <!--            android:layout_width="11dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_recommend_distance"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:gravity="right"-->
+    <!--            android:text="5.3KM"-->
+    <!--            android:textColor="@color/black_000000"-->
+    <!--            android:textSize="11sp" />-->
+    <!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_recommend_des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="@id/tv_recommend_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_rate"
+        tools:text="教令肌肤啦发觉了房间爱上放假时间aljflaj发教令肌肤啦发觉了房间爱上放假时间aljflaj发" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        app:layout_constraintLeft_toLeftOf="@id/tv_recommend_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_recommend_title"
+        tools:layout_height="@dimen/dp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/gray_e1e1e1"
+        app:layout_constraintLeft_toLeftOf="@id/tv_recommend_title"
+        app:layout_constraintTop_toBottomOf="@id/iv_recommend" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_recommend"
+        app:layout_constraintLeft_toLeftOf="@id/tv_recommend_title"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_height="@dimen/dp_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

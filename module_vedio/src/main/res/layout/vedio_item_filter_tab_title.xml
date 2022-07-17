@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/vedio_bg_filter_tab_title"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20px"
+        android:paddingTop="13px"
+        android:paddingRight="20px"
+        android:paddingBottom="13px"
+        android:text="最近热播"
+        android:textColor="@drawable/vedio_color_filter_tab_title"
+        android:textSize="26px">
+
+    </TextView>
+</com.zhy.autolayout.AutoFrameLayout>

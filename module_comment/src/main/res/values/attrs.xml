@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="AutoTabLayout">
+        <attr name="auto_textSize_base_width" format="boolean"></attr>
+    </declare-styleable>
+
+
+    <!--应用标题栏-->
+    <declare-styleable name="AppTitleBar">
+        <attr name="atb_title" format="string" />
+        <attr name="atb_title_color" format="color" />
+        <attr name="atb_more_text" format="string" />
+        <attr name="atb_alpha_status_bar" format="boolean" />
+        <attr name="atb_more_text_color" format="color" />
+        <attr name="atb_backVisibility" format="boolean" />
+        <attr name="atb_moreVisibility" format="boolean" />
+        <attr name="atb_backIcon" format="reference" />
+        <attr name="atb_moreIcon" format="reference" />
+        <attr name="atb_backgroundColor" format="color" />
+        <attr name="atb_backgroundGradient" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="gtv_start_color" format="color" />
+        <attr name="gtv_end_color" format="color" />
+        <attr name="gtv_mid_color" format="color" />
+        <attr name="gtv_angle" format="integer" />
+        <attr name="gtv_radius" format="dimension" />
+        <attr name="gtv_text_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator" tools:ignore="ResourceName">
+        <attr name="vpi_selected_color" format="color|reference" />
+        <attr name="vpi_default_color" format="color|reference" />
+        <attr name="vpi_radius" format="dimension|reference" />
+        <attr name="vpi_radius_selected" format="dimension|reference" />
+        <attr name="vpi_length" format="dimension|reference" />
+        <attr name="vpi_distance" format="dimension|reference" />
+        <attr name="vpi_num" format="integer" />
+        <attr name="vpi_indicatorType">
+            <enum name="LINE" value="0" />
+            <enum name="CIRCLE" value="1" />
+            <enum name="CIRCLE_LINE" value="2" />
+            <enum name="BEZIER" value="3" />
+            <enum name="SPRING" value="4" />
+            <enum name="PROGRESS" value="5" />
+        </attr>
+        <attr name="vpi_distanceType">
+            <enum name="BY_RADIUS" value="0" />
+            <enum name="BY_DISTANCE" value="1" />
+            <enum name="BY_LAYOUT" value="2" />
+        </attr>
+        <attr name="vpi_animation" format="boolean" />
+    </declare-styleable>
+
+
+    <!--扩散圆颜色-->
+    <attr name="diffuse_color" format="color" />
+    <!--中心圆颜色-->
+    <attr name="diffuse_coreColor" format="color" />
+    <!--中心圆图片-->
+    <attr name="diffuse_coreImage" format="reference" />
+    <!--中心圆半径-->
+    <attr name="diffuse_coreRadius" format="float" />
+    <!--扩散圆宽度,值越小越宽-->
+    <attr name="diffuse_width" format="integer" />
+    <!--最大扩散宽度-->
+    <attr name="diffuse_maxWidth" format="integer" />
+    <!--扩散速度，值越大越快-->
+    <attr name="diffuse_speed" format="integer" />
+
+    <declare-styleable name="DiffuseView">
+        <attr name="diffuse_color" />
+        <attr name="diffuse_coreColor" />
+        <attr name="diffuse_coreImage" />
+        <attr name="diffuse_coreRadius" />
+        <attr name="diffuse_width" />
+        <attr name="diffuse_maxWidth" />
+        <attr name="diffuse_speed" />
+    </declare-styleable>
+
+    <declare-styleable name="TagTextView">
+        <attr name="ttv_start_color" format="color" />
+        <attr name="ttv_end_color" format="color" />
+        <attr name="background_type" format="enum">
+            <enum name="stroke" value="0" />
+            <enum name="fill" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FWBanner">
+        <attr name="fwb_selected_color" format="color|reference" />
+        <attr name="fwb_default_color" format="color|reference" />
+        <attr name="fwb_radius" format="dimension|reference" />
+        <attr name="fwb_radius_selected" format="dimension|reference" />
+        <attr name="fwb_length" format="dimension|reference" />
+        <attr name="fwb_distance" format="dimension|reference" />
+        <attr name="fwb_num" format="integer" />
+        <attr name="fwb_indicator_height" format="dimension|reference" />
+        <attr name="fwb_indicatorType">
+            <enum name="LINE" value="0" />
+            <enum name="CIRCLE" value="1" />
+            <enum name="CIRCLE_LINE" value="2" />
+            <enum name="BEZIER" value="3" />
+            <enum name="SPRING" value="4" />
+            <enum name="PROGRESS" value="5" />
+        </attr>
+        <attr name="fwb_distanceType">
+            <enum name="BY_RADIUS" value="0" />
+            <enum name="BY_DISTANCE" value="1" />
+            <enum name="BY_LAYOUT" value="2" />
+        </attr>
+        <attr name="fwb_animation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="menu_item">
+        <attr name="menu_icon" format="reference" />
+        <attr name="menu_title" format="string" />
+        <attr name="menu_right_text" format="string" />
+        <attr name="menu_right_text_color" format="color"/>
+        <attr name="menu_more_visibility" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="KsgLikeView">
+        <!-- 默认favor图片-->
+        <attr name="ksg_default_image" format="reference" />
+        <!-- 进入动画 时长-->
+        <attr name="ksg_enter_duration" format="integer" />
+        <!--贝赛尔曲线动画 时长-->
+        <attr name="ksg_curve_duration" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="MultiImageView">
+        <attr name="type" />
+        <attr name="miv_border_width" format="dimension" />
+        <attr name="miv_border_color" format="color" />
+        <attr name="miv_border_overlay" format="boolean" />
+        <attr name="miv_fill_color" format="color" />
+        <attr name="miv_corner_radius" format="dimension" />
+        <attr name="miv_sides" format="integer" />
+        <attr name="miv_rotate_angle" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundConstraintLayout">
+        <attr name="cl_cornerRadius" format="dimension" />
+        <attr name="cl_cornerRadius_leftTop" format="dimension" />
+        <attr name="cl_cornerRadius_leftBottom" format="dimension" />
+        <attr name="cl_cornerRadius_rightTop" format="dimension" />
+        <attr name="cl_cornerRadius_rightBottom" format="dimension" />
+        <attr name="cl_borderWidth" format="dimension" />
+        <attr name="cl_borderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progress" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
+
+    <declare-styleable name="FlowLinearLayout">
+        <attr name="columnCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="grivate" format="enum">
+            <!--对齐方式 !-->
+            <enum name="right" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="horizontal_Space" format="dimension"></attr>
+        <attr name="vertical_Space" format="dimension"></attr>
+        <attr name="isFull" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="RadiusCardView">
+        <!--        左上圆角大小-->
+        <attr name="rcv_topLeftRadiu" format="dimension" />
+        <!--        右上圆角大小-->
+        <attr name="rcv_topRightRadiu" format="dimension" />
+        <!--        右下圆角大小-->
+        <attr name="rcv_bottomRightRadiu" format="dimension" />
+        <!--        左下圆角大小-->
+        <attr name="rcv_bottomLeftRadiu" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="vericationCodeView">
+        <!--输入框的数量-->
+        <attr name="vcv_et_number" format="integer" />
+        <!--输入类型-->
+        <attr name="vcv_et_inputType">
+            <enum name="number" value="0" />
+            <enum name="numberPassword" value="1" />
+            <enum name="text" value="2" />
+            <enum name="textPassword" value="3" />
+        </attr>
+        <!--输入框的宽度-->
+        <attr name="vcv_et_width" format="dimension|reference" />
+        <!--输入框文字颜色-->
+        <attr name="vcv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="vcv_et_text_size" format="dimension|reference" />
+        <!--输入框背景-->
+        <attr name="vcv_et_bg" format="reference" />
+        <!--光标样式-->
+        <attr name="vcv_et_cursor" format="reference" />
+        <!--聚焦背景-->
+        <attr name="vcv_et_bg_focus" format="reference" />
+        <!--是否隐藏光标-->
+        <attr name="vcv_et_cursor_visible" format="boolean" />
+        <!--输入框间距，不输入则代表平分-->
+        <attr name="vcv_et_spacing" format="dimension|reference" />
+
+    </declare-styleable>
+    <!--应用标题栏-->
+    <declare-styleable name="EPlayerView">
+        <attr name="atb_type" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="NetWorkState">
+        <attr name="state_high" format="boolean"/>
+        <attr name="state_middle" format="boolean"/>
+        <attr name="state_low" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="MarqueeViewGroup">
+        <attr name="mvg_direction" format="integer">
+            <enum name="to_top" value="0"/>
+            <enum name="to_left" value="1"/>
+            <enum name="to_right" value="2"/>
+            <enum name="to_bottom" value="3"/>
+        </attr>
+        <attr name="mvg_duration" format="integer"/>
+        <attr name="isLooper" format="boolean"/>
+        <attr name="isFixed" format="boolean"/>
+    </declare-styleable>
+
+</resources>

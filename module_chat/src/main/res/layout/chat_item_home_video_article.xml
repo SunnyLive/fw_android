@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/gray_f6f6f6"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_video_article"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_10">
+
+
+
+        <ImageView
+            android:id="@+id/iv_snapshot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/purple_9B7CF1" />
+
+
+        <TextView
+            android:id="@+id/tv_article_name"
+            style="@style/TextStyle.MSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rect_alpha70_black_round5"
+            android:minLines="2"
+            android:padding="@dimen/dp_9"
+            android:text="s1231231232sdasdsadasdsadsadsadsadsadsadsadasdsadas1"
+            android:textColor="@color/text_white" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_video_play"/>
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

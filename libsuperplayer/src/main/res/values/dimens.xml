@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MEDIA CONTROLLER -->
+    <dimen name="media_controller_view_height">48dip</dimen>
+
+    <dimen name="live_btn_size">35dp</dimen>
+
+</resources>

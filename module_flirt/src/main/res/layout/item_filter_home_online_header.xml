@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_6"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <!-- <FrameLayout
+         android:id="@+id/bannerMarqueeMask"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/x426"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent">
+         <com.youth.banner.Banner
+             android:id="@+id/flirtBanner"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/x426"
+             android:background="@color/color_FE3C9C"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+     </FrameLayout>-->
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/flirtBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_190"
+        android:layout_margin="@dimen/dp_3"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/ll_pmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_1"
+            android:layout_marginRight="@dimen/dp_1"
+            android:background="@drawable/shape_banner_bg" />
+
+        <ImageView
+            android:id="@+id/im_pmd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_195"
+            android:src="@drawable/pic_banner_gif" />
+
+    </FrameLayout>
+
+
+    <com.fengwo.module_flirt.UI.BannerIndicator
+        android:id="@+id/bannerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y8"
+        android:layout_marginTop="@dimen/y12"
+        android:paddingBottom="@dimen/y2"
+        app:layout_constraintEnd_toEndOf="@+id/ll_pmd"
+        app:layout_constraintStart_toStartOf="@+id/ll_pmd"
+        app:layout_constraintTop_toBottomOf="@+id/ll_pmd" />
+
+
+    <!--<com.youth.banner.Banner
+        android:id="@+id/flirtBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x426"
+        android:background="@color/color_FE3C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fengwo.module_flirt.UI.BannerIndicator
+        android:id="@+id/bannerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y8"
+        android:layout_marginTop="@dimen/y12"
+        android:paddingBottom="@dimen/y2"
+        app:layout_constraintEnd_toEndOf="@+id/flirtBanner"
+        app:layout_constraintStart_toStartOf="@+id/flirtBanner"
+        app:layout_constraintTop_toBottomOf="@+id/flirtBanner" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

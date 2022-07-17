@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BASE_URL", "\"${BASE_URL}\""
+        buildConfigField "String", "BASE_PAY_URL", "\"${BASE_PAY_URL}\""
+        buildConfigField "String", "BASE_IM_URL", "\"${BASE_IM_URL}\""
+        buildConfigField "String", "BASE_IM_URL_WENBO", "\"${BASE_IM_URL_WENBO}\""
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    api rootProject.ext.dependencies['retrofit']
+    api rootProject.ext.dependencies['brvah']
+    implementation 'com.google.code.gson:gson:2.8.5'
+    api rootProject.ext.dependencies['brvah']
+    api rootProject.ext.dependencies['rxjava']
+//    api files('libs/autobahn-0.5.0.jar')
+//    implementation 'io.crossbar.autobahn:autobahn-android:18.5.1'
+}

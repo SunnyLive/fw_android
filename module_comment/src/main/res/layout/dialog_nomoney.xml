@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/bg_basedialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_30"
+        android:paddingBottom="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_warn"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:src="@drawable/ic_warming"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="余额不足"
+            android:textColor="@color/text_33"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_warn" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_19"
+            android:text="囊中羞涩，花钻不足"
+            android:textColor="@color/text_66"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/btn_cancle"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/rect_gray_round100"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_submit"
+            app:layout_constraintTop_toBottomOf="@id/tv_tip" />
+
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/btn_submit"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_23"
+            android:gravity="center"
+            android:text="获得花钻"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_18"
+
+            app:layout_constraintLeft_toRightOf="@id/btn_cancle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_cancle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

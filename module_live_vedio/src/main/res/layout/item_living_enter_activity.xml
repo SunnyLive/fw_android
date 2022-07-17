@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_enter_activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#bbD073FF"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_4"
+    android:visibility="visible"
+    app:layout_constraintRight_toLeftOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/rv_chat"
+    >
+
+
+    <ImageView
+        android:id="@+id/iv_angel"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:src="@drawable/ic_angel_0" />
+
+    <TextView
+        android:id="@+id/tv_angel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:singleLine="true"
+        android:text="欢迎告白天使实力守护 啦啦啦 登场"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_level"
+        android:layout_width="@dimen/dp_68"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:src="@drawable/ic_angel_0" />
+
+</LinearLayout>

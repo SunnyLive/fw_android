@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_roomid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="房间号：100001"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_level_now"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="@dimen/dp_12"-->
+<!--        android:layout_marginTop="@dimen/dp_64"-->
+<!--        android:text="直播暂时离开"-->
+<!--        android:textColor="@color/text_white"-->
+<!--        android:textSize="@dimen/sp_14"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/topview"-->
+<!--        tools:visibility="visible" />-->
+
+    <include
+        android:id="@+id/include_layout_live_end"
+        layout="@layout/activity_custom_live_end"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>

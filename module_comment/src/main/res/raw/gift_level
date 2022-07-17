@@ -1,0 +1,370 @@
+[
+      {
+        "levelId": 1,
+        "levelNextId": 2,
+        "levelName": "战士I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v1%403x.png",
+        "levelLowest": 0,
+        "levelHighest": 589
+      },
+      {
+        "levelId": 2,
+        "levelNextId": 3,
+        "levelName": "战士II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v2%403x.png",
+        "levelLowest": 590,
+        "levelHighest": 3499
+      },
+      {
+        "levelId": 3,
+        "levelNextId": 4,
+        "levelName": "战士III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v3%403x.png",
+        "levelLowest": 3500,
+        "levelHighest": 9799
+      },
+      {
+        "levelId": 4,
+        "levelNextId": 5,
+        "levelName": "战士IV",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v4%403x.png",
+        "levelLowest": 9800,
+        "levelHighest": 15799
+      },
+      {
+        "levelId": 5,
+        "levelNextId": 6,
+        "levelName": "战士V",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v5%403x.png",
+        "levelLowest": 15800,
+        "levelHighest": 19999
+      },
+      {
+        "levelId": 6,
+        "levelNextId": 7,
+        "levelName": "骑士I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v6%403x.png",
+        "levelLowest": 20000,
+        "levelHighest": 25999
+      },
+      {
+        "levelId": 7,
+        "levelNextId": 8,
+        "levelName": "骑士II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v7%403x.png",
+        "levelLowest": 26000,
+        "levelHighest": 31999
+      },
+      {
+        "levelId": 8,
+        "levelNextId": 9,
+        "levelName": "骑士III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v8%403x.png",
+        "levelLowest": 32000,
+        "levelHighest": 37999
+      },
+      {
+        "levelId": 9,
+        "levelNextId": 10,
+        "levelName": "骑士IV",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v9%403x.png",
+        "levelLowest": 38000,
+        "levelHighest": 45999
+      },
+      {
+        "levelId": 10,
+        "levelNextId": 11,
+        "levelName": "骑士V",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v10%403x.png",
+        "levelLowest": 46000,
+        "levelHighest": 49999
+      },
+      {
+        "levelId": 11,
+        "levelNextId": 12,
+        "levelName": "男爵I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v11%403x.png",
+        "levelLowest": 50000,
+        "levelHighest": 74999
+      },
+      {
+        "levelId": 12,
+        "levelNextId": 13,
+        "levelName": "男爵II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v12%403x.png",
+        "levelLowest": 75000,
+        "levelHighest": 124999
+      },
+      {
+        "levelId": 13,
+        "levelNextId": 14,
+        "levelName": "男爵III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v13%403x.png",
+        "levelLowest": 125000,
+        "levelHighest": 149999
+      },
+      {
+        "levelId": 14,
+        "levelNextId": 15,
+        "levelName": "子爵I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v14%403x.png",
+        "levelLowest": 150000,
+        "levelHighest": 199999
+      },
+      {
+        "levelId": 15,
+        "levelNextId": 16,
+        "levelName": "子爵II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v15%403x.png",
+        "levelLowest": 200000,
+        "levelHighest": 299999
+      },
+      {
+        "levelId": 16,
+        "levelNextId": 17,
+        "levelName": "子爵III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v16%403x.png",
+        "levelLowest": 300000,
+        "levelHighest": 349999
+      },
+      {
+        "levelId": 17,
+        "levelNextId": 18,
+        "levelName": "伯爵I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v17%403x.png",
+        "levelLowest": 350000,
+        "levelHighest": 449999
+      },
+      {
+        "levelId": 18,
+        "levelNextId": 19,
+        "levelName": "伯爵II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v18%403x.png",
+        "levelLowest": 450000,
+        "levelHighest": 599999
+      },
+      {
+        "levelId": 19,
+        "levelNextId": 20,
+        "levelName": "伯爵III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v19%403x.png",
+        "levelLowest": 600000,
+        "levelHighest": 699999
+      },
+      {
+        "levelId": 20,
+        "levelNextId": 21,
+        "levelName": "侯爵I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v20%403x.png",
+        "levelLowest": 700000,
+        "levelHighest": 899999
+      },
+      {
+        "levelId": 21,
+        "levelNextId": 22,
+        "levelName": "侯爵II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v21%403x.png",
+        "levelLowest": 900000,
+        "levelHighest": 1299999
+      },
+      {
+        "levelId": 22,
+        "levelNextId": 23,
+        "levelName": "侯爵III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v22%403x.png",
+        "levelLowest": 1300000,
+        "levelHighest": 1499999
+      },
+      {
+        "levelId": 23,
+        "levelNextId": 24,
+        "levelName": "公爵I",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v23%403x.png",
+        "levelLowest": 1500000,
+        "levelHighest": 2299999
+      },
+      {
+        "levelId": 24,
+        "levelNextId": 25,
+        "levelName": "公爵II",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v24%403x.png",
+        "levelLowest": 2300000,
+        "levelHighest": 3899999
+      },
+      {
+        "levelId": 25,
+        "levelNextId": 26,
+        "levelName": "公爵III",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v25%403x.png",
+        "levelLowest": 3900000,
+        "levelHighest": 4499999
+      },
+      {
+        "levelId": 26,
+        "levelNextId": 27,
+        "levelName": "郡公",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v26%403x.png",
+        "levelLowest": 4500000,
+        "levelHighest": 4999999
+      },
+      {
+        "levelId": 27,
+        "levelNextId": 28,
+        "levelName": "国公",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v27%403x.png",
+        "levelLowest": 5000000,
+        "levelHighest": 6499999
+      },
+      {
+        "levelId": 28,
+        "levelNextId": 29,
+        "levelName": "王爵",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v28%403x.png",
+        "levelLowest": 6500000,
+        "levelHighest": 8999999
+      },
+      {
+        "levelId": 29,
+        "levelNextId": 30,
+        "levelName": "相国",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v29%403x.png",
+        "levelLowest": 9000000,
+        "levelHighest": 12999999
+      },
+      {
+        "levelId": 30,
+        "levelNextId": 31,
+        "levelName": "藩王",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v30%403x.png",
+        "levelLowest": 13000000,
+        "levelHighest": 17999999
+      },
+      {
+        "levelId": 31,
+        "levelNextId": 32,
+        "levelName": "郡王",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v31%403x.png",
+        "levelLowest": 18000000,
+        "levelHighest": 23999999
+      },
+      {
+        "levelId": 32,
+        "levelNextId": 33,
+        "levelName": "亲王",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v32%403x.png",
+        "levelLowest": 24000000,
+        "levelHighest": 30999999
+      },
+      {
+        "levelId": 33,
+        "levelNextId": 34,
+        "levelName": "国王",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v33%403x.png",
+        "levelLowest": 31000000,
+        "levelHighest": 38999999
+      },
+      {
+        "levelId": 34,
+        "levelNextId": 35,
+        "levelName": "帝王",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v34%403x.png",
+        "levelLowest": 39000000,
+        "levelHighest": 47999999
+      },
+      {
+        "levelId": 35,
+        "levelNextId": 36,
+        "levelName": "大帝",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v35%403x.png",
+        "levelLowest": 48000000,
+        "levelHighest": 57999999
+      },
+      {
+        "levelId": 36,
+        "levelNextId": 37,
+        "levelName": "圣君",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v36%403x.png",
+        "levelLowest": 58000000,
+        "levelHighest": 68999999
+      },
+      {
+        "levelId": 37,
+        "levelNextId": 38,
+        "levelName": "帝皇",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v37%403x.png",
+        "levelLowest": 69000000,
+        "levelHighest": 70999999
+      },
+      {
+        "levelId": 38,
+        "levelNextId": 39,
+        "levelName": "圣尊",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v38%403x.png",
+        "levelLowest": 71000000,
+        "levelHighest": 83999999
+      },
+      {
+        "levelId": 39,
+        "levelNextId": 40,
+        "levelName": "圣皇",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v39%403x.png",
+        "levelLowest": 84000000,
+        "levelHighest": 97999999
+      },
+      {
+        "levelId": 40,
+        "levelNextId": 41,
+        "levelName": "天尊",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v40%403x.png",
+        "levelLowest": 98000000,
+        "levelHighest": 112999999
+      },
+      {
+        "levelId": 41,
+        "levelNextId": 42,
+        "levelName": "帝尊",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v41%403x.png",
+        "levelLowest": 113000000,
+        "levelHighest": 129999999
+      },
+      {
+        "levelId": 42,
+        "levelNextId": 43,
+        "levelName": "天神",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v42%403x.png",
+        "levelLowest": 130000000,
+        "levelHighest": 149999999
+      },
+      {
+        "levelId": 43,
+        "levelNextId": 44,
+        "levelName": "上神",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v43%403x.png",
+        "levelLowest": 150000000,
+        "levelHighest": 189999999
+      },
+      {
+        "levelId": 44,
+        "levelNextId": 45,
+        "levelName": "圣神",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v44%403x.png",
+        "levelLowest": 190000000,
+        "levelHighest": 269999999
+      },
+      {
+        "levelId": 45,
+        "levelNextId": 46,
+        "levelName": "创世神",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v45%403x.png",
+        "levelLowest": 270000000,
+        "levelHighest": 429999999
+      },
+      {
+        "levelId": 46,
+        "levelNextId": 47,
+        "levelName": "三界霸主",
+        "levelIcon": "https://fwres.oss-cn-hangzhou.aliyuncs.com/upload/resource/level_user/v46%403x.png",
+        "levelLowest": 430000000,
+        "levelHighest": 665999999
+      }
+    ]

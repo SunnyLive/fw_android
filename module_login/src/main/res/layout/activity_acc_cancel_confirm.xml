@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/normal_bg"/>
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="考虑到安全问题，需要您使用申请时的手机号进行验证，验证通过后方可撤销。"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:text="手机号"
+        android:textColor="@color/text_33"
+        android:drawableLeft="@drawable/ic_phone_gray"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_60"
+        android:drawablePadding="@dimen/dp_4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_area_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_33" />
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44"
+            android:background="@null"
+            android:hint="请输入手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/text_33"
+            android:enabled="false"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/dp_8"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/normal_bg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:text="验证码"
+        android:textColor="@color/text_33"
+        android:drawableLeft="@drawable/ic_key_gray"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:drawablePadding="@dimen/dp_4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_yzm_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:textColor="@color/text_33"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/dp_8"/>
+        <TextView
+            android:id="@+id/tv_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取验证码"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/purple_9966ff"
+            android:paddingTop="@dimen/dp_9"
+            android:paddingBottom="@dimen/dp_9"
+            android:paddingLeft="@dimen/dp_22"
+            android:paddingRight="@dimen/dp_22"
+            android:background="@drawable/shape_purple_board_corner"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/normal_bg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <com.fengwo.module_comment.widget.GradientTextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_42"
+        android:layout_marginRight="@dimen/dp_42"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dp_80"
+        android:text="确定"
+        app:gtv_start_color="#CC66FF"
+        app:gtv_end_color="#A580FF"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

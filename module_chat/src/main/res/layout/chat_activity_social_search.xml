@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_social_search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_chat_search"
+        app:layout_constraintDimensionRatio="1:0.46"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fengwo.module_comment.widget.AppTitleBar
+        android:id="@+id/basetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:atb_backVisibility="false"
+        app:atb_backgroundColor="@color/transparent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_36"
+            android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/bg_white_circle"
+            android:hint="请输入搜索关键词"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_42"
+            android:singleLine="true"
+            android:textColor="@color/text_99"
+            android:textColorHint="@color/text_99"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:padding="@dimen/dp_2"
+            android:src="@drawable/ic_seach_social"
+            app:layout_constraintBottom_toBottomOf="@id/et_search"
+            app:layout_constraintRight_toRightOf="@id/et_search"
+            app:layout_constraintTop_toTopOf="@id/et_search" />
+
+        <ImageView
+            android:id="@+id/tv_cancel"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_4"
+            android:src="@drawable/ic_action_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.fengwo.module_comment.widget.AppTitleBar>
+
+    <ImageView
+        android:id="@+id/ivHot"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/ic_search_hot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basetitle" />
+
+    <TextView
+        android:id="@+id/tvHot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:text="@string/string_hot_search"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@id/ivHot"
+        app:layout_constraintLeft_toRightOf="@id/ivHot"
+        app:layout_constraintTop_toTopOf="@id/ivHot" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fl_hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingEnd="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/tvHot"
+        tools:layout_height="@dimen/dp_50" />
+
+    <TextView
+        android:id="@+id/tv_search_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/string_history_search"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_hot_search" />
+
+    <ImageView
+        android:id="@+id/iv_clear_history"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:padding="@dimen/dp_4"
+        android:src="@drawable/ic_gray_garbage"
+        app:layout_constraintBottom_toBottomOf="@id/tv_search_history"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_search_history" />
+
+    <com.fengwo.module_comment.widget.MyFlowLayout
+        android:id="@+id/fl_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/tv_search_history" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basetitle" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="ivHot,tvHot,fl_hot_search,tv_search_history,iv_clear_history,fl_history" />
+</androidx.constraintlayout.widget.ConstraintLayout>

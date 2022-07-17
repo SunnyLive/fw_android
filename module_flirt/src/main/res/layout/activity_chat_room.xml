@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_chatroom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop" />
+    <FrameLayout
+        android:id="@+id/rl_zw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/iv_bgzw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_196"
+            android:src="@mipmap/pic_zw"
+            android:layout_gravity="center"
+
+          />
+    </FrameLayout>
+
+    <!--直播界面 /聊天窗口 / 键盘-->
+    <com.fengwo.module_flirt.widget.ChatRoomVideoView
+        android:id="@+id/crv_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--小窗口-->
+    <com.fengwo.module_flirt.widget.SmallWindowView
+        android:id="@+id/sw_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/dp_200"
+        android:visibility="gone" />
+
+    <!--最外层-->
+    <com.fengwo.module_flirt.widget.ChatRoomButtonView
+        android:id="@+id/crb_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_15"
+
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_30" />
+
+    <!--订单列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_260"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_15"
+        android:visibility="gone" />
+
+    <!--进入直播间等待 遮罩  已废弃-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/ll_wait"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@color/transparent"-->
+    <!--        android:clickable="false"-->
+    <!--        android:gravity="center"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/radius_gray_bg_alpha"-->
+    <!--            android:paddingLeft="@dimen/dp_38"-->
+    <!--            android:paddingTop="@dimen/dp_15"-->
+    <!--            android:paddingRight="@dimen/dp_38"-->
+    <!--            android:paddingBottom="@dimen/dp_15"-->
+    <!--            android:text="心动电波发送中..."-->
+    <!--            android:textColor="@color/text_white"-->
+    <!--            android:textSize="@dimen/sp_14" />-->
+    <!--    </LinearLayout>-->
+
+
+    <!--美颜-->
+    <FrameLayout
+        android:id="@+id/fl_faceunity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <ViewStub
+            android:id="@+id/fu_base_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+        <ViewStub
+            android:id="@+id/fu_effect_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+    <!--    礼物-->
+    <com.fengwo.module_comment.widget.epf.EPlayerView
+        android:id="@+id/playview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:clearsAfterStop="true"
+
+        />
+
+    <!-- 上滑提示-->
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_40_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_150"
+            android:src="@drawable/ic_chat_room_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上滑展开对话框"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <!-- 加时礼物 -->
+    <FrameLayout
+        android:id="@+id/ll_add_gift"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/alpha_50_black"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_add_gift_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_gift_three" />
+
+        <ImageView
+            android:id="@+id/iv_close_addTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_160"
+            android:padding="@dimen/dp_15"
+            android:src="@mipmap/ic_close" />
+
+        <TextView
+            android:id="@+id/tv_gift_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_170"
+            android:text="开启缘分"
+            android:textColor="#fffe3c9c"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/im_views"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_250"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <com.fengwo.module_flirt.widget.HorizontalBarrageView
+        android:id="@+id/hbv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_130" />
+
+    <include
+        android:id="@+id/view_gift_msg"
+        layout="@layout/item_gift_msg"
+        android:visibility="gone" />
+
+
+
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_d1d1d1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_12">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_000000"
+            android:textSize="@dimen/sp_14"
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="Mark"/>
+        <ImageView
+            android:id="@+id/iv_user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_head"
+            android:layout_below="@id/tv_nick"
+            android:layout_marginLeft="@dimen/dp_10"
+          />
+        <ImageView
+            android:id="@+id/iv_host_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_user_level"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_below="@id/tv_nick" />
+        
+        <com.fengwo.module_comment.widget.GradientTextView
+            android:id="@+id/iv_invite"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_26"
+            android:layout_alignParentRight="true"
+            android:text="发送邀请"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"/>
+
+    </RelativeLayout>
+</LinearLayout>

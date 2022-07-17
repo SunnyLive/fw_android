@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GiftItemLayout">
+        <attr name="gift_index" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color"/>
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_scale_rate" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BevelView">
+        <attr name="bevel_border_color" format="color|reference" />
+        <attr name="bevel_border_width" format="dimension|reference" />
+        <attr name="bevel_bevel_percent" format="float" />
+        <attr name="bevel_round_radius" format="dimension|reference" />
+        <attr name="bevel_direction" format="enum">
+            <enum name="up_left" value="1" />
+            <enum name="down_right" value="2" />
+            <enum name="up_right" value="3" />
+            <enum name="down_left" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 飘落自定义属性 -->
+    <declare-styleable name="FallingLayout">
+        <!-- 飘落物初始X坐标 -->
+        <attr name="initX" format="dimension" />
+        <!-- 飘落无初始Y坐标-->
+        <attr name="initY" format="dimension" />
+        <!-- 飘落时 X 坐标随机范围 -->
+        <attr name="xRand" format="dimension" />
+        <!-- 飘落位移距离随机范围-->
+        <attr name="animLengthRand" format="dimension" />
+        <!-- X 坐标的弧度-->
+        <attr name="xPointFactor" format="dimension" />
+        <!-- 飘落位移距离-->
+        <attr name="animLength" format="dimension" />
+        <!-- 飘落物的宽度 -->
+        <attr name="rain_width" format="dimension" />
+        <!-- 飘落物的高度 -->
+        <attr name="rain_height" format="dimension" />
+        <!-- 贝塞尔因子 弧度 -->
+        <attr name="bezierFactor" format="integer" />
+        <!-- 动画时长 -->
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MarqueTextView">
+        <attr name="delayTime" format="integer"/>
+    </declare-styleable>
+</resources>

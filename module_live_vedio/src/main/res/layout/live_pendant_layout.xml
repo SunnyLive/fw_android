@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragViewOutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_rect_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#88000000"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_rect_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_drag_view_to_delete_bg"
+                android:padding="3dp"
+                android:text="拖动此区域删除"
+                android:textColor="#ffcd5872"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/center_drag_container"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_pendantx_lin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88000000" />
+    </LinearLayout>
+
+    <com.fengwo.module_live_vedio.widget.DragView
+        android:id="@+id/rl_drag_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_80">
+
+
+        <ImageView
+            android:id="@+id/tv_drag_content"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_77"/>
+
+
+        <EditText
+            android:id="@+id/ed_title"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_11"
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:hint=""
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:maxLength="11"
+            android:background="@null"
+
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10" />
+
+    </com.fengwo.module_live_vedio.widget.DragView>
+
+</RelativeLayout>

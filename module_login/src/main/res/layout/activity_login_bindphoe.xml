@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_login_bg_new"
+    >
+
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_20"
+        android:src="@drawable/ic_back_white" />
+
+    <TextView
+        android:id="@+id/tv_bind_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_115"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sp_24"
+        android:textColor="@color/text_white"
+        android:text="@string/login_bind_phone_label"
+        android:textStyle="bold"
+        />
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_below="@+id/tv_bind_label"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_93"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:maxLength="11"
+        android:background="@drawable/bg_login_phone_edit_state"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="请输入手机号"
+        android:textColorHint="@color/text_white"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_16"
+        android:drawableRight="@drawable/icon_login_bind_close"
+        android:paddingRight="@dimen/dp_15"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_code_parent"
+        android:layout_below="@id/et_phone"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_21"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_login_phone_edit_state"
+        android:gravity="center_vertical"
+        >
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:hint="输入验证码"
+            android:textColorHint="#ffffffff"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14"
+            android:background="@null"
+            />
+
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_29"
+            android:background="#ffffffff"
+            />
+
+
+        <TextView
+            android:id="@+id/btn_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_16"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:text="获取验证码"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/et_phone"
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_140"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_login_bt_bg"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/text_white"
+        android:text="@string/text_next"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_custom_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="400-005-1118"
+        android:layout_above="@+id/btn_rule"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@id/btn_rule"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/login_rule"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/sp_10"/>
+
+</RelativeLayout>
